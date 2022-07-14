@@ -1,28 +1,57 @@
-html {
-  height: 100%;
+:root {
+  --silcrow: #FC3819;
+  --asterisk: #091833;
+  --dagger: #67E0A1;
+  --double-dagger: #E0D4FF;
+  --paper: #FFFFFF;
+  --ink: #232425;
+  
+  --silcrow-900: #FC5136;
 }
 
 body {
-  font-size: 150px;
-
   width: 100%;
-	height: 100%;
-
-	display:grid;
-	justify-content:center;
-	align-items:center;
 }
 
-.container {
+.intro {
   text-align: center;
-  width: 240px;
-  height: 240px;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: var(--silcrow-900);
+  color: var(--paper);
   
   display:grid;
   justify-content:center;
   align-items:center;
 }
 
-p {
+.silcrow-icon {
+  font-size: 142px;
   font-family: Anybody Variable;
+  position: relative;
+  font-variation-settings: 'wght' 700, 'wdth' 100;
+}
+
+.silcrow-icon::before {
+  background-image: url("../images/badge-elipse.svg");
+  content: "";
+  background-size: 100% 100%;
+  position: absolute;
+  inset: -30px;
+}
+
+.title-text h2 {
+  font-family: Orleans;
+  font-size: 54px;
+}
+
+.title-text h3 {
+  font-family: Lyon Text;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.intro img {
+  justify-self: center;
 }

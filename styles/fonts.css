@@ -3,3 +3,30 @@
   src: url('../fonts/anybody-variable.woff2') format('woff2');
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Lyon Text';
+  src: url('LyonText-RegularItalic-Web.woff2') format('woff2'),
+       url('LyonText-RegularItalic-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Lyon Text';
+  src: url('LyonText-Regular-Web.woff2') format('woff2'),
+       url('LyonText-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Orleans';
+  src: url('Orleans-Light-Web.woff2') format('woff2'),
+       url('Orleans-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
