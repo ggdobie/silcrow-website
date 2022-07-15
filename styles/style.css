@@ -15,7 +15,7 @@ body {
 
 .intro {
   text-align: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   
   background-color: var(--silcrow-900);
@@ -26,19 +26,23 @@ body {
   align-items:center;
 }
 
+.seal{
+  position: relative;
+  justify-self: center;
+}
+
 .silcrow-icon {
   font-size: 142px;
   font-family: Anybody Silcrow Variable;
-  position: relative;
-  font-variation-settings: 'wght' 700, 'wdth' 100;
+  font-variation-settings: 'wght' 100, 'wdth' 600;
 }
 
-.silcrow-icon::before {
-  background-image: url("../images/badge-elipse.svg");
-  content: "";
-  background-size: 100% 100%;
+.seal-elipse {
   position: absolute;
-  inset: -30px;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(140%, 120%);
 }
 
 .title-text h2 {
@@ -52,6 +56,6 @@ body {
   font-style: italic;
 }
 
-.intro img {
+.intro-arrow {
   justify-self: center;
 }
