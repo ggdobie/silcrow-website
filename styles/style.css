@@ -22,23 +22,34 @@ body {
   transition: 0.3s;
 }
 
-p+p {
-  text-indent: 1em;
-}
-
-.large-text {
-  font-family: Lyon Text;
-  font-style: italic;
-  font-size: 1.5rem;
-  line-height: 126%;
-}
-
 body.reversed {
   background-color: var(--silcrow-900);
   color: var(--paper);
 }
 
-.grid-prime {
+p+p {
+  text-indent: 1em;
+}
+
+.large-text {
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.26;
+}
+
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
+    letter-spacing: 0.1em;
+}
+
+h5, small {
+  font-size: 0.8125rem;
+}
+
+.grid-prime, .grid-case {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -70,11 +81,21 @@ body.reversed {
   grid-column-end: 5;
 }
 
-.title-text h2 {
+h2 {
   font-family: Orleans;
-  color: (--paper);
-  font-size: 3.375rem;
+  font-size: 2.25rem;
   letter-spacing: -0.01em;
+}
+
+h2 em {
+  font-family: Lyon Text;
+  font-style: italic;
+  letter-spacing: -0.04em;
+}
+
+.title-text h2 {
+  font-size: 3.375rem;  
+  color: (--paper);
 }
 
 .title-text h3 {
@@ -155,6 +176,19 @@ body.reversed {
   background-color: var(--paper);
 }
 
+.case-study small, .case-study h2 {
+  grid-column: span 4;
+}
+
+small span {
+  color: var(--silcrow);
+}
+
+small span::after {
+  content: "·";
+  margin: 0 10px 0 6px;
+}
+
 @media (min-width: 640px) {
   /* html {
     font-size: 17px;
@@ -219,7 +253,7 @@ body.reversed {
   }
   
   .large-text {
-    line-height: 140%;
+    line-height: 1.4;
   }
   
   .squiggle {
