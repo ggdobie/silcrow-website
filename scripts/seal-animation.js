@@ -18,7 +18,7 @@ let interval = null
 const startInterval = function () {
   interval = setInterval(() => {
 	  randomiseVariables()	
-  }, 1500)
+  }, 1000)
 }
 
 const randomiseVariables = function () {
