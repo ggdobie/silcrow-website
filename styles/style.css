@@ -7,6 +7,7 @@
   --ink: #232425;
   
   --silcrow-900: #FC5136;
+  --silcrow-300: #FFE6E2;
 }
 
 html {
@@ -22,6 +23,14 @@ body {
   background-color: var(--silcrow-900);
 }
 
+.grid-prime {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .intro {
   text-align: center;
   width: 100%;
@@ -32,16 +41,29 @@ body {
   justify-content:center;
   align-items:center;
   transition: height 0.3s;
+  
+  grid-template-rows: repeat(3, 1fr);
+  
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.title-text {
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .seal {
   position: relative;
   justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .silcrow-icon {
   --weight: 400;
   --width: 100;
+  color: var(--silcrow-300);
   font-size: 142px;
   font-family: Anybody Silcrow Variable;
   font-variation-settings: 'wght' var(--weight), 'wdth' var(--width);
@@ -59,6 +81,7 @@ body {
 .title-text h2 {
   font-family: Orleans;
   font-size: 3.375rem;
+  letter-spacing: -1%;
 }
 
 .title-text h3 {
@@ -69,6 +92,8 @@ body {
 
 .intro-arrow {
   justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .next {
