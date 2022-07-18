@@ -33,7 +33,7 @@ p+p {
   line-height: 126%;
 }
 
-.reversed {
+body.reversed {
   background-color: var(--silcrow-900);
   color: var(--paper);
 }
@@ -74,7 +74,7 @@ p+p {
   font-family: Orleans;
   color: (--paper);
   font-size: 3.375rem;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
 }
 
 .title-text h3 {
@@ -133,7 +133,10 @@ p+p {
   mask-image: var(--squiggle-svg);
   width:100%;
   height:8px;
-  
+  transition: 0.3s;
+}
+
+.intro-blurb .squiggle {
   grid-column: span 2;
 }
 
@@ -141,4 +144,134 @@ p+p {
   color: var(--silcrow);
   grid-column-start: 1;
   grid-column-end: 5;
+  transition: 0.3s;
+}
+
+.intro-text.reversed {
+  color: var(--paper);
+}
+
+.squiggle.reversed {
+  background-color: var(--paper);
+}
+
+@media (min-width: 640px) {
+  /* html {
+    font-size: 17px;
+  }   */
+  
+  .grid-prime {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
+  .intro-title {
+    text-align: left;
+    height: 50vh;
+    grid-template-rows: 1fr;
+  }
+  
+  .seal {
+    order: 1;
+    grid-column-start: 1;
+  }
+  
+  .silcrow-icon {
+    font-size: 110px;
+  }
+  
+  .title-text {
+    order: 2;
+    grid-column-start: 4;
+    grid-column-end: 8;
+  }
+  
+  .title-text h2 {
+    font-size: 5.0625rem;
+  }
+  
+  .title-text h3 {
+    line-height: 1;
+  }
+  
+  .intro-arrow {
+    display: none;
+  }
+  
+  .intro-text {
+    grid-column-start: 4;
+    grid-column-end: 8;
+  }
+  
+  .intro-blurb .squiggle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: end;
+  }
+}
+
+@media (min-width: 820px) {
+  html {
+    font-size: 17px;
+  }    
+  
+  .grid-prime {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  .large-text {
+    line-height: 140%;
+  }
+  
+  .squiggle {
+    height: 12px;
+  }
+  
+  .intro-text {
+    grid-column-start: 4;
+    grid-column-end: 11;
+  }
+  
+  .intro-text p+p {
+    text-indent: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 20px;
+  }    
+  
+  .grid-prime {
+    grid-template-columns: repeat(20, 1fr);
+  }
+  
+  .intro-title {
+    height: 65vh;
+  }
+  
+  .seal, .intro-blurb .squiggle {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  
+  .silcrow-icon {
+    font-size: 142px;
+  }
+  
+  .title-text h2 {
+    font-size: 7.5rem;
+    letter-spacing: -0.025em;
+  }
+  
+  .intro-text {
+    grid-column-start: 4;
+    grid-column-end: 11;
+  }
+  
+  .title-text, .intro-text {
+    grid-column-start: 5;
+    grid-column-end: 12;
+  }
+  
+  
 }

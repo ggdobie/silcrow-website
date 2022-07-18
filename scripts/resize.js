@@ -4,9 +4,19 @@ const calculateHeight = function() {
 }
 
 window.addEventListener('resize', () => {
-  if (window.pageYOffset <= 0) {
-	  calculateHeight()
-  }
+	
+	let mobileBreakpoint = true
+	
+	if (window.matchMedia('(min-width: 640px)').matches) {
+		mobileBreakpoint = false
+	} else {
+		mobileBreakpoint = true
+	}
+	
+	if (window.pageYOffset <= 0 && mobileBreakpoint == true) {
+  		calculateHeight()
+	}
+	
 })
 
 calculateHeight()
