@@ -136,7 +136,7 @@
   
   .title-text, .intro-text {
     grid-column-start: 5;
-    grid-column-end: -2;
+    grid-column-end: -3;
   }
   
   .intro-blurb .squiggle {
@@ -144,7 +144,7 @@
     grid-column-end: 4;
   }
   
-  .intro-blurb .squiggle, .intro-text {
+  .intro-blurb .squiggle, .intro-text, .quote p {
     align-self: end;
   }
   
@@ -167,7 +167,25 @@
   
 }
 
-@media (min-width: 820px) {
+@media (min-width: 772px) {
+  
+  .title-text, .intro-text {
+    grid-column-start: 5;
+    grid-column-end: -4;
+  }
+  
+  .case-study h2 {
+    align-self: end;
+  }
+  
+}
+
+@media (min-width: 980px) {
+  
+  .title-text, .intro-text {
+    grid-column-start: 5;
+    grid-column-end: -2;
+  }
   
 }
 
