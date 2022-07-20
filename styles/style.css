@@ -8,6 +8,7 @@
   
   --silcrow-900: #FC5136;
   --silcrow-300: #FFE6E2;
+  --silcrow-200: #FFEEEB;
 }
 
 html {
@@ -37,16 +38,13 @@ p+p {
   line-height: 1.26;
 }
 
-.small-caps {
-    -moz-font-feature-settings: "c2sc", "smcp";
-    -ms-font-feature-settings: "c2sc", "smcp";
-    -webkit-font-feature-settings: "c2sc", "smcp";
-    font-feature-settings: "c2sc", "smcp";
-    letter-spacing: 0.1em;
-}
-
 h5, small {
   font-size: 0.8125rem;
+  -moz-font-feature-settings: "c2sc", "smcp";
+  -ms-font-feature-settings: "c2sc", "smcp";
+  -webkit-font-feature-settings: "c2sc", "smcp";
+  font-feature-settings: "c2sc", "smcp";
+  letter-spacing: 0.1em;
 }
 
 .grid-prime, .grid-case {
@@ -146,7 +144,7 @@ h2 em {
 .intro-blurb {
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 2000px;
+  padding-bottom: 400px;
 }
 
 .squiggle {
@@ -176,8 +174,24 @@ h2 em {
   background-color: var(--paper);
 }
 
-.case-study small, .case-study h2 {
+.case-study {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: solid 1px var(--silcrow-200);
+  border-bottom: solid 1px var(--silcrow-200);
+  display: grid;
+}
+
+.case-study + .case-study {
+  border-top: none;
+}
+
+.case-study small, .case-study h2, .case-study .illustration {
   grid-column: span 4;
+}
+
+.case-study .illustration {
+  position: relative;
 }
 
 small span {
@@ -187,12 +201,83 @@ small span {
 small span::after {
   content: "·";
   margin: 0 10px 0 6px;
+  color: var(--asterisk);
 }
 
+.case-study img {
+  grid-column: span 4;
+  transform: scale(90%) translateY(+30px);
+  transform-origin: left;
+  justify-self: start;
+  position: relative;
+}
+
+.case-study .illustration::before {
+  content: "";
+  background-image: url("../images/case-study-illo-bg.png");
+  background-size: contain;
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.flush-left, .flush-right {
+  display: flex;
+}
+
+.flush-left .text, .flush-right .text {
+  flex: none;
+}
+
+.flush-left .squiggle {
+  margin-left: 12px;
+}
+
+.flush-right .squiggle {
+  margin-right: 12px;
+}
+
+.flush-left .squiggle, .flush-right .squiggle {
+  margin-top: 0.45em;
+}
+
+.case-study h2 em {
+  margin-right: 10px;
+}
+
+.case-study h2::after {
+  content: "";
+  background-color: var(--silcrow);
+  mask-image: var(--arrow-svg);
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  width: 28px;
+  height: 16px;
+}
+
+
+
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* MEDIA QUERIES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
 @media (min-width: 640px) {
-  /* html {
-    font-size: 17px;
-  }   */
   
   .grid-prime {
     grid-template-columns: repeat(8, 1fr);
