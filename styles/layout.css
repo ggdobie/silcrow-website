@@ -63,7 +63,7 @@
   grid-template-columns: 1, 1fr;
 }
 
-.case-study small, .case-study h2, .case-study .illustration, .quote p {
+.case-study *, .quote * {
   grid-column-start: 1;
   grid-column-end: -1;
 }
@@ -74,6 +74,18 @@
   transform-origin: left;
   justify-self: start;
   position: relative;
+}
+
+.content-item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+ 
+.quote {
+  grid-template-rows: auto 1fr auto auto;
+  align-items: end;
+  align-content: end;
+  grid-row-gap: 0;
 }
 
 
@@ -115,6 +127,10 @@
   .grid-tertiary {
     grid-template-columns: repeat(var(--split-tertiary), 1fr);
   }
+  
+  .quote {
+    grid-row-gap: 0;
+  }
     
   .intro-title {
     height: 65vh;
@@ -144,8 +160,12 @@
     grid-column-end: 4;
   }
   
-  .intro-blurb .squiggle, .intro-text, .quote p {
-    align-self: end;
+  .intro-blurb {
+    align-items: end;
+  }
+  
+  .content-item {
+    height: 80vh;
   }
   
   .content-container {
@@ -154,13 +174,18 @@
 
   .case-study {
     grid-column: span var(--split-secondary);
+    /* grid-template-rows: auto 1fr auto; */
+  }
+  
+  .case-study h2 {
+    align-self: end;
   }
   
   .quote {
     grid-column: span var(--split-tertiary);
   }
   
-  .case-study small, .case-study h2, .case-study .illustration, .quote p {
+ .case-study *, .quote * {
     grid-column-start: 2;
     grid-column-end: -2;
   }
@@ -172,10 +197,6 @@
   .title-text, .intro-text {
     grid-column-start: 5;
     grid-column-end: -4;
-  }
-  
-  .case-study h2 {
-    align-self: end;
   }
   
 }

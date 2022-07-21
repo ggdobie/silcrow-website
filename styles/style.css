@@ -11,6 +11,7 @@
   --silcrow-200: #FFEEEB;
   
   --ink-000: #F0F2F5;
+  --ink-100: #E1E3E5;
 }
 
 html {
@@ -40,8 +41,8 @@ p+p {
   line-height: 1.26;
 }
 
-h5, small {
-  font-size: 0.8125rem;
+h5, small, figcaption {
+  font-size: 13px;
   -moz-font-feature-settings: "c2sc", "smcp";
   -ms-font-feature-settings: "c2sc", "smcp";
   -webkit-font-feature-settings: "c2sc", "smcp";
@@ -63,6 +64,11 @@ h2 em {
   font-family: Lyon Text;
   font-style: italic;
   letter-spacing: -0.04em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--asterisk);
 }
 
 .title-text h2 {
@@ -104,7 +110,7 @@ h2 em {
 
 .intro-blurb {
   width: 100%;
-  padding-top: 120px;
+  /* padding-top: 120px; */
   padding-bottom: 100px;
 }
 
@@ -127,11 +133,6 @@ h2 em {
 
 .squiggle.reversed {
   background-color: var(--paper);
-}
-
-.content-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .content-item {
@@ -214,6 +215,40 @@ small span::after {
   height: 16px;
 }
 
+figure .decoration {
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.deco-quote {
+  width: 34px;
+  height: 25px;
+  background-color: var(--silcrow);
+  mask-image: var(--quotemark-svg);
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  margin-right: 20px;
+}
+
+figure .decoration .squiggle {
+  background-color: var(--ink-100);
+}
+
+figure blockquote {
+  margin-top: 90px;
+}
+
+figcaption span {
+  display: block;
+}
+
+figcaption {
+  border-left: 1px solid var(--silcrow);
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
 
 
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -258,10 +293,6 @@ small span::after {
   .content-item:nth-last-child(2) {
     border-bottom: solid 1px var(--ink-000);  
     margin-bottom: 40px;
-  }
-  
-  .content-item {
-    height: 80vh;
   }
   
   .case-study .illustration::before {
@@ -319,10 +350,6 @@ small span::after {
     font-size: 20px;
   }
   
-  .case-study h2 {
-    font-size: 5rem;
-  }
-  
   .silcrow-icon {
     font-size: 142px;
   }
@@ -330,6 +357,15 @@ small span::after {
   .title-text h2 {
     font-size: 7.5rem;
     letter-spacing: -0.025em;
+  }
+  
+  .content-item {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  
+  .case-study h2 {
+    font-size: 5rem;
   }
   
   .case-study .illustration {
@@ -342,6 +378,10 @@ small span::after {
   
   .case-study h2::after {
     margin-bottom: 0.1em;
+  }
+  
+  figcaption {
+    margin-top: 33px;
   }
   
 }
