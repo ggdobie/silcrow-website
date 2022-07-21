@@ -12,6 +12,9 @@
   
   --ink-000: #F0F2F5;
   --ink-100: #E1E3E5;
+  
+  --underline: #85E6B470;
+  --underline-hover: #85E6B490;
 }
 
 html {
@@ -23,7 +26,12 @@ body {
   
   font-family: Lyon Text;
   color: var(--asterisk);
+  
   transition: 0.3s;
+}
+
+p {
+  line-height: 1.44;
 }
 
 body.reversed {
@@ -60,7 +68,7 @@ h2 {
   letter-spacing: -0.01em;
 }
 
-h2 em {
+em {
   font-family: Lyon Text;
   font-style: italic;
   letter-spacing: -0.04em;
@@ -69,6 +77,28 @@ h2 em {
 a {
   text-decoration: none;
   color: var(--asterisk);
+}
+
+p a {
+  font-style: italic;
+  background-image: linear-gradient(to right, var(--underline) 0%, var(--underline) 200%);
+  background-repeat: repeat-x;
+  background-position: 0 0.7em;
+  background-size: 100% 20px;
+  transition: 0.3s;
+  overflow: visible;
+  padding: 2px;
+}
+
+p a:hover {
+  background-image: linear-gradient(to right, var(--underline-hover) 0%, var(--underline-hover) 200%);
+  background-position: 0 0;
+  background-size: 100% 2em;
+}
+
+.hero-text {
+  font-size: 3.375rem;
+  letter-spacing: -0.03em;
 }
 
 .title-text h2 {
@@ -249,7 +279,38 @@ figcaption {
   margin-top: 25px;
 }
 
+.responsible .stamp {
+  position: relative;
+}
 
+.responsible .stamp::after {
+  content: "";
+  background-color: var(--dagger);
+  mask-image: url("../images/badge-diligent.svg");
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  width: 152px;
+  height: 123px;
+  position: absolute;
+  bottom: 0;
+  right:0;
+  /* display: inline; */
+  transform: translateY(70%);
+}
+
+.signature {
+  position: relative
+}
+
+.signature .squiggle {
+  background-color: var(--dagger);
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right:0;
+}
 
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -382,6 +443,10 @@ figcaption {
   
   figcaption {
     margin-top: 33px;
+  }
+  
+  .hero-text{
+    font-size: 7.5rem;
   }
   
 }
