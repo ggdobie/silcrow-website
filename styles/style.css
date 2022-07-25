@@ -292,17 +292,13 @@ figcaption {
   transform: translateY(70%);
 }
 
-.signature {
-  position: relative
+.responsible .signature {
+  width: 120px;
+  z-index: 100;
 }
 
-.signature .squiggle {
+.responsible .squiggle {
   background-color: var(--dagger);
-  display: block;
-  position: absolute;
-  bottom: 12px;
-  left: 0;
-  right:0;
 }
 
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -425,6 +421,10 @@ figcaption {
   
   .case-study img, .case-study .illustration:before {
     max-width: 500px;
+  }
+  
+  .responsible .signature {
+    width: 156px;
   }
   
 }
