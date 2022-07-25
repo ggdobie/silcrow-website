@@ -138,6 +138,10 @@ p a:hover {
   color: var(--paper);
 }
 
+.translucent {
+  opacity: 0.3;
+}
+
 .squiggle {
   background-color: var(--silcrow);
   mask-image: var(--squiggle-svg);
@@ -343,6 +347,11 @@ figcaption {
     font-size: 5.0625rem;
   }
   
+  .responsible .stamp::after {
+    width: 200px;
+    height: 162px;
+  }
+  
   .case-study h2 {
     font-size: 3.375rem;
   }
@@ -396,11 +405,6 @@ figcaption {
   .case-study .illustration::before {
     width: 45vw;
     height: 45vw;
-  }
-  
-  .responsible .stamp::after {
-    width: 200px;
-    height: 162px;
   }
   
 }
