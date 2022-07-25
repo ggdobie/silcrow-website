@@ -138,12 +138,6 @@ p a:hover {
   color: var(--paper);
 }
 
-.intro-blurb {
-  width: 100%;
-  padding-top: 220px;
-  padding-bottom: 100px;
-}
-
 .squiggle {
   background-color: var(--silcrow);
   mask-image: var(--squiggle-svg);
@@ -328,11 +322,7 @@ figcaption {
 
 
 @media (min-width: 640px) {
-  
-  .intro-blurb {
-    padding-top: 320px;
-  }
-  
+   
   figure blockquote {
     margin-top: 120px;
   }
@@ -369,6 +359,10 @@ figcaption {
 
 @media (min-width: 900px) {
   
+  html {
+    font-size: 16px;
+  }
+  
   .silcrow-icon {
     font-size: 110px;
   }
@@ -394,6 +388,10 @@ figcaption {
     margin-bottom: 40px;
   }
   
+  .case-study small {
+    padding-bottom: 30px;
+  }
+   
   .case-study .illustration::before {
     width: 45vw;
     height: 45vw;
@@ -407,6 +405,10 @@ figcaption {
 }
 
 @media (min-width: 980px) {
+  
+  html {
+    font-size: 17px;
+  }
     
   .case-study h2 {
     font-size: 3.375rem;
@@ -421,7 +423,7 @@ figcaption {
     height: 24px;
   }
   
-  .case-study .illustration, .case-study .illustration:before {
+  .case-study img, .case-study .illustration:before {
     max-width: 500px;
   }
   
