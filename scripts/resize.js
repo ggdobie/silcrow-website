@@ -7,7 +7,7 @@ window.addEventListener('resize', () => {
 	
 	let mobileBreakpoint = true
 	
-	if (window.matchMedia('(min-width: 640px)').matches) {
+	if (window.matchMedia('(min-width: 900px)').matches) {
 		mobileBreakpoint = false
 	} else {
 		mobileBreakpoint = true

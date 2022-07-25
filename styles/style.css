@@ -103,11 +103,11 @@ p a:hover {
 
 .title-text h2 {
   font-size: 3.375rem;  
-  color: (--paper);
+  color: var(--paper);
 }
 
 .title-text h3 {
-  color: (--paper);
+  color: var(--paper);
   font-size: 1.5rem;
   line-height: 1.4;
   font-style: italic;
@@ -327,6 +327,10 @@ figcaption {
 
 @media (min-width: 760px) {
   
+  .silcrow-icon {
+    font-size: 210px;
+  }
+  
   .large-text {
     line-height: 1.4;
   }
@@ -360,11 +364,12 @@ figcaption {
   }
   
   .silcrow-icon {
-    font-size: 110px;
+    font-size: 136px;
   }
   
-  .title-text h2, .hero-text {
-    font-size: 5.0625rem;
+  .title-text h2 {
+    font-size: 7.5rem;
+    letter-spacing: -0.025em;
   }
   
   .title-text h3 {
@@ -437,11 +442,6 @@ figcaption {
   
   .silcrow-icon {
     font-size: 142px;
-  }
-  
-  .title-text h2 {
-    font-size: 7.5rem;
-    letter-spacing: -0.025em;
   }
   
   .content-item {
