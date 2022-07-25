@@ -140,7 +140,7 @@ p a:hover {
 
 .intro-blurb {
   width: 100%;
-  /* padding-top: 120px; */
+  padding-top: 220px;
   padding-bottom: 100px;
 }
 
@@ -329,6 +329,45 @@ figcaption {
 
 @media (min-width: 640px) {
   
+  .intro-blurb {
+    padding-top: 320px;
+  }
+  
+  figure blockquote {
+    margin-top: 120px;
+  }
+
+}
+
+@media (min-width: 760px) {
+  
+  .large-text {
+    line-height: 1.4;
+  }
+  
+  .intro-text p+p {
+    text-indent: 0;
+  }
+  
+  .title-text h2, .hero-text {
+    font-size: 5.0625rem;
+  }
+  
+  .case-study h2 {
+    font-size: 3.375rem;
+  }
+  
+}
+
+@media (min-width: 810px) {
+  
+  html {
+    font-size: 17px;
+  }
+  
+}
+
+@media (min-width: 900px) {
   
   .silcrow-icon {
     font-size: 110px;
@@ -367,25 +406,8 @@ figcaption {
   
 }
 
-@media (min-width: 772px) {
-  
-  .large-text {
-    line-height: 1.4;
-  }
-  
-  .content-item {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  
-}
-
 @media (min-width: 980px) {
-  
-  .intro-text p+p {
-    text-indent: 0;
-  }
-  
+    
   .case-study h2 {
     font-size: 3.375rem;
   }

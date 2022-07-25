@@ -38,12 +38,12 @@
 .seal {
   position: relative;
   justify-self: center;
-  grid-column: 2 / 4;
+  grid-column: 2 / -2;
 }
 
 .intro-arrow {
   justify-self: center;
-  grid-column: 2 / 4;
+  grid-column: 2 / -2;
 }
 
 .intro-blurb .squiggle {
@@ -118,6 +118,39 @@
 
 
 @media (min-width: 640px) {
+  
+  :root{
+    --master-column-count: 6;
+  }
+  
+  .title-text, .intro-text, .content-item * {
+    grid-column: 2 / -2;
+  }
+  
+  .intro-blurb .squiggle {
+    grid-column: 2/ span 2;
+  }
+  
+  .intro-blurb .intro-text {
+    grid-column: 2 / span 3;
+  }
+  
+}
+
+@media (min-width: 760px) {
+  
+  .intro-blurb .intro-text {
+    grid-column: 2 / span 4;
+  }
+  
+  .content-item {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  
+}
+
+@media (min-width: 900px) {
   
   :root{
     --master-column-count: 12;
@@ -221,13 +254,6 @@
   
 }
 
-@media (min-width: 772px) {
-  
-  .title-text, .intro-text {
-    grid-column: 5 / -4;
-  }
-  
-}
 
 @media (min-width: 980px) {
   
