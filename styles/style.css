@@ -174,7 +174,7 @@ footer p a {
   border-top: solid 1px var(--ink-000);
 }
 
-.content-item:nth-last-child(2) {
+.content-container {
   border-bottom: solid 1px var(--ink-000);  
 }
 
@@ -265,10 +265,6 @@ figure .decoration {
   margin-right: 20px;
 }
 
-figure .decoration .squiggle {
-  background-color: var(--ink-100);
-}
-
 figure blockquote {
   margin-top: 90px;
 }
@@ -281,6 +277,11 @@ figcaption {
   border-left: 1px solid var(--silcrow);
   padding-left: 15px;
   margin-top: 25px;
+}
+
+.responsible {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
 
 .responsible .stamp {
@@ -414,12 +415,12 @@ footer .copyright {
     display: none;
   }
   
-  .content-item:nth-child(odd) {
+  .content-item.left {
     border-right: solid 1px var(--ink-000);
   }
   
-  .content-item:last-child {
-    border-bottom: solid 1px var(--ink-000);
+  .content-item.right {
+    border-left: solid 1px var(--ink-000);
   }
   
   .case-study small {
@@ -482,7 +483,7 @@ footer .copyright {
     font-size: 142px;
   }
   
-  .content-item {
+  .case-study, .quote {
     padding-top: 90px;
     padding-bottom: 90px;
   }
