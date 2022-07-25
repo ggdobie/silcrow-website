@@ -96,6 +96,13 @@ p a:hover {
   background-size: 100% 2em;
 }
 
+footer p a {
+  font-size: 14px;
+  background-image: none;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
 .hero-text {
   font-size: 3.375rem;
   letter-spacing: -0.03em;
@@ -167,9 +174,8 @@ p a:hover {
   border-top: solid 1px var(--ink-000);
 }
 
-.content-item:nth-last-child(1) {
+.content-item:nth-last-child(2) {
   border-bottom: solid 1px var(--ink-000);  
-  margin-bottom: 40px;
 }
 
 .case-study{
@@ -305,6 +311,20 @@ figcaption {
   background-color: var(--dagger);
 }
 
+footer {
+  padding-top: 40px;
+  padding-bottom: 52px;
+}
+
+footer .contact {
+  margin-bottom: 1px;
+}
+
+footer .copyright {
+  border-top: 1px solid var(--ink-000);
+  padding-top: 28px;
+}
+
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -325,6 +345,11 @@ figcaption {
    
   figure blockquote {
     margin-top: 120px;
+  }
+  
+  footer {
+    padding-top: 80px;
+    padding-bottom: 104px;
   }
 
 }
@@ -394,8 +419,7 @@ figcaption {
   }
   
   .content-item:last-child {
-    border-bottom: solid 1px var(--ink-000);  
-    margin-bottom: 40px;
+    border-bottom: solid 1px var(--ink-000);
   }
   
   .case-study small {
@@ -405,6 +429,16 @@ figcaption {
   .case-study .illustration::before {
     width: 45vw;
     height: 45vw;
+  }
+  
+  footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  footer .copyright {
+    border-top: none;
+    padding-top: 0;
   }
   
 }

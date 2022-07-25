@@ -105,6 +105,23 @@
   margin: 40px 0 -20px 0;
 }
 
+footer {
+  align-items: center;
+}
+
+footer .toggle-colophon {
+  grid-column: 1 / 3;
+}
+
+footer .contact {
+  grid-column: -1 / -3;
+  text-align: right;
+}
+
+footer .copyright {
+  grid-column: 1 / -1;
+}
+
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -141,6 +158,18 @@
   
   .intro-blurb {
     padding-top: 320px;
+  }
+  
+  footer .toggle-colophon {
+    grid-column: 2 / 4;
+  }
+  
+  footer .contact {
+    grid-column: -2 / -4;
+  }
+  
+  footer .copyright {
+    grid-column: 2 / -2;
   }
   
 }
@@ -269,6 +298,20 @@
   
   .signature {
     grid-column-start: 5;
+  }
+  
+  footer .toggle-colophon {
+    grid-column: 2 / 4;
+  }
+  
+  footer .contact {
+    grid-column: 4 / 6;
+    text-align: left;
+  }
+  
+  footer .copyright {
+    grid-column: -2 / -6;
+    text-align: right;
   }
   
 }
