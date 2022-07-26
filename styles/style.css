@@ -288,6 +288,23 @@ figcaption {
   margin-top: 25px;
 }
 
+.client-logo-row {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.client-logo-row:nth-child(even) {
+  transform: translateX(-33%);
+}
+
+.client-logo-row img {
+  padding: 20px;
+  height: 112px;
+  background-image: var(--ellipse-reverse-svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .responsible {
   padding-top: 30vh;
   padding-bottom: 30vh;
@@ -507,7 +524,7 @@ footer .copyright {
     font-size: 142px;
   }
   
-  .case-study, .quote {
+  .case-study, .quote, {
     padding-top: 90px;
     padding-bottom: 90px;
   }
