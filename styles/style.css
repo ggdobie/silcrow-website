@@ -134,14 +134,10 @@ footer p a {
   font-family: Anybody Silcrow Variable;
   font-variation-settings: 'wght' var(--weight), 'wdth' var(--width);
   transition: 1s;
-}
-
-.seal-elipse {
-  position: absolute;
-  height:100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(160%, 120%);
+  padding: 20px;
+  background-image: var(--ellipse-reverse-svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .collapsed {
@@ -384,9 +380,9 @@ footer .copyright {
 
 @media (min-width: 760px) {
   
-  .silcrow-icon {
+  /* .silcrow-icon {
     font-size: 210px;
-  }
+  } */
   
   .large-text {
     line-height: 1.4;

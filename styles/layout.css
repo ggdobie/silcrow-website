@@ -37,7 +37,6 @@
 }
 
 .seal {
-  position: relative;
   justify-self: center;
   grid-column: 2 / -2;
 }
@@ -148,6 +147,10 @@ footer .copyright {
   
   .title-text, .intro-text, .content-item * {
     grid-column: 2 / -2;
+  }
+  
+  .seal {
+    grid-column: 1 / -1;
   }
   
   .intro-blurb .squiggle {
