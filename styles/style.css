@@ -92,7 +92,7 @@ p a {
 
 p a:hover {
   background-image: linear-gradient(to right, var(--underline-hover) 0%, var(--underline-hover) 200%);
-  background-position: 0 0;
+  background-position: 0 0.1em;
   background-size: 100% 2em;
 }
 
@@ -101,6 +101,12 @@ footer p a {
   background-image: none;
   line-height: 1;
   letter-spacing: 0.02em;
+}
+
+.caption {
+  font-family: Lyon Text;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .hero-text {
@@ -185,6 +191,10 @@ footer p a {
 
 .case-study .illustration {
   position: relative;
+}
+
+.case-study small {
+  padding-bottom: 30px;
 }
 
 small span {
@@ -313,12 +323,29 @@ figcaption {
 }
 
 footer {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 52px;
 }
 
-footer .contact {
+footer .toggle-colophon::after, footer .contact::after {
+  content: "";
+  background-color: var(--silcrow);
+  mask-image: var(--chevron-svg);
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  width: 9px;
+  height: 5px;
+  margin-left: 10px;
   margin-bottom: 1px;
+}
+
+footer .contact::after {
+  transform: rotate(-90deg);
+}
+
+footer .toggle-colophon, footer .contact {
+  padding: 20px 0;
 }
 
 footer .copyright {
@@ -422,10 +449,6 @@ footer .copyright {
   .content-item.right {
     border-left: solid 1px var(--ink-000);
   }
-  
-  .case-study small {
-    padding-bottom: 30px;
-  }
    
   .case-study .illustration::before {
     width: 45vw;
@@ -433,8 +456,8 @@ footer .copyright {
   }
   
   footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   
   footer .copyright {
@@ -490,10 +513,6 @@ footer .copyright {
   
   .case-study h2 {
     font-size: 5rem;
-  }
-  
-  .case-study .illustration {
-    grid-column: 3 / span 7;
   }
   
   .case-study .illustration, .case-study .illustration:before {

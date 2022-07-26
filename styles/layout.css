@@ -11,6 +11,7 @@
   display:grid;
   grid-template-columns: repeat(var(--master-column-count), 1fr);
   grid-gap: var(--gutter);
+  grid-row-gap: 0;
   
   padding-left: 35px;
   padding-right: 35px;
@@ -71,7 +72,7 @@
 
 .case-study img {
   grid-column: span var(--master-column-count);
-  transform: scale(90%) translateY(+30px);
+  transform: scale(90%);
   transform-origin: left;
   justify-self: start;
   position: relative;
@@ -107,6 +108,7 @@
 
 footer {
   align-items: center;
+  grid-row-gap: 0;
 }
 
 footer .toggle-colophon {
@@ -356,6 +358,10 @@ footer .copyright {
   
   .title-text, .intro-text {
     grid-column: 5 / 12;
+  }
+  
+  .case-study .illustration {
+    grid-column: 3 / span 7;
   }
   
   .responsible h2 {
