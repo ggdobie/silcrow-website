@@ -288,18 +288,44 @@ figcaption {
   margin-top: 25px;
 }
 
-.client-logo-row {
-  display: inline-flex;
-  gap: 20px;
+.client-list {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: #00ffff20; */
 }
 
-.client-logo-row:nth-child(even) {
-  transform: translateX(-33%);
+.client-list small {
+  margin-bottom: 100px;
+}
+
+.logo-grid-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  max-width: 500px;
+  align-items: center;
+  /* background-color: #00ffff20; */
+}
+
+.client-logo-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 20px;
+  width: max-content;
+  /* background-color: #00ffff20; */
 }
 
 .client-logo-row img {
   padding: 20px;
   height: 112px;
+  flex: none;
+  flex-grow: 0;
   background-image: var(--ellipse-reverse-svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
