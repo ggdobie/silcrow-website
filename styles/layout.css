@@ -280,8 +280,16 @@ footer .copyright {
     grid-column: span var(--split-tertiary);
   }
   
-  .responsible {
+  .responsible, .client-list {
     grid-column: span var(--master-column-count);
+  }
+  
+  .client-list small {
+    grid-column: 2 / 5;
+  }
+  
+  .client-list .logo-grid-container {
+    grid-column: 7 / -2;
   }
   
   .content-item {
