@@ -62,7 +62,11 @@ const fadeAndMoveLogos = function() {
 		
 		logos.forEach((logo) => {
 			
-			const fadeSeverity = 0.5
+			let fadeSeverity = 0.5
+			
+			if (window.matchMedia('(min-width: 1920px)').matches) {
+				fadeSeverity = 0.7
+			}
 			
 			const logoCenter = logo.getBoundingClientRect().width / 2	
 			

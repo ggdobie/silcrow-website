@@ -17,6 +17,12 @@
   padding-right: 35px;
 }
 
+.grid-secondary {
+  height: 100vh;
+  min-height: 480px;
+  max-height: 600px;
+}
+
 .intro-title {
   text-align: center;
   width: 100%;
@@ -56,7 +62,7 @@
 
 .intro-blurb {
   width: 100%;
-  padding-top: 220px;
+  padding-top: 320px;
   padding-bottom: 100px;
 }
 
@@ -67,6 +73,11 @@
 
 .content-item * {
   grid-column: 1 / -1;
+}
+
+.case-study {
+  grid-template-rows: auto 1fr auto;
+  align-items: end;
 }
 
 .case-study img {
@@ -260,6 +271,10 @@ footer .copyright {
     height: 90vh;
     min-height: 700px;
   }
+  
+.grid-secondary {
+    max-height: none;
+}
 
   .case-study {
     grid-column: span var(--split-secondary);
@@ -292,12 +307,12 @@ footer .copyright {
     grid-column: 7 / -2;
   }
   
-  .content-item {
+  .case-study, .quote {
     grid-row-gap: 0;
     grid-template-rows: auto 1fr auto;
   }
   
- .content-item * {
+  .content-item * {
     grid-column: 2 / -2;
   }
   
@@ -311,6 +326,14 @@ footer .copyright {
   
   .signature {
     grid-column-start: 5;
+  }
+  
+  .client-list {
+    height: 100vh;
+    align-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* grid-template-rows: 1fr auto 1fr; */
   }
   
   footer .toggle-colophon {
