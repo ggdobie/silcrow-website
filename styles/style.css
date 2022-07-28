@@ -33,6 +33,11 @@ body {
   transition: 0.3s;
 }
 
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, small::selection, blockquote::selection, em::selection, span::selection, figcaption::selection, a::selection, img::selection {
+  background: var(--silcrow-900);
+  color: var(--paper);
+}
+
 p {
   line-height: 1.44;
 }
