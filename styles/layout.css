@@ -299,7 +299,7 @@ footer .copyright {
   }
   
   .grid-secondary {
-      max-height: none;
+    max-height: none;
   }
 
   .case-study {
@@ -333,7 +333,7 @@ footer .copyright {
     grid-column: 7 / -2;
   }
   
-  .case-study, .quote {
+  .case-study, .quote, .responsible {
     grid-row-gap: 0;
     grid-template-rows: auto 1fr auto;
   }
