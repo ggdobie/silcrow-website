@@ -408,10 +408,14 @@ footer .copyright {
 
 
 @media (min-width: 640px) {
+  
+html {
+  font-size: 17px;
+}
 
 }
 
-@media (min-width: 760px) {
+@media (min-width: 800px) {
   
   .large-text {
     line-height: 1.4;
@@ -437,10 +441,6 @@ footer .copyright {
 }
 
 @media (min-width: 810px) {
-  
-  html {
-    font-size: 17px;
-  }
   
 }
 
