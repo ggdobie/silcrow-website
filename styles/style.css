@@ -13,8 +13,11 @@
   --ink-000: #F0F2F5;
   --ink-100: #E1E3E5;
   
-  --underline: #85E6B470;
-  --underline-hover: #85E6B490;
+  --underline: #FC513620;
+  --underline-hover: #FC513630;
+  
+  --r-underline: #85E6B470;
+  --r-underline-hover: #85E6B490;
 }
 
 html {
@@ -96,13 +99,6 @@ p a:hover {
   background-size: 100% 2em;
 }
 
-footer p a {
-  font-size: 14px;
-  background-image: none;
-  line-height: 1;
-  letter-spacing: 0.02em;
-}
-
 .caption {
   font-family: Lyon Text;
   font-style: italic;
@@ -160,6 +156,10 @@ footer p a {
   transition: 0.3s;
 }
 
+.squiggle.reversed {
+  background-color: var(--paper);
+}
+
 .intro-blurb .squiggle {
   margin-bottom: 20px;
 }
@@ -171,10 +171,6 @@ footer p a {
 
 .intro-text.reversed {
   color: var(--paper);
-}
-
-.squiggle.reversed {
-  background-color: var(--paper);
 }
 
 .content-item {
@@ -194,15 +190,11 @@ footer p a {
   position: relative;
 }
 
-.case-study small {
-  padding-bottom: 30px;
-}
-
-small span {
+.case-study small span {
   color: var(--silcrow);
 }
 
-small span::after {
+.case-study small span::after {
   content: "·";
   margin: 0 10px 0 6px;
   color: var(--asterisk);
@@ -229,16 +221,16 @@ small span::after {
   flex: none;
 }
 
+.flush-left .squiggle, .flush-right .squiggle {
+  margin-top: 0.55em;
+}
+
 .flush-left .squiggle {
   margin-left: 12px;
 }
 
 .flush-right .squiggle {
   margin-right: 12px;
-}
-
-.flush-left .squiggle, .flush-right .squiggle {
-  margin-top: 0.55em;
 }
 
 .case-study .illustration, .case-study h2 {
@@ -275,11 +267,6 @@ figure .decoration {
   mask-image: var(--quotemark-svg);
   mask-repeat: no-repeat;
   mask-size: auto;
-  margin-right: 20px;
-}
-
-figure blockquote {
-  margin-top: 90px;
 }
 
 figcaption span {
@@ -295,12 +282,7 @@ figcaption {
 .client-list {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 100px;
   /* background-color: #00ffff20; */
-}
-
-.client-list small {
-  margin-bottom: 100px;
 }
 
 .logo-grid-container {
@@ -338,8 +320,7 @@ figcaption {
 }
 
 .responsible {
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  background: linear-gradient(114.97deg, rgba(232, 255, 243, 0.4) -0.3%, #E8FFF3 84.85%);
 }
 
 .responsible .stamp {
@@ -362,18 +343,21 @@ figcaption {
   transform: translateY(70%);
 }
 
+.responsible p a {
+  background-image: linear-gradient(to right, var(--r-underline) 0%, var(--r-underline) 200%);
+}
+
+.respnsible p a:hover {
+  background-image: linear-gradient(to right, var(--r-underline-hover) 0%, var(--r-underline-hover) 200%);
+}
+
 .responsible .signature {
   width: 120px;
-  z-index: 100;
+  z-index: 1;
 }
 
 .responsible .squiggle {
   background-color: var(--dagger);
-}
-
-footer {
-  padding-top: 20px;
-  padding-bottom: 52px;
 }
 
 footer .toggle-colophon::after, footer .contact::after {
@@ -420,23 +404,10 @@ footer .copyright {
 
 
 @media (min-width: 640px) {
-   
-  figure blockquote {
-    margin-top: 120px;
-  }
-  
-  footer {
-    padding-top: 80px;
-    padding-bottom: 104px;
-  }
 
 }
 
 @media (min-width: 760px) {
-  
-  /* .silcrow-icon {
-    font-size: 210px;
-  } */
   
   .large-text {
     line-height: 1.4;
@@ -514,11 +485,6 @@ footer .copyright {
     padding-top: 20px;
   }
   
-  footer {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
   footer .copyright {
     border-top: none;
     padding-top: 0;
@@ -565,11 +531,6 @@ footer .copyright {
     font-size: 142px;
   }
   
-  .case-study, .quote, {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-  
   .case-study h2 {
     font-size: 5rem;
   }
@@ -586,7 +547,7 @@ footer .copyright {
     margin-top: 33px;
   }
   
-  .hero-text{
+  .hero-text {
     font-size: 7.5rem;
   }
   
