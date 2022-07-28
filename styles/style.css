@@ -276,7 +276,6 @@ figcaption span {
 figcaption {
   border-left: 1px solid var(--silcrow);
   padding-left: 15px;
-  margin-top: 25px;
 }
 
 .client-list {
@@ -541,10 +540,6 @@ footer .copyright {
   
   .case-study h2::after {
     margin-bottom: 0.1em;
-  }
-  
-  figcaption {
-    margin-top: 33px;
   }
   
   .hero-text {

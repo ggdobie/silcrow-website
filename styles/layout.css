@@ -1,13 +1,11 @@
-:root {
-  
+:root {  
   --master-column-count: 4;
   --gutter: 20px;
   --split-secondary: 1;
-  --split-tertiary: 1;
-  
+  --split-tertiary: 1;  
 }
 
-.grid-prime, .grid-secondary, .grid-tertiary {
+.grid-primary, .grid-secondary, .grid-tertiary {
   display:grid;
   grid-template-columns: repeat(var(--master-column-count), 1fr);
   grid-gap: var(--gutter);
@@ -15,12 +13,6 @@
   
   padding-left: 35px;
   padding-right: 35px;
-}
-
-.grid-secondary {
-  height: 100vh;
-  min-height: 480px;
-  max-height: 600px;
 }
 
 .intro-title {
@@ -42,12 +34,7 @@
   grid-column: 1 / -1;
 }
 
-.seal {
-  justify-self: center;
-  grid-column: 2 / -2;
-}
-
-.intro-arrow {
+.seal, .intro-arrow {
   justify-self: center;
   grid-column: 2 / -2;
 }
@@ -68,15 +55,26 @@
 
 .content-container {
   display: grid;
-  grid-template-columns: 1, 1fr;
 }
 
 .content-item * {
   grid-column: 1 / -1;
 }
 
+.case-study, .quote, .client-list {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.quote, .responsible, .footer {
+  grid-row-gap: 0;
+}
+
 .case-study {
   grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  min-height: 480px;
+  max-height: 600px;
   align-items: end;
 }
 
@@ -89,29 +87,25 @@
   transform: scale(90%);
   transform-origin: left;
   justify-self: start;
-  position: relative;
-}
-
-.case-study, .quote, .client-list {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
  
 .quote {
   grid-template-rows: auto 1fr auto auto;
   align-items: end;
   align-content: end;
-  grid-row-gap: 0;
+}
+
+figure .decoration {
+  margin-bottom: 90px;
 }
 
 figure blockquote {
-  margin-top: 90px;
+  margin-bottom: 25px;
 }
 
 .responsible {
   padding-top: 15vh;
   padding-bottom: 15vh;
-  grid-row-gap: 0;
 }
 
 .responsible h2 {
@@ -133,7 +127,6 @@ figure blockquote {
 
 footer {
   align-items: center;
-  grid-row-gap: 0;
   padding-top: 20px;
   padding-bottom: 52px;
 }
@@ -189,12 +182,8 @@ footer .copyright {
     grid-column: 2 / span 3;
   }
   
-  .intro-blurb {
-    padding-top: 320px;
-  }
-  
-  figure blockquote {
-    margin-top: 120px;
+  figure .decoration {
+    margin-bottom: 120px;
   }
   
   footer {
@@ -222,9 +211,13 @@ footer .copyright {
     grid-column: 2 / span 4;
   }
   
-  .content-item {
+  .case-study, .quote, .client-list {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+  
+  .case-study {
+    max-height: 920px;
   }
   
 }
@@ -238,13 +231,13 @@ footer .copyright {
     --split-tertiary: 5;
   }
   
-  .grid-prime, .grid-secondary, .grid-tertiary {
+  .grid-primary, .grid-secondary, .grid-tertiary {
     padding-left: calc(var(--gutter)/2);
     padding-right: calc(var(--gutter)/2);;
     grid-gap: var(--gutter);
   }
   
-  .grid-prime {
+  .grid-primary {
     grid-template-columns: repeat(var(--master-column-count), 1fr);
   }
   
@@ -292,17 +285,18 @@ footer .copyright {
   .content-container {
     grid-template-columns: repeat(var(--master-column-count), 1fr);
   }
+   
+  .content-item * {
+    grid-column: 2 / -2;
+  }
   
-  .grid-secondary, .grid-tertiary {
+  .case-study, .quote {
     height: 90vh;
     min-height: 700px;
   }
-  
-  .grid-secondary {
-    max-height: none;
-  }
 
   .case-study {
+    max-height: none;
     grid-column: span var(--split-secondary);
     grid-template-rows: auto 1fr auto;
     align-items: end;
@@ -338,16 +332,11 @@ footer .copyright {
     grid-template-rows: auto 1fr auto;
   }
   
-  .content-item * {
-    grid-column: 2 / -2;
-  }
-  
   .client-list {
     height: 100vh;
     align-content: center;
     padding-top: 0px;
     padding-bottom: 0px;
-    /* grid-template-rows: 1fr auto 1fr; */
   }
   
   .responsible p {
@@ -358,7 +347,7 @@ footer .copyright {
     grid-column: 2 / -3;
   }
   
-  .signature {
+  .responsible .signature {
     grid-column-start: 5;
   }
   
@@ -390,7 +379,7 @@ footer .copyright {
     grid-column: 5 / -2;
   }
   
-  .grid-secondary, .grid-tertiary {
+  .case-study, .quote {
     min-height: 800px;
   }
   
@@ -432,6 +421,10 @@ footer .copyright {
   .case-study, .quote, {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+  
+  figure blockquote {
+    margin-bottom: 33px;
   }
   
   .responsible h2 {
