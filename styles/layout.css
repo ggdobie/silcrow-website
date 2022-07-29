@@ -133,15 +133,23 @@ footer {
 
 footer .toggle-colophon {
   grid-column: 1 / 3;
+  order: 1;
+}
+  
+footer .colophon {
+  grid-column: 1 / -1;
+  order: 3;
 }
 
 footer .contact {
   grid-column: -1 / -3;
   text-align: right;
+  order: 2;
 }
 
 footer .copyright {
   grid-column: 1 / -1;
+  order: 4;
 }
 
 /* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */

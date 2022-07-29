@@ -57,7 +57,7 @@ p+p {
   line-height: 1.26;
 }
 
-h5, small, figcaption {
+h5, small, figcaption, footer h2 {
   font-size: 13px;
   -moz-font-feature-settings: "c2sc", "smcp";
   -ms-font-feature-settings: "c2sc", "smcp";
@@ -364,7 +364,11 @@ figcaption {
   background-color: var(--dagger);
 }
 
-footer .toggle-colophon::after, footer .contact::after {
+footer h2 {
+  font-family: Lyon Text;
+}
+
+footer .caret {
   content: "";
   background-color: var(--silcrow);
   -webkit-mask-image: url("../images/caret.svg");
@@ -376,15 +380,39 @@ footer .toggle-colophon::after, footer .contact::after {
   height: 5px;
   margin-left: 10px;
   margin-bottom: 1px;
+  transition: 0.3s ease-in-out;
 }
 
-footer .contact::after {
+footer .caret.active {
+  transform: rotate(-180deg);
+}
+
+footer .contact .caret {
   transform: rotate(-90deg);
 }
 
 footer .toggle-colophon, footer .contact {
   padding: 20px 0;
 }
+
+footer .toggle-colophon {
+  cursor: pointer;
+}
+
+footer .toggle-colophon:focus {
+  background-color: var(--dagger);
+}
+
+footer .colophon {
+  height: 200px;
+  background-color: var(--ink-000);
+  transition: 0.3s ease-in-out;
+}
+
+.colophon.hidden {
+  height: 0px;
+}
+
 
 footer .copyright {
   border-top: 1px solid var(--ink-000);
