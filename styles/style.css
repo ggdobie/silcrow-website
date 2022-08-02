@@ -104,6 +104,7 @@ p a, li a {
   transition: 0.3s;
   overflow: visible;
   padding: 2px;
+  margin: 0 -2px;
 }
 
 p a:hover, li a:hover {
@@ -430,12 +431,12 @@ footer .colophon h2 {
 
 footer .colophon .large-text {
   font-size: 1em;
-  padding: 0 0 0 20px;
 }
 
 footer .colophon .large-text, footer .colophon ul {
   border-left: 1px solid var(--silcrow);
   margin-bottom: 50px;
+  padding-left: 20px;
 }
 
 footer .colophon .silcrow-symbol {
@@ -451,13 +452,13 @@ footer li {
   display: flex;
   align-content: center;
   align-items: center;
-  margin-left: 20px;
   padding: 10px 0 8px 0;
   font-size: 14px;
 }
 
 footer li a {
   margin-bottom: 2px;
+  margin-left: -2px;
 }
 
 footer li a, footer li .title {
@@ -504,6 +505,14 @@ footer .carbon {
   
 html {
   font-size: 17px;
+}
+
+footer .colophon .large-text {
+  font-size: 1.5em;
+}
+
+footer .colophon li {
+  font-size: 1em;
 }
 
 }
@@ -587,6 +596,22 @@ html {
     padding-top: 0;
   }
   
+  footer .colophon .type, footer .colophon .references, footer .colophon .details {
+    border-top: 1px solid var(--ink-100);
+    padding-top: 16px;
+    /* width: 100%; */
+  }
+  
+  footer .colophon .large-text {
+    font-size: 1rem;
+  }
+  
+  footer .colophon .large-text, footer .colophon ul {
+    border-left: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
 }
 
 @media (min-width: 980px) {
@@ -614,6 +639,14 @@ html {
   
   .responsible .signature {
     width: 156px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  
+  footer .colophon .large-text {
+    font-size: 1.5rem;
   }
   
 }
@@ -652,6 +685,14 @@ html {
   
   .client-logo-row img {
     height: 150px;
+  }
+  
+  footer .colophon li {
+    font-size: 1rem;
+  }
+  
+  footer .colophon .references h2 {
+    margin-bottom: 24px;
   }
   
 }
