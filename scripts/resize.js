@@ -13,7 +13,7 @@ window.addEventListener('resize', () => {
 		mobileBreakpoint = true
 	}
 	
-	if (window.pageYOffset <= 0 && mobileBreakpoint == true) {
+	if (mobileBreakpoint == true) {
   		calculateHeight()
 	}
 	
