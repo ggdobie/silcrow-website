@@ -147,7 +147,7 @@ footer .contact {
   order: 2;
 }
 
-footer .copyright {
+footer .carbon {
   grid-column: 1 / -1;
   order: 4;
 }
@@ -207,7 +207,7 @@ footer .copyright {
     grid-column: -2 / -4;
   }
   
-  footer .copyright {
+  footer .carbon, footer .colophon {
     grid-column: 2 / -2;
   }
   
@@ -373,9 +373,14 @@ footer .copyright {
     text-align: left;
   }
   
-  footer .copyright {
+  footer .carbon {
     grid-column: -2 / -6;
     text-align: right;
+    order: 3;
+  }
+  
+  footer .colophon {
+    order: 4;
   }
   
 }

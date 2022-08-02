@@ -7,14 +7,15 @@
   --ink: #232425;
   
   --silcrow-900: #FC5136;
+  --silcrow-500: #FEB4A9;
   --silcrow-300: #FFE6E2;
   --silcrow-200: #FFEEEB;
   
   --ink-000: #F0F2F5;
   --ink-100: #E1E3E5;
   
-  --underline: #FC513620;
-  --underline-hover: #FC513630;
+  --underline: #FEB4A940;
+  --underline-hover: #FEB4A950;
   
   --r-underline: #85E6B470;
   --r-underline-hover: #85E6B490;
@@ -52,12 +53,15 @@ p+p {
 }
 
 .large-text {
-  font-style: italic;
   font-size: 1.5rem;
   line-height: 1.26;
 }
 
-h5, small, figcaption, footer h2 {
+.intro-blurb .large-text, figure .large-text {
+  font-style: italic;
+}
+
+h5, small, figcaption, footer h2, .sc {
   font-size: 13px;
   -moz-font-feature-settings: "c2sc", "smcp";
   -ms-font-feature-settings: "c2sc", "smcp";
@@ -68,6 +72,10 @@ h5, small, figcaption, footer h2 {
 
 .intro-title {
   transition: 0.3s;
+}
+
+.intro-title.reversed {
+  background-color: var(--silcrow-900);
 }
 
 h2 {
@@ -87,7 +95,7 @@ a {
   color: var(--asterisk);
 }
 
-p a {
+p a, li a {
   font-style: italic;
   background-image: linear-gradient(to right, var(--underline) 0%, var(--underline) 200%);
   background-repeat: repeat-x;
@@ -98,7 +106,7 @@ p a {
   padding: 2px;
 }
 
-p a:hover {
+p a:hover, li a:hover {
   background-image: linear-gradient(to right, var(--underline-hover) 0%, var(--underline-hover) 200%);
   background-position: 0 0.1em;
   background-size: 100% 2em;
@@ -364,6 +372,14 @@ figcaption {
   background-color: var(--dagger);
 }
 
+footer {
+  /* background-color: var(--paper); */
+  transition: 0.3s;
+  /* position: fixed; */
+  /* bottom: 0;
+  z-index: -1; */
+}
+
 footer h2 {
   font-family: Lyon Text;
 }
@@ -399,23 +415,77 @@ footer .toggle-colophon {
   cursor: pointer;
 }
 
-footer .toggle-colophon:focus {
-  background-color: var(--dagger);
+footer.expanded {
+  z-index: 100;
 }
 
 footer .colophon {
-  height: 200px;
-  background-color: var(--ink-000);
   transition: 0.3s ease-in-out;
+  overflow: hidden;
+  height: auto;
+  padding-top: 20px;
 }
 
-.colophon.hidden {
+footer .colophon.hidden {
+  overflow: hidden;
   height: 0px;
+  opacity: 0;
 }
 
+footer .colophon h2 {
+  margin-bottom: 18px;
+}
 
-footer .copyright {
-  border-top: 1px solid var(--ink-000);
+footer .colophon .large-text {
+  font-size: 1em;
+  padding: 0 0 0 20px;
+}
+
+footer .colophon .large-text, footer .colophon ul {
+  border-left: 1px solid var(--ink-100);
+  margin-bottom: 50px;
+}
+
+footer .colophon .silcrow-symbol {
+  font-family: Anybody Silcrow Variable;
+}
+
+footer .colophon .sc {
+  font-size: inherit;
+  letter-spacing: 0;
+}
+
+footer li {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-left: 20px;
+  padding: 14px 0 12px 0;
+  border-bottom: 1px solid var(--ink-000);
+  font-size: 14px;
+}
+
+footer li a {
+  margin-bottom: 2px;
+}
+
+footer li:nth-child(1) {
+  padding-top: 4px;
+}
+
+footer li:nth-last-child(1) {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+footer .details {
+  padding: 28px 0 30px 0;
+  border-top: 1px solid var(--ink-100);
+}
+
+footer .carbon {
+  border-top: 1px solid var(--ink-100);
   padding-top: 28px;
 }
 
@@ -517,7 +587,7 @@ html {
     padding-top: 20px;
   }
   
-  footer .copyright {
+  footer .carbon {
     border-top: none;
     padding-top: 0;
   }
