@@ -323,7 +323,7 @@ figcaption {
 }
 
 .client-logo-row img {
-  padding: 20px;
+  padding: 30px;
   height: 112px;
   flex: none;
   flex-grow: 0;
@@ -433,8 +433,8 @@ footer .colophon .large-text {
   font-size: 1em;
 }
 
-footer .colophon .large-text, footer .colophon ul {
-  border-left: 1px solid var(--silcrow);
+footer .colophon .type, footer .colophon .references {
+  border-left: 1px solid var(--ink-100);
   margin-bottom: 50px;
   padding-left: 20px;
 }
@@ -468,8 +468,8 @@ footer li a, footer li .title {
 footer li .line {
   height: 1px;
   width: 100%;
-  background-color: var(--ink-000);
-  margin: 0 8px;
+  background-color: var(--ink-100);
+  margin: 0 10px;
 }
 
 footer li:nth-child(1) {
@@ -513,6 +513,14 @@ footer .colophon .large-text {
 
 footer .colophon li {
   font-size: 1em;
+}
+
+footer .colophon .type, footer .colophon .references, footer .colophon .details {
+  border-top: 1px solid var(--ink-100);
+  border-left: none;
+  padding-left: 0;
+  padding-top: 16px;
+  /* width: 100%; */
 }
 
 }
@@ -596,12 +604,6 @@ footer .colophon li {
     padding-top: 0;
   }
   
-  footer .colophon .type, footer .colophon .references, footer .colophon .details {
-    border-top: 1px solid var(--ink-100);
-    padding-top: 16px;
-    /* width: 100%; */
-  }
-  
   footer .colophon .large-text {
     font-size: 1rem;
   }
@@ -610,6 +612,10 @@ footer .colophon li {
     border-left: none;
     margin-bottom: 0;
     padding-left: 0;
+  }
+  
+  footer li .line {
+    margin: 0 20px;
   }
   
 }
