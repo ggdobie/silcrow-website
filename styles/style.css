@@ -54,7 +54,7 @@ p+p {
 
 .large-text {
   font-size: 1.5rem;
-  line-height: 1.26;
+  line-height: 1.3;
 }
 
 .intro-blurb .large-text, figure .large-text {
@@ -325,7 +325,7 @@ figcaption {
 }
 
 .client-logo-row img {
-  padding: 30px;
+  padding: 20px;
   height: 112px;
   flex: none;
   flex-grow: 0;
@@ -425,6 +425,7 @@ footer .colophon.hidden {
   overflow: hidden;
   height: 0px;
   opacity: 0;
+  padding-top: 0px;
 }
 
 footer .colophon h2 {
@@ -445,17 +446,12 @@ footer .colophon .silcrow-symbol {
   font-family: Anybody Silcrow Variable;
 }
 
-footer .colophon .sc {
-  font-size: inherit;
-  letter-spacing: 0;
-}
-
 footer li {
   display: flex;
   align-content: center;
   align-items: center;
-  padding: 10px 0 8px 0;
   font-size: 14px;
+  padding: 6px 0 4px 0;
 }
 
 footer li a {
@@ -480,6 +476,11 @@ footer li:nth-child(1) {
 
 footer .details {
   padding-bottom: 30px;
+}
+
+footer .colophon .details{
+  display: grid;
+  grid-row-gap: 6px;
 }
 
 footer .carbon {
@@ -649,12 +650,32 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
     width: 156px;
   }
   
+  footer .type h2, footer .references h2 {
+    margin-bottom: 50px;
+  }
+  
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1194px) {
+  
+  footer .colophon {
+    padding-top: 50px;
+  }
   
   footer .colophon .large-text {
     font-size: 1.5rem;
+  }
+  
+}
+
+@media (min-width: 1248px) {
+  
+  html {
+    font-size: 18px;
+  }
+  
+  .client-logo-row img {
+    height: 130px;
   }
   
 }
@@ -692,15 +713,16 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
   }
   
   .client-logo-row img {
-    height: 150px;
+    height: 160px;
+    padding: 30px;
   }
   
   footer .colophon li {
     font-size: 1rem;
   }
   
-  footer .colophon .references h2 {
+  /* footer .colophon .references h2 {
     margin-bottom: 24px;
-  }
+  } */
   
 }

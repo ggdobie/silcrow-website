@@ -64,8 +64,8 @@ const fadeAndMoveLogos = function() {
 			
 			let fadeSeverity = 0.5
 			
-			if (window.matchMedia('(min-width: 1920px)').matches) {
-				fadeSeverity = 0.7
+			if (window.matchMedia('(min-width: 1194px)').matches) {
+				fadeSeverity = 0.4
 			}
 			
 			const logoCenter = logo.getBoundingClientRect().width / 2	
