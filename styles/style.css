@@ -62,11 +62,13 @@ p+p {
 }
 
 h5, small, figcaption, footer h2, .sc {
-  font-size: 13px;
   -moz-font-feature-settings: "c2sc", "smcp";
   -ms-font-feature-settings: "c2sc", "smcp";
   -webkit-font-feature-settings: "c2sc", "smcp";
   font-feature-settings: "c2sc", "smcp";
+}
+h5, small, figcaption, footer h2 {
+  font-size: 13px;
   letter-spacing: 0.1em;
 }
 
