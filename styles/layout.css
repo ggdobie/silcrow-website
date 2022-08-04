@@ -94,7 +94,7 @@
   align-content: end;
 }
 
-figure .decoration {
+figure .quotemark {
   margin-bottom: 90px;
 }
 
@@ -197,7 +197,7 @@ footer .carbon {
     grid-column: 2 / -2;
   }
   
-  figure .decoration {
+  figure .quotemark {
     margin-bottom: 120px;
   }
   

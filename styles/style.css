@@ -19,6 +19,8 @@
   
   --r-underline: #85E6B470;
   --r-underline-hover: #85E6B490;
+  
+  --quote-float-height: -8px;
 }
 
 html {
@@ -275,20 +277,36 @@ p a:hover, li a:hover {
   height: 16px;
 }
 
-figure .decoration {
-  height: 20px;
-  display: flex;
-  align-items: center;
+figure .quotemark {
+  display: grid;
+  align-items:center;
 }
 
-.deco-quote {
-  width: 34px;
-  height: 25px;
-  background-color: var(--silcrow);
-  -webkit-mask-image: url("../images/quotemark.svg");
-  mask-image: var(--quotemark-svg);
-  mask-repeat: no-repeat;
-  mask-size: auto;
+figure .quotemark picture {
+  width: 132px;
+  height: auto;
+}
+
+.lower {
+  margin-top: -44px;
+  animation: shrink 3s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+.upper {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(var(--quote-float-height)); }
+  100% { transform: rotate(0px); }
+}
+
+@keyframes shrink {
+  0% { transform: scale(100%); }
+  50% { transform: scale(95%); }
+  100% { transform: scale(100%); }
 }
 
 figcaption span {
@@ -686,6 +704,18 @@ footer .carbon {
 }
 
 @media (min-width: 1194px) {
+  
+  :root {
+    --quote-float-height: -15px;
+  }
+  
+  figure .quotemark picture {
+    width: 272px;
+  }
+  
+  .lower {
+    margin-top: -100px;
+  }
   
   footer .colophon {
     padding-top: 50px;
