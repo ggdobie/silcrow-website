@@ -206,6 +206,11 @@ p a:hover, li a:hover {
   position: relative;
 }
 
+.case-study .illustration img {
+  transform: scale(90%);
+  transform-origin: left;
+}
+
 .case-study small span {
   color: var(--silcrow);
 }
@@ -223,7 +228,8 @@ p a:hover, li a:hover {
   background-repeat: no-repeat;
   position: absolute;
   width: 80vw;
-  height: 80vw;
+  height: 80vh;
+  max-height: 380px;
   top: 0;
   left: 0;
   mix-blend-mode: multiply;
@@ -528,25 +534,25 @@ footer .carbon {
 
 @media (min-width: 640px) {
   
-html {
-  font-size: 17px;
-}
-
-footer .colophon .large-text {
-  font-size: 1.5em;
-}
-
-footer .colophon li {
-  font-size: 1em;
-}
-
-footer .colophon .type, footer .colophon .references, footer .colophon .details {
-  border-top: 1px solid var(--ink-100);
-  border-left: none;
-  padding-left: 0;
-  padding-top: 16px;
-  /* width: 100%; */
-}
+  html {
+    font-size: 17px;
+  }
+  
+  footer .colophon .large-text {
+    font-size: 1.5em;
+  }
+  
+  footer .colophon li {
+    font-size: 1em;
+  }
+  
+  footer .colophon .type, footer .colophon .references, footer .colophon .details {
+    border-top: 1px solid var(--ink-100);
+    border-left: none;
+    padding-left: 0;
+    padding-top: 16px;
+    /* width: 100%; */
+  }
 
 }
 
@@ -571,6 +577,11 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
   
   .case-study h2 {
     font-size: 3.375rem;
+  }
+  
+  .case-study .illustration::before {
+    height: 60vh;
+    max-height: 470px;
   }
   
 }
@@ -615,7 +626,7 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
   }
    
   .case-study .illustration::before {
-    width: 45vw;
+    width: 100%;
     height: 45vw;
   }
   
@@ -664,10 +675,6 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
     height: 24px;
   }
   
-  .case-study img, .case-study .illustration:before {
-    max-width: 500px;
-  }
-  
   .responsible .signature {
     width: 156px;
   }
@@ -686,6 +693,11 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
   
   footer .colophon .large-text {
     font-size: 1.5rem;
+  }
+  
+  .case-study .illustration::before {
+    height: 70vh;
+    max-height: 550px;
   }
   
 }
@@ -717,7 +729,7 @@ footer .colophon .type, footer .colophon .references, footer .colophon .details 
   }
   
   .case-study .illustration, .case-study .illustration:before {
-    max-width: none;
+    max-width: 700px;
   }
   
   .case-study h2::after {

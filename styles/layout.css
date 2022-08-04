@@ -82,10 +82,8 @@
   padding-bottom: 30px;
 }
 
-.case-study img {
+.case-study .illustration {
   grid-column: span var(--master-column-count);
-  transform: scale(90%);
-  transform-origin: left;
   justify-self: start;
   max-width: 430px;
 }
@@ -195,6 +193,10 @@ footer .carbon {
     grid-column: 2 / span 3;
   }
   
+  .case-study .illustration {
+    grid-column: 2 / -2;
+  }
+  
   figure .decoration {
     margin-bottom: 120px;
   }
@@ -231,10 +233,20 @@ footer .carbon {
   
   .case-study {
     max-height: 920px;
+    min-height: 790px;
   }
   
   footer .colophon .details {
     padding-bottom: 50px;
+  }
+  
+}
+
+@media (min-width: 800px) {
+  
+  .case-study .illustration {
+    grid-column: 2 / -2;
+    max-width: 500px;
   }
   
 }
@@ -321,11 +333,6 @@ footer .carbon {
   
   .case-study h2 {
     align-self: end;
-  }
-  
-  .case-study img {
-    grid-column: 2 / span 4;
-    transform: scale(90%) translateY(0);
   }
   
   .quote {
@@ -481,6 +488,10 @@ footer .carbon {
   
   .title-text, .intro-blurb .intro-text {
     grid-column: 6 / 14;
+  }
+  
+  .case-study .illustration {
+    max-width: 600px;
   }
   
   .client-list .logo-grid-container {
