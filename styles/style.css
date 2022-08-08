@@ -36,7 +36,25 @@ body {
   transition: 0.3s;
 }
 
-p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, small::selection, blockquote::selection, em::selection, span::selection, figcaption::selection, a::selection, img::selection {
+body.reversed {
+  background-color: var(--silcrow-900);
+  color: var(--paper);
+}
+
+p::selection, 
+h1::selection, 
+h2::selection, 
+h3::selection, 
+h4::selection, 
+h5::selection, 
+h6::selection, 
+small::selection, 
+blockquote::selection, 
+em::selection, 
+span::selection, 
+figcaption::selection, 
+a::selection, 
+img::selection {
   background: var(--silcrow-900);
   color: var(--paper);
 }
@@ -45,41 +63,8 @@ p {
   line-height: 1.44;
 }
 
-body.reversed {
-  background-color: var(--silcrow-900);
-  color: var(--paper);
-}
-
 p+p {
   text-indent: 1em;
-}
-
-.large-text {
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-.intro-blurb .large-text, figure .large-text {
-  font-style: italic;
-}
-
-h5, small, figcaption, footer h2, .sc {
-  -moz-font-feature-settings: "c2sc", "smcp";
-  -ms-font-feature-settings: "c2sc", "smcp";
-  -webkit-font-feature-settings: "c2sc", "smcp";
-  font-feature-settings: "c2sc", "smcp";
-}
-h5, small, figcaption, footer h2 {
-  font-size: 13px;
-  letter-spacing: 0.1em;
-}
-
-.intro-title {
-  transition: 0.3s;
-}
-
-.intro-title.reversed {
-  background-color: var(--silcrow-900);
 }
 
 h2 {
@@ -117,6 +102,24 @@ p a:hover, li a:hover {
   background-size: 100% 2em;
 }
 
+.large-text {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.sc {
+  -moz-font-feature-settings: "c2sc", "smcp";
+  -ms-font-feature-settings: "c2sc", "smcp";
+  -webkit-font-feature-settings: "c2sc", "smcp";
+  font-feature-settings: "c2sc", "smcp";
+}
+
+.cap-heading, figcaption {
+  font-family: Lyon Text;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
 .caption {
   font-family: Lyon Text;
   font-style: italic;
@@ -128,19 +131,40 @@ p a:hover, li a:hover {
   letter-spacing: -0.03em;
 }
 
-.title-text h2 {
+.squiggle {
+  background-color: var(--silcrow);
+  -webkit-mask-image: url("../images/squiggle-tile.svg");
+  mask-image: var(--squiggle-svg);
+  width:100%;
+  height:8px;
+  transition: 0.3s;
+}
+
+.squiggle.reversed {
+  background-color: var(--paper);
+}
+
+.intro-title {
+  transition: 0.3s;
+}
+
+.intro-title.reversed {
+  background-color: var(--silcrow-900);
+}
+
+.intro-title .title-text h2 {
   font-size: 3.375rem;  
   color: var(--paper);
 }
 
-.title-text h3 {
+.intro-title .title-text h3 {
   color: var(--paper);
   font-size: 1.5rem;
   line-height: 1.4;
   font-style: italic;
 }
 
-.silcrow-icon {
+.intro-title .seal .silcrow-icon {
   --weight: 400;
   --width: 100;
   color: var(--silcrow-300);
@@ -165,29 +189,20 @@ p a:hover, li a:hover {
   opacity: 0.3;
 }
 
-.squiggle {
-  background-color: var(--silcrow);
-  -webkit-mask-image: url("../images/squiggle-tile.svg");
-  mask-image: var(--squiggle-svg);
-  width:100%;
-  height:8px;
-  transition: 0.3s;
-}
-
-.squiggle.reversed {
-  background-color: var(--paper);
-}
-
 .intro-blurb .squiggle {
   margin-bottom: 20px;
 }
 
-.intro-text {
+.intro-blurb .large-text, figure .large-text {
+  font-style: italic;
+}
+
+.intro-blurb .intro-text {
   color: var(--silcrow);
   transition: 0.3s;
 }
 
-.intro-text.reversed {
+.intro-blurb .intro-text.reversed {
   color: var(--paper);
 }
 
@@ -204,15 +219,6 @@ p a:hover, li a:hover {
   overflow: hidden;
 }
 
-.case-study .illustration {
-  position: relative;
-}
-
-.case-study .illustration img {
-  transform: scale(90%);
-  transform-origin: left;
-}
-
 .case-study small span {
   color: var(--silcrow);
 }
@@ -221,6 +227,15 @@ p a:hover, li a:hover {
   content: "·";
   margin: 0 10px 0 6px;
   color: var(--asterisk);
+}
+
+.case-study .illustration {
+  position: relative;
+}
+
+.case-study .illustration img {
+  transform: scale(90%);
+  transform-origin: left;
 }
 
 .case-study .illustration::before {
@@ -237,28 +252,24 @@ p a:hover, li a:hover {
   mix-blend-mode: multiply;
 }
 
-.flush-left, .flush-right {
+.case-study h2 .flush-left, .flush-right {
   display: flex;
 }
 
-.flush-left .text, .flush-right .text {
+.case-study h2 .flush-left .text, .flush-right .text {
   flex: none;
 }
 
-.flush-left .squiggle, .flush-right .squiggle {
+.case-study h2 .flush-left .squiggle, .flush-right .squiggle {
   margin-top: 0.55em;
 }
 
-.flush-left .squiggle {
+.case-study h2 .flush-left .squiggle {
   margin-left: 12px;
 }
 
-.flush-right .squiggle {
+.case-study h2 .flush-right .squiggle {
   margin-right: 12px;
-}
-
-.case-study .illustration, .case-study h2 {
-  z-index: 1;
 }
 
 .case-study h2 em {
@@ -277,6 +288,10 @@ p a:hover, li a:hover {
   height: 16px;
 }
 
+.case-study .illustration, .case-study h2 {
+  z-index: 1;
+}
+
 figure .quotemark {
   display: grid;
   align-items:center;
@@ -287,14 +302,14 @@ figure .quotemark picture {
   height: auto;
 }
 
-.lower {
+figure .quotemark .upper {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+figure .quotemark .lower {
   margin-top: -44px;
   animation: shrink 3s ease-in-out infinite;
   transform-origin: 50% 50%;
-}
-
-.upper {
-  animation: bounce 3s ease-in-out infinite;
 }
 
 @keyframes bounce {
@@ -309,11 +324,11 @@ figure .quotemark picture {
   100% { transform: scale(100%); }
 }
 
-figcaption span {
+figure figcaption span {
   display: block;
 }
 
-figcaption {
+figure figcaption {
   border-left: 1px solid var(--silcrow);
   padding-left: 15px;
 }
@@ -324,7 +339,7 @@ figcaption {
   /* background-color: #00ffff20; */
 }
 
-.logo-grid-container {
+.client-list .logo-grid-container {
   position: relative;
   top: 50%;
   left: 50%;
@@ -338,7 +353,7 @@ figcaption {
   /* background-color: #00ffff20; */
 }
 
-.client-logo-row {
+.client-list .logo-grid-container .client-logo-row {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -348,7 +363,7 @@ figcaption {
   /* background-color: #00ffff20; */
 }
 
-.client-logo-row img {
+.client-list .logo-grid-container .client-logo-row img {
   padding: 20px;
   height: 112px;
   flex: none;
@@ -361,6 +376,8 @@ figcaption {
 .responsible {
   position: relative;
 }
+
+// BACKGROUND IMAGES
 
 .responsible::after, .responsible::before {
   content: "";
@@ -580,11 +597,11 @@ footer .carbon {
     line-height: 1.4;
   }
   
-  .intro-text p+p {
+  .intro-blurb .intro-text p+p {
     text-indent: 0;
   }
   
-  .title-text h2, .hero-text {
+  .intro-title .title-text h2, .hero-text {
     font-size: 5.0625rem;
   }
   
@@ -614,16 +631,16 @@ footer .carbon {
     font-size: 16px;
   }
   
-  .silcrow-icon {
+  .intro-title .seal .silcrow-icon {
     font-size: 136px;
   }
   
-  .title-text h2 {
+  .intro-title .title-text h2 {
     font-size: 7.5rem;
     letter-spacing: -0.025em;
   }
   
-  .title-text h3 {
+  .intro-title .title-text h3 {
     line-height: 1;
   }
   
@@ -648,7 +665,7 @@ footer .carbon {
     height: 45vw;
   }
   
-  .client-list small {
+  .client-list h2 {
     border-top: 1px solid var(--ink-100);
     padding-top: 20px;
   }
@@ -679,13 +696,13 @@ footer .carbon {
   html {
     font-size: 17px;
   }
-    
-  .case-study h2 {
-    font-size: 3.375rem;
-  }
   
   .squiggle {
     height: 12px;
+  }
+    
+  .case-study h2 {
+    font-size: 3.375rem;
   }
   
   .case-study h2::after {
@@ -697,7 +714,7 @@ footer .carbon {
     width: 156px;
   }
   
-  footer .type h2, footer .references h2 {
+  footer .colophon .type h2, footer .colophon .references h2 {
     margin-bottom: 50px;
   }
   
@@ -713,7 +730,7 @@ footer .carbon {
     width: 272px;
   }
   
-  .lower {
+  figure .quotemark .lower {
     margin-top: -100px;
   }
   
@@ -738,7 +755,7 @@ footer .carbon {
     font-size: 18px;
   }
   
-  .client-logo-row img {
+  .client-list .logo-grid-container .client-logo-row img {
     height: 130px;
   }
   
@@ -750,7 +767,11 @@ footer .carbon {
     font-size: 20px;
   }
   
-  .silcrow-icon {
+  .hero-text {
+    font-size: 7.5rem;
+  }
+  
+  .intro-title .seal .silcrow-icon {
     font-size: 142px;
   }
   
@@ -766,17 +787,13 @@ footer .carbon {
     margin-bottom: 0.1em;
   }
   
-  .hero-text {
-    font-size: 7.5rem;
-  }
-  
   .responsible .stamp::after {
     width: 270px;
     height: 219px;
     transform: translate(0.7em, 0.9em);
   }
   
-  .client-logo-row img {
+  .client-list .logo-grid-container .client-logo-row img {
     height: 160px;
     padding: 30px;
   }
@@ -784,9 +801,5 @@ footer .carbon {
   footer .colophon li {
     font-size: 1rem;
   }
-  
-  /* footer .colophon .references h2 {
-    margin-bottom: 24px;
-  } */
   
 }
