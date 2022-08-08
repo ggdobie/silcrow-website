@@ -449,17 +449,13 @@ footer .carbon {
     text-indent: 0;
   }
   
-  .intro-title .title-text h2, .hero-text {
+  .intro-title .title-text h2 {
     font-size: 5.0625rem;
   }
   
   .responsible .stamp::after {
     width: 200px;
     height: 162px;
-  }
-  
-  .case-study h2 {
-    font-size: 3.375rem;
   }
   
   .case-study .illustration::before {
@@ -540,10 +536,6 @@ footer .carbon {
   .squiggle {
     height: 12px;
   }
-    
-  .case-study h2 {
-    font-size: 3.375rem;
-  }
   
   .case-study h2::after {
     width: 40px;
@@ -601,10 +593,6 @@ footer .carbon {
   
   .intro-title .seal .silcrow-icon {
     font-size: 142px;
-  }
-  
-  .case-study h2 {
-    font-size: 5rem;
   }
   
   .case-study .illustration, .case-study .illustration:before {

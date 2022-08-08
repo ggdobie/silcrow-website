@@ -196,7 +196,7 @@ p a:hover, li a:hover {
 @media (min-width: 640px) {
   
   html {
-	font-size: 17px;
+	  font-size: 17px;
   }
 
 }
@@ -204,7 +204,15 @@ p a:hover, li a:hover {
 @media (min-width: 800px) {
   
   .large-text {
-	line-height: 1.4;
+	  line-height: 1.4;
+  }
+  
+  .hero-text {
+    font-size: 5.0625rem;
+  }
+  
+  h2 {
+    font-size: 3.375rem;
   }
   
 }
@@ -216,7 +224,7 @@ p a:hover, li a:hover {
 @media (min-width: 900px) {
   
   html {
-	font-size: 16px;
+	  font-size: 16px;
   }
   
   
@@ -225,7 +233,11 @@ p a:hover, li a:hover {
 @media (min-width: 980px) {
   
   html {
-	font-size: 17px;
+	  font-size: 17px;
+  }
+  
+  h2 {
+    font-size: 3.375rem;
   }
   
   
@@ -238,7 +250,7 @@ p a:hover, li a:hover {
 @media (min-width: 1248px) {
   
   html {
-	font-size: 18px;
+	  font-size: 18px;
   }
   
 }
@@ -246,11 +258,15 @@ p a:hover, li a:hover {
 @media (min-width: 1920px) {
   
   html {
-	font-size: 20px;
+	  font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 5rem;
   }
   
   .hero-text {
-	font-size: 7.5rem;
+	  font-size: 7.5rem;
   }
   
 }
