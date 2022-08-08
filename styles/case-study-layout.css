@@ -15,3 +15,13 @@ section {
 section * {
   grid-column: 1 / -1;
 }
+
+.testimonial figure {
+  display: grid;
+  grid-template-columns: repeat(var(--master-column-count), 1fr);
+  grid-column-gap: var(--gutter);
+}
+
+.testimonial figure blockquote {
+  margin-bottom: 1em;
+}

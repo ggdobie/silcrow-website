@@ -18,3 +18,32 @@ section.paper {
 section.gallery-cta {
   background-color: var(--double-dagger-100);
 }
+
+.testimonial {
+  background-color: var(--silcrow-900);
+  color: var(--paper);
+}
+
+.testimonial figure blockquote .quotemark {
+  content: "";
+  background-color: var(--silcrow-500);
+  mask-image: var(--testimonial-quotemark-svg);
+  position: absolute;
+  mask-repeat: no-repeat;
+  mask-size: 15px 11px;
+  width: 15px;
+  height: 11px;
+}
+
+.testimonial figure blockquote .quotemark.open { 
+  transform: translate(-140%, 30%);
+}
+
+.testimonial figure blockquote .quotemark.close { 
+  transform: translate(40%, 30%) rotate(180deg);
+}
+
+.testimonial figure figcaption {
+  border-top: 1px solid var(--silcrow-500);
+  padding-top: 20px;
+}
