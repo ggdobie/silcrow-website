@@ -1,150 +1,6 @@
 :root {
-  --silcrow: #FC3819;
-  --asterisk: #091833;
-  --dagger: #67E0A1;
-  --double-dagger: #E0D4FF;
-  --paper: #FFFFFF;
-  --ink: #232425;
-  
-  --silcrow-900: #FC5136;
-  --silcrow-500: #FEB4A9;
-  --silcrow-300: #FFE6E2;
-  --silcrow-200: #FFEEEB;
-  
-  --ink-000: #F0F2F5;
-  --ink-100: #E1E3E5;
-  
-  --underline: #FEB4A940;
-  --underline-hover: #FEB4A950;
-  
-  --r-underline: #85E6B470;
-  --r-underline-hover: #85E6B490;
-  
   --quote-float-height: -8px;
 }
-
-html {
-  font-size: 16px;
-}
-
-body {
-  width: 100%;
-  
-  font-family: Lyon Text;
-  color: var(--asterisk);
-  
-  transition: 0.3s;
-}
-
-body.reversed {
-  background-color: var(--silcrow-900);
-  color: var(--paper);
-}
-
-p::selection, 
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
-h6::selection, 
-small::selection, 
-blockquote::selection, 
-em::selection, 
-span::selection, 
-figcaption::selection, 
-a::selection, 
-img::selection {
-  background: var(--silcrow-900);
-  color: var(--paper);
-}
-
-p {
-  line-height: 1.44;
-}
-
-p+p {
-  text-indent: 1em;
-}
-
-h2 {
-  font-family: Orleans;
-  font-size: 2.25rem;
-  letter-spacing: -0.01em;
-}
-
-em {
-  font-family: Lyon Text;
-  font-style: italic;
-  letter-spacing: -0.04em;
-}
-
-a {
-  text-decoration: none;
-  color: var(--asterisk);
-}
-
-p a, li a {
-  font-style: italic;
-  background-image: linear-gradient(to right, var(--underline) 0%, var(--underline) 200%);
-  background-repeat: repeat-x;
-  background-position: 0 0.7em;
-  background-size: 100% 20px;
-  transition: 0.3s;
-  overflow: visible;
-  padding: 2px;
-  margin: 0 -2px;
-}
-
-p a:hover, li a:hover {
-  background-image: linear-gradient(to right, var(--underline-hover) 0%, var(--underline-hover) 200%);
-  background-position: 0 0.1em;
-  background-size: 100% 2em;
-}
-
-.large-text {
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
-
-.sc {
-  -moz-font-feature-settings: "c2sc", "smcp";
-  -ms-font-feature-settings: "c2sc", "smcp";
-  -webkit-font-feature-settings: "c2sc", "smcp";
-  font-feature-settings: "c2sc", "smcp";
-}
-
-.cap-heading, figcaption {
-  font-family: Lyon Text;
-  font-size: 13px;
-  letter-spacing: 0.1em;
-}
-
-.caption {
-  font-family: Lyon Text;
-  font-style: italic;
-  font-size: 14px;
-}
-
-.hero-text {
-  font-size: 3.375rem;
-  letter-spacing: -0.03em;
-}
-
-.squiggle {
-  background-color: var(--silcrow);
-  -webkit-mask-image: url("../images/squiggle-tile.svg");
-  mask-image: var(--squiggle-svg);
-  width:100%;
-  height:8px;
-  transition: 0.3s;
-}
-
-.squiggle.reversed {
-  background-color: var(--paper);
-}
-
-// –– INDEX STYLES
 
 .intro-title {
   transition: 0.3s;
@@ -379,8 +235,6 @@ figure figcaption {
   position: relative;
 }
 
-// BACKGROUND IMAGES
-
 .responsible::after, .responsible::before {
   content: "";
   position: absolute;
@@ -571,10 +425,6 @@ footer .carbon {
 
 @media (min-width: 640px) {
   
-  html {
-    font-size: 17px;
-  }
-  
   footer .colophon .large-text {
     font-size: 1.5em;
   }
@@ -594,10 +444,6 @@ footer .carbon {
 }
 
 @media (min-width: 800px) {
-  
-  .large-text {
-    line-height: 1.4;
-  }
   
   .intro-blurb .intro-text p+p {
     text-indent: 0;
@@ -628,10 +474,6 @@ footer .carbon {
 }
 
 @media (min-width: 900px) {
-  
-  html {
-    font-size: 16px;
-  }
   
   .intro-title .seal .silcrow-icon {
     font-size: 136px;
@@ -695,10 +537,6 @@ footer .carbon {
 
 @media (min-width: 980px) {
   
-  html {
-    font-size: 17px;
-  }
-  
   .squiggle {
     height: 12px;
   }
@@ -753,10 +591,6 @@ footer .carbon {
 
 @media (min-width: 1248px) {
   
-  html {
-    font-size: 18px;
-  }
-  
   .client-list .logo-grid-container .client-logo-row img {
     height: 130px;
   }
@@ -764,14 +598,6 @@ footer .carbon {
 }
 
 @media (min-width: 1920px) {
-  
-  html {
-    font-size: 20px;
-  }
-  
-  .hero-text {
-    font-size: 7.5rem;
-  }
   
   .intro-title .seal .silcrow-icon {
     font-size: 142px;
