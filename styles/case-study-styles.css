@@ -84,6 +84,14 @@ section h2 {
     padding: 1.35em 0;
   }
   
+}
+
+@media (min-width: 1920px) {
   
+  .testimonial figure blockquote .quotemark {
+    mask-size: 31px 23px;
+    width: 31px;
+    height: 23px;
+  }
   
 }

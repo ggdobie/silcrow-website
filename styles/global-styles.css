@@ -234,6 +234,7 @@ figure figcaption span {
   
   h2, .feature-text {
     font-size: 3.375rem;
+    letter-spacing: -0.02em;
   }
   
   h3 {
