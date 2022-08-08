@@ -1,0 +1,104 @@
+:root {  
+  --master-column-count: 4;
+  --gutter: 20px;
+  --split-secondary: 1;
+  --split-tertiary: 1;  
+}
+
+.grid-primary, .grid-secondary, .grid-tertiary {
+  display:grid;
+  grid-template-columns: repeat(var(--master-column-count), 1fr);
+  grid-column-gap: var(--gutter);
+  grid-row-gap: 0;
+  
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* MEDIA QUERIES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ——————————————–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+@media (min-width: 640px) {
+  
+  :root{
+    --master-column-count: 6;
+  }
+  
+}
+
+@media (min-width: 760px) {
+  
+}
+
+@media (min-width: 800px) {
+  
+}
+
+@media (min-width: 900px) {
+  
+  :root{
+    --master-column-count: 12;
+    --gutter: 12px;
+    --split-secondary: 7;
+    --split-tertiary: 5;
+  }
+  
+  .grid-primary, .grid-secondary, .grid-tertiary {
+    padding-left: calc(var(--gutter)/2);
+    padding-right: calc(var(--gutter)/2);;
+    grid-column-gap: var(--gutter);
+  }
+  
+  .grid-primary {
+    grid-template-columns: repeat(var(--master-column-count), 1fr);
+  }
+  
+  .grid-secondary {
+    grid-template-columns: repeat(var(--split-secondary), 1fr);
+  }
+  
+  .grid-tertiary {
+    grid-template-columns: repeat(var(--split-tertiary), 1fr);
+  }
+  
+}
+
+
+@media (min-width: 980px) {
+  
+}
+
+@media (min-width: 1194px) {
+  
+  :root{
+    --master-column-count: 15;
+    --gutter: 18px;
+    --split-secondary: 8;
+    --split-tertiary: 7;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  
+  :root{
+    --master-column-count: 20;
+    --gutter: 26px;
+    --split-secondary: 12;
+    --split-tertiary: 8;
+  }
+  
+}

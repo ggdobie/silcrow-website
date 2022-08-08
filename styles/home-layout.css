@@ -1,20 +1,3 @@
-:root {  
-  --master-column-count: 4;
-  --gutter: 20px;
-  --split-secondary: 1;
-  --split-tertiary: 1;  
-}
-
-.grid-primary, .grid-secondary, .grid-tertiary {
-  display:grid;
-  grid-template-columns: repeat(var(--master-column-count), 1fr);
-  grid-column-gap: var(--gutter);
-  grid-row-gap: 0;
-  
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
 .intro-title {
   text-align: center;
   width: 100%;
@@ -168,11 +151,7 @@ footer .carbon {
 
 
 @media (min-width: 640px) {
-  
-  :root{
-    --master-column-count: 6;
-  }
-  
+
   .intro-title .title-text, .intro-text, .content-item * {
     grid-column: 2 / -2;
   }
@@ -252,31 +231,6 @@ footer .carbon {
 }
 
 @media (min-width: 900px) {
-  
-  :root{
-    --master-column-count: 12;
-    --gutter: 12px;
-    --split-secondary: 7;
-    --split-tertiary: 5;
-  }
-  
-  .grid-primary, .grid-secondary, .grid-tertiary {
-    padding-left: calc(var(--gutter)/2);
-    padding-right: calc(var(--gutter)/2);;
-    grid-column-gap: var(--gutter);
-  }
-  
-  .grid-primary {
-    grid-template-columns: repeat(var(--master-column-count), 1fr);
-  }
-  
-  .grid-secondary {
-    grid-template-columns: repeat(var(--split-secondary), 1fr);
-  }
-  
-  .grid-tertiary {
-    grid-template-columns: repeat(var(--split-tertiary), 1fr);
-  }
     
   .intro-title {
     height: 65vh;
@@ -468,13 +422,6 @@ footer .carbon {
 
 @media (min-width: 1194px) {
   
-  :root{
-    --master-column-count: 15;
-    --gutter: 18px;
-    --split-secondary: 8;
-    --split-tertiary: 7;
-  }
-  
   .case-study, .quote {
     min-height: 830px;
   }
@@ -528,13 +475,6 @@ footer .carbon {
 }
 
 @media (min-width: 1920px) {
-  
-  :root{
-    --master-column-count: 20;
-    --gutter: 26px;
-    --split-secondary: 12;
-    --split-tertiary: 8;
-  }
   
   .intro-title .seal, .intro-blurb .squiggle {
     grid-column: 2 / 4;
