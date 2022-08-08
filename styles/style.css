@@ -144,6 +144,8 @@ p a:hover, li a:hover {
   background-color: var(--paper);
 }
 
+// –– INDEX STYLES
+
 .intro-title {
   transition: 0.3s;
 }
@@ -178,15 +180,11 @@ p a:hover, li a:hover {
   background-size: 100% 100%;
 }
 
-.collapsed {
+.intro-title.collapsed {
   padding: 0;
   opacity: 0;
   height: 50px;
   color: var(--paper);
-}
-
-.translucent {
-  opacity: 0.3;
 }
 
 .intro-blurb .squiggle {
@@ -206,12 +204,16 @@ p a:hover, li a:hover {
   color: var(--paper);
 }
 
-.content-item {
-  border-top: solid 1px var(--ink-000);
-}
-
 .content-container {
   border-bottom: solid 1px var(--ink-000);  
+}
+
+.content-container.translucent {
+  opacity: 0.3;
+}
+
+.content-item {
+  border-top: solid 1px var(--ink-000);
 }
 
 .case-study{
