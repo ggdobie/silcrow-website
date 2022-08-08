@@ -33,6 +33,7 @@ section h2 {
 .testimonial figure blockquote .quotemark {
   content: "";
   background-color: var(--silcrow-500);
+  -webkit-mask-image: url("../images/testimonial-quotemark.svg");
   mask-image: var(--testimonial-quotemark-svg);
   position: absolute;
   mask-repeat: no-repeat;
