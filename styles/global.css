@@ -152,6 +152,24 @@ p a:hover, li a:hover {
   background-size: 100% 2em;
 }
 
+abbr[title] {
+   border-bottom: 1px dashed var(--silcrow-500);
+   cursor: help;
+}
+
+@media (hover:none) {
+  
+  abbr[title] {
+   border-bottom: none;
+  }
+  
+  abbr[title]:after {
+   content: " (" attr(title) ")";
+   font-style: italic;
+  }
+  
+}
+
 .sc {
   -moz-font-feature-settings: "c2sc", "smcp";
   -ms-font-feature-settings: "c2sc", "smcp";
