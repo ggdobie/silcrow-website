@@ -3,8 +3,10 @@ body {
 }
 
 section {
-  height: 80vh;
+  min-height: 80vh;
   align-content: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 section.tan {
@@ -17,6 +19,10 @@ section.paper {
 
 section.gallery-cta {
   background-color: var(--double-dagger-100);
+}
+
+section h2 {
+  margin-bottom: 0.3em;
 }
 
 .testimonial {
@@ -46,4 +52,35 @@ section.gallery-cta {
 .testimonial figure figcaption {
   border-top: 1px solid var(--silcrow-500);
   padding-top: 20px;
+}
+
+.summary h2 {
+  margin-bottom: 24px;
+}
+
+.summary ul li {
+  padding: 1em 0;
+  border-top: 1px solid var(--ink-100);
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary ul li:last-child {
+  border-bottom: 1px solid var(--ink-100);
+}
+
+.summary ul li .name {
+  font-style: italic;
+}
+
+@media (min-width: 900px) {
+  
+  .summary h2 {
+    border-top: 1px solid var(--ink-100);
+    padding-top: 20px;
+  }
+  
+  .summary ul li {
+    padding: 1.35em 0;
+  }
 }

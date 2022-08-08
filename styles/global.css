@@ -115,9 +115,11 @@ h2, .feature-text {
 h3 {
   font-style: italic;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.14;  
   letter-spacing: -0.01em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 em {
@@ -234,6 +236,12 @@ figure figcaption span {
     font-size: 3.375rem;
   }
   
+  h3 {
+    font-size: 2.25em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+  
   .hero-text {
     font-size: 5.0625rem;
   }
@@ -287,6 +295,10 @@ figure figcaption span {
   
   h2, .feature-text {
     font-size: 5rem;
+  }
+  
+  h3 {
+    margin-top: 6em;
   }
   
   .hero-text {
