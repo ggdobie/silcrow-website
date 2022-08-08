@@ -1,0 +1,20 @@
+body {
+  background-color: var(--paper);
+}
+
+section {
+  height: 80vh;
+  align-content: center;
+}
+
+section.tan {
+  background-color: var(--silcrow-000);
+}
+
+section.paper {
+  background-color: var(--paper);
+}
+
+section.gallery-cta {
+  background-color: var(--double-dagger-100);
+}

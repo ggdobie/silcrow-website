@@ -10,9 +10,12 @@
   --silcrow-500: #FEB4A9;
   --silcrow-300: #FFE6E2;
   --silcrow-200: #FFEEEB;
+  --silcrow-000: #FCF9F7;
   
   --ink-000: #F0F2F5;
   --ink-100: #E1E3E5;
+  
+  --double-dagger-100: #F9F6FF;
   
   --underline: #FEB4A940;
   --underline-hover: #FEB4A950;
@@ -99,16 +102,30 @@ p+p {
   text-indent: 1em;
 }
 
-h2 {
+h1, h2 {
   font-family: Orleans;
+}
+
+h2 {
   font-size: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.14;  
   letter-spacing: -0.01em;
 }
 
 em {
   font-family: Lyon Text;
   font-style: italic;
-  letter-spacing: -0.04em;
+}
+
+h2 em {
+  letter-spacing: -0.04em;  
 }
 
 a {
