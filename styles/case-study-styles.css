@@ -25,6 +25,38 @@ section h2 {
   margin-bottom: 0.3em;
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.dropcap {
+  font-family: Orleans;
+  float: left;
+  font-size: 2.65rem;
+  line-height: 1;
+  margin: 0.15em 0.1em 0.07em 0;
+  padding: 0.1em;
+  color: var(--paper);
+  text-shadow: -1px 1px 0 var(--silcrow), 1px 1px 0 var(--silcrow), 1px -1px 0 var(--silcrow), -1px -1px 0 var(--silcrow);
+}
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+.dropcap:before {
+  margin-top: -0.2em;
+}
+.dropcap:after {
+  margin-bottom: -0.15em;
+}
+
 .testimonial figure blockquote .quotemark {
   content: "";
   background-color: var(--silcrow-500);
