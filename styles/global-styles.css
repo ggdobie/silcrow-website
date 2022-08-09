@@ -52,6 +52,15 @@
 }
 
 @font-face {
+  font-family: 'Dropcaps';
+  src: url('../fonts/Dropcaps.woff2') format('woff2'),
+	   url('../fonts/Dropcaps.woff') format('woff');
+  font-weight:  900;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
   font-family: 'Anybody Silcrow Variable';
   src: url('../fonts/Anybody-Silcrow-Variable.woff2') format('woff2'),
 	   url('../fonts/Anybody-Silcrow-Variable.woff') format('woff') ;
