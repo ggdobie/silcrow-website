@@ -54,29 +54,33 @@ section h2 {
   margin-bottom: 24px;
 }
 
-.summary ul li {
+.summary .credits ul li {
   padding: 1em 0;
   border-top: 1px solid var(--ink-100);
   display: flex;
   justify-content: space-between;
 }
 
-.summary ul li:last-child {
+.summary .credits ul li:last-child {
   border-bottom: 1px solid var(--ink-100);
 }
 
-.summary ul li .name {
+.summary .credits ul li .name {
   font-style: italic;
 }
 
 @media (min-width: 900px) {
+  
+  section {
+    min-height: 100vh;
+  }
   
   .summary h2 {
     border-top: 1px solid var(--ink-100);
     padding-top: 20px;
   }
   
-  .summary ul li {
+  .summary .credits ul li {
     padding: 1.35em 0;
   }
   

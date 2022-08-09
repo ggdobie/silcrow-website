@@ -214,6 +214,11 @@ abbr[title] {
   line-height: 1.3;
 }
 
+.m-shrink {
+  font-size: 1em;
+  line-height: 1.44;
+}
+
 .hero-text {
   font-size: 3.375rem;
   letter-spacing: -0.03em;
@@ -245,6 +250,11 @@ figure figcaption span {
 }
 
 @media (min-width: 800px) {
+  
+  .large-boost {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
   
   .large-text {
 	  line-height: 1.4;

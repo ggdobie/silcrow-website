@@ -18,11 +18,19 @@ section * {
 @media (min-width: 900px) {
   
   section * {
-    grid-column: 5 / -2;
+    grid-column: 5 / -3;
   }
   
   .testimonial * {
-    grid-column: 2 / -2;
+    grid-column: 3 / -3;
+  }
+  
+  .summary h2 {
+    grid-column: 5 / 8;
+  }
+  
+  .summary .credits {
+    grid-column: 5 / 12;
   }
   
 }
@@ -43,6 +51,14 @@ section * {
   
   .summary * {
     grid-column: 7 / -5;
+  }
+  
+  .summary h2 {
+    grid-column: 7 / 10;
+  }
+  
+  .summary .credits {
+    grid-column: 7 / 14;
   }
 
 }
