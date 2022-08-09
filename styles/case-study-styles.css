@@ -25,11 +25,6 @@ section h2 {
   margin-bottom: 0.3em;
 }
 
-.testimonial {
-  background-color: var(--silcrow-900);
-  color: var(--paper);
-}
-
 .testimonial figure blockquote .quotemark {
   content: "";
   background-color: var(--silcrow-500);

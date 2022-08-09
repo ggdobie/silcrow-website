@@ -71,7 +71,7 @@ body {
   transition: 0.3s;
 }
 
-body.reversed {
+.reversed {
   background-color: var(--silcrow-900);
   color: var(--paper);
 }
@@ -92,6 +92,24 @@ a::selection,
 img::selection {
   background: var(--silcrow-900);
   color: var(--paper);
+}
+
+.reversed p::selection,
+.reversed h1::selection,
+.reversed h2::selection,
+.reversed h3::selection,
+.reversed h4::selection,
+.reversed h5::selection,
+.reversed h6::selection,
+.reversed small::selection,
+.reversed .large-text::selection,
+.reversed blockquote::selection,
+.reversed a::selection,
+.reversed img::selection,
+.reversed figcaption::selection,
+.reversed figcaption span::selection {
+  color: var(--paper);
+  background: var(--asterisk);
 }
 
 p {
