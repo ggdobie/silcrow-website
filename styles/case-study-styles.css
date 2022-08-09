@@ -2,9 +2,12 @@ body {
   background-color: var(--paper);
 }
 
+main {
+  contain: paint;
+}
+
 section {
   min-height: 80vh;
-  align-content: center;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -25,10 +28,35 @@ section h2 {
   margin-bottom: 0.3em;
 }
 
+.diagram {
+  position: relative;
+  height: 150vh;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.diagram .illustration {
+  position: sticky;
+  width: 100%;
+  top: 50%;
+  z-index: 1;
+}
+
+.diagram .illustration img {
+  transform: scale(150%);
+}
+
 .info-card {
   border-radius: 20px;
   box-shadow: 0px 11px 14px rgba(233, 226, 222, 0.5);
   padding: 24px;
+  margin: 18em 0 20em 0;
 }
 
 .sr-only:not(:focus):not(:active) {
