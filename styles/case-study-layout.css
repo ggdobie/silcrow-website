@@ -33,6 +33,10 @@ section * {
     grid-column: 5 / 12;
   }
   
+  .info-card {
+    grid-column: 7 / span 6;
+  }
+  
 }
 
 @media (min-width: 1920px) {

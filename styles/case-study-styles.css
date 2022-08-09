@@ -25,6 +25,12 @@ section h2 {
   margin-bottom: 0.3em;
 }
 
+.info-card {
+  border-radius: 20px;
+  box-shadow: 0px 11px 14px rgba(233, 226, 222, 0.5);
+  padding: 24px;
+}
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(50%);
@@ -43,8 +49,23 @@ section h2 {
   line-height: 0.6;
   margin: 0.4em 0.1em 0.07em 0;
   padding: 0.1em 0.1em 0.1em 0;
-  color: var(--paper);
   text-shadow: -1px 1px 0 var(--silcrow), 1px 1px 0 var(--silcrow), 1px -1px 0 var(--silcrow), -1px -1px 0 var(--silcrow);
+}
+
+.tan .info-card {
+  background-color: var(--paper);
+}
+
+.tan .dropcap {
+  color: var(--paper);
+}
+
+.paper .info-card {
+  background-color: var(--silcrow-050);
+}
+
+.paper .dropcap {
+  color: var(--silcrow-050);
 }
 
 .dropcap:before, .dropcap:after {
@@ -102,6 +123,14 @@ section h2 {
 
 .summary .credits ul li .name {
   font-style: italic;
+}
+
+@media (min-width: 640px) {
+  
+  .info-card {
+    padding: 50px;
+  }
+  
 }
 
 @media (min-width: 900px) {
