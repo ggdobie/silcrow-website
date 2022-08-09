@@ -10,6 +10,13 @@ section * {
   align-content: start;
 }
 
+.diagram .info {
+  display: grid;
+  padding-top: 25vh;
+  padding-bottom: 33vh;
+  align-content: space-between;
+}
+
 .testimonial figure blockquote {
   margin-bottom: 1em;
 }
@@ -20,9 +27,19 @@ section * {
     grid-column: 2 / -2;
   }
   
+  .diagram .illustration {
+    grid-column: 1 / -1;
+  }
+  
 }
 
 @media (min-width: 900px) {
+  
+  .diagram .info {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: var(--gutter);
+  }
   
   section * {
     grid-column: 5 / -3;
@@ -40,12 +57,16 @@ section * {
     grid-column: 5 / 12;
   }
   
-  .diagram .info-card {
-    grid-column: 8 / -2;
+  .diagram .info, .diagram .illustration {
+    grid-column: 2 / -2;
   }
   
-  .diagram .illustration {
-    grid-column: 2 / -2;
+  .diagram .info-card.right {
+    grid-column: 2 / 7;
+  }
+  
+  .diagram .info-card.left {
+    grid-column: -2 / -7;
   }
   
 }

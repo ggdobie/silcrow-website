@@ -31,32 +31,33 @@ section h2 {
 .diagram {
   position: relative;
   height: 150vh;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .info {
   position: absolute;
   top: 0;
   z-index: 10;
+  height: 100%;
 }
 
 .diagram .illustration {
   position: sticky;
   width: 100%;
-  top: 50%;
+  top: 25%;
   z-index: 1;
 }
 
 .diagram .illustration img {
-  transform: scale(150%);
+  transform: scale(200%) translateX(33%);
 }
 
 .info-card {
   border-radius: 20px;
   box-shadow: 0px 11px 14px rgba(233, 226, 222, 0.5);
   padding: 24px;
-  margin: 18em 0 20em 0;
+  /* margin: 18em 0 20em 0; */
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -159,12 +160,38 @@ section h2 {
     padding: 50px;
   }
   
+  .diagram .illustration img {
+    transform: scale(200%) translateX(25%);
+  }
+  
+}
+
+@media (min-width: 800px) {
+  
+  .diagram {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .diagram .illustration img {
+    transform: scale(120%) translateX(0);
+  }
+  
 }
 
 @media (min-width: 900px) {
   
   section {
     min-height: 100vh;
+  }
+  
+  .diagram {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .diagram .illustration img {
+    transform: scale(110%) translateX(0);
   }
   
   .summary h2 {
