@@ -235,7 +235,7 @@ abbr[title] {
 
 .squiggle {
   background-color: var(--silcrow);
-  -webkit-mask-image: url("../images/squiggle-tile.svg");
+  -webkit-mask-image: url("../images/bg-tile-squiggle.svg");
   mask-image: var(--squiggle-svg);
   width:100%;
   height:8px;

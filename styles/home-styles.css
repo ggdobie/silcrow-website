@@ -137,7 +137,7 @@
 .case-study h2::after {
   content: "";
   background-color: var(--silcrow);
-  -webkit-mask-image: url("../images/arrow-right.svg");
+  -webkit-mask-image: url("../images/icon-arrow-right.svg");
   mask-image: var(--arrow-svg);
   display: inline-block;
   mask-repeat: no-repeat;
@@ -301,8 +301,8 @@ footer h2 {
 footer .caret {
   content: "";
   background-color: var(--silcrow);
-  -webkit-mask-image: url("../images/caret.svg");
-  mask-image: var(--chevron-svg);
+  -webkit-mask-image: url("../images/icon-caret.svg");
+  mask-image: var(--caret-svg);
   display: inline-block;
   mask-repeat: no-repeat;
   mask-size: auto;
