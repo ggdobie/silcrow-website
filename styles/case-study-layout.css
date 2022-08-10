@@ -61,11 +61,11 @@ section * {
     grid-column: 2 / -2;
   }
   
-  .diagram .info-card.right {
+  .diagram .info-card.left {
     grid-column: 2 / 7;
   }
   
-  .diagram .info-card.left {
+  .diagram .info-card.right {
     grid-column: -2 / -7;
   }
   

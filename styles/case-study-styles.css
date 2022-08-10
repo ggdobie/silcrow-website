@@ -57,7 +57,6 @@ section h2 {
   border-radius: 20px;
   box-shadow: 0px 11px 14px rgba(233, 226, 222, 0.5);
   padding: 24px;
-  /* margin: 18em 0 20em 0; */
 }
 
 .sr-only:not(:focus):not(:active) {
