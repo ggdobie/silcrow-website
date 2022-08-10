@@ -12,8 +12,6 @@ section * {
 
 .diagram .info {
   display: grid;
-  padding-top: 25vh;
-  padding-bottom: 33vh;
   align-content: space-between;
 }
 
@@ -35,26 +33,13 @@ section * {
 
 @media (min-width: 900px) {
   
-  .diagram .info {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: var(--gutter);
-  }
-  
   section * {
     grid-column: 5 / -3;
   }
   
-  .testimonial * {
-    grid-column: 3 / -3;
-  }
-  
-  .summary h2 {
-    grid-column: 5 / 8;
-  }
-  
-  .summary .credits {
-    grid-column: 5 / 12;
+  .diagram .info {
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: var(--gutter);
   }
   
   .diagram .info, .diagram .illustration {
@@ -67,6 +52,18 @@ section * {
   
   .diagram .info-card.right {
     grid-column: -2 / -7;
+  }
+  
+  .testimonial * {
+    grid-column: 3 / -3;
+  }
+  
+  .summary h2 {
+    grid-column: 5 / 8;
+  }
+  
+  .summary .credits {
+    grid-column: 5 / 12;
   }
   
 }
