@@ -1,13 +1,4 @@
 const silcrow = document.querySelector(".silcrow-icon")
-
-function randomNumber(min, max) {
-  return Math.random() * (max - min) + min
-}
-
-function randomRoundNumber(min, max) {
-  return Math.round(randomNumber(min, max))
-}
-
 let interval = null
 
 const startInterval = function () {

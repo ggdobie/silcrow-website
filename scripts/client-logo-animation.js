@@ -2,22 +2,6 @@ const sectionTag =document.querySelector(".client-list")
 const logoContainer = document.querySelector(".logo-grid-container")
 const logoRows = document.querySelectorAll(".client-logo-row")
 
-function clamp(input, min, max) {
-  return Math.max(min, Math.min(input, max))
-}
-
-function map(value, low1, high1, low2, high2) {
-  return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
-}
-
-function mapAndClamp(value, low1, high1, low2, high2) {
-  return clamp(
-	map(value, low1, high1, low2, high2),
-	Math.min(low2, high2), 
-	Math.max(low2, high2)
-  )
-}
-
 const fadeAndMoveLogos = function() {
 	const scrollY = window.pageYOffset
 	
@@ -54,8 +38,6 @@ const fadeAndMoveLogos = function() {
 			// MOVE THE ROWS
 			logoRow.style.transform = `translateX(${movement * delay}px)`
 		}
-		
-		
 		
 		// FADE LOGOS DEPENDING ON THEIR PROXIMITY TO THE CENTRE
 		const logos = logoRow.querySelectorAll("img")

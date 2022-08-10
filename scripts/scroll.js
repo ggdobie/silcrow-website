@@ -4,12 +4,6 @@ const blurbSquiggle = document.querySelector(".intro-blurb .squiggle")
 const pageBody = document.querySelector("body")
 const contentContainer = document.querySelector(".content-container")
 
-// if (window.matchMedia('(min-width: 640px)').matches) {
-// 	console.log('Wide viewport');
-// } else {
-// 	console.log('Small viewport');
-// }
-
 const scrollEffects = function() {
 
 	if (window.pageYOffset > 0){

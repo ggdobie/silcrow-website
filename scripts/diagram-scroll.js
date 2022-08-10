@@ -2,22 +2,6 @@ const sectionTag = document.querySelector(".diagram")
 const illustrationTag = document.querySelector(".diagram .illustration")
 let mobileBreakpoint = true
 
-function clamp(input, min, max) {
-  return Math.max(min, Math.min(input, max))
-}
-
-function map(value, low1, high1, low2, high2) {
-  return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
-}
-
-function mapAndClamp(value, low1, high1, low2, high2) {
-  return clamp(
-	map(value, low1, high1, low2, high2),
-	Math.min(low2, high2), 
-	Math.max(low2, high2)
-  )
-}
-
 const moveIllustration = function() {
 	const scrollY = window.pageYOffset
 	
