@@ -30,7 +30,7 @@ section h2 {
 
 .diagram {
   position: relative;
-  height: 150vh;
+  height: 1080px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -49,10 +49,12 @@ section h2 {
   width: 100%;
   top: 25%;
   z-index: 1;
+  transition: 0.2s ease-out;
 }
 
 .diagram .illustration img {
-  transform: scale(200%) translateX(33%);
+  transform: scale(200%);
+  transform-origin: center left;
 }
 
 .diagram .info-card {

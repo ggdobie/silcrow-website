@@ -8,6 +8,8 @@ section * {
 
 .diagram {
   align-content: start;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 .diagram .info {
