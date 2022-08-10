@@ -1,4 +1,4 @@
-const silcrow = document.querySelector('.silcrow-icon')
+const silcrow = document.querySelector(".silcrow-icon")
 
 function randomNumber(min, max) {
   return Math.random() * (max - min) + min
@@ -29,8 +29,8 @@ const randomiseVariables = function () {
 	// console.log(silcrowFont.toString(), fontToVerify.toString())
 	// 
 	// if (silcrowFont.toString() === fontToVerify.toString()) {
-	  silcrow.style.setProperty('--weight', randomRoundNumber(100, 900))
-	  silcrow.style.setProperty('--width', randomRoundNumber(60, 150))
+	  silcrow.style.setProperty("--weight", randomRoundNumber(100, 900))
+	  silcrow.style.setProperty("--width", randomRoundNumber(60, 150))
 	// }
 	
 }

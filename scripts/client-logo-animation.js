@@ -64,7 +64,7 @@ const fadeAndMoveLogos = function() {
 			
 			let fadeSeverity = 0.5
 			
-			if (window.matchMedia('(min-width: 1194px)').matches) {
+			if (window.matchMedia("(min-width: 1194px)").matches) {
 				fadeSeverity = 0.4
 			}
 			
@@ -87,9 +87,14 @@ const fadeAndMoveLogos = function() {
 	})	
 }
 
-document.addEventListener("scroll", function(){
+window.addEventListener("scroll", function() {
+	
 	fadeAndMoveLogos()
+	
 })
-document.addEventListener("resize", function(){
+
+window.addEventListener("resize", function() {
+	
 	fadeAndMoveLogos()
+	
 })

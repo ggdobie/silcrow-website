@@ -29,8 +29,10 @@ const scrollEffects = function() {
 	
 }
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", function() {
+	
   scrollEffects()
+  
 })
 
 scrollEffects()

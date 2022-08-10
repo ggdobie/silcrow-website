@@ -40,17 +40,18 @@ const moveIllustration = function() {
 	
 }
 
-window.addEventListener("resize", function(){
+window.addEventListener("resize", function() {
 	
-	if (window.matchMedia('(min-width: 640px)').matches) {
+	if (window.matchMedia("(min-width: 640px)").matches) {
 		mobileBreakpoint = false
-	} else {
+	}
+	else {
 		mobileBreakpoint = true
 	}
 	
 })
 
-document.addEventListener("scroll", function(){
+window.addEventListener("scroll", function() {
 	
 	if (mobileBreakpoint == true) {
 		moveIllustration()

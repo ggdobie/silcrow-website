@@ -16,6 +16,8 @@ const toggleColophon = function() {
 	// }, 300)
 }
 
-toggleSwitch.addEventListener('click', () => {
+toggleSwitch.addEventListener("click", function() {
+	
   toggleColophon()
+  
 })
