@@ -32,6 +32,40 @@ section h3 {
   margin-top: 2em;
 }
 
+.layers figure {
+  position: relative;
+  max-width: 480px;
+}
+
+.layers figure img {
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(130%);
+  box-shadow: -6px 6px var(--ink-100);
+  /* max-width: 480px; */
+  /* transform-origin: center; */
+}
+
+.layers figure.top {
+  z-index: 1;
+}
+
+.layers figure.bottom {
+  margin-top: -15%;
+  z-index: 0;
+}
+
+.layers figure.top figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layers figure.bottom figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
 .diagram {
   position: relative;
   height: 1080px;
@@ -163,6 +197,10 @@ section h3 {
 }
 
 @media (min-width: 640px) {
+  
+  .layers figure {
+    max-width: none;
+  }
   
   .diagram {
     padding-top: 250px;

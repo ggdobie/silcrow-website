@@ -206,7 +206,7 @@ abbr[title] {
   font-feature-settings: "c2sc", "smcp";
 }
 
-.cap-heading, figcaption {
+.cap-heading, .quote figcaption, .testimonial figcaption {
   font-family: Lyon Text;
   font-size: 13px;
   letter-spacing: 0.1em;
@@ -216,6 +216,11 @@ abbr[title] {
   font-family: Lyon Text;
   font-style: italic;
   font-size: 14px;
+  font-variant-numeric: oldstyle-nums; 
+}
+
+.caption span {
+  color: var(--silcrow);
 }
 
 .large-text {
@@ -246,7 +251,7 @@ abbr[title] {
   background-color: var(--paper);
 }
 
-figure figcaption span {
+.quote figcaption span, .testimonial figcaption span {
   display: block;
 }
 
