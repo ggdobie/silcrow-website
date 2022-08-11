@@ -168,7 +168,7 @@ section h3 {
   }
   
   .diagram .illustration img {
-    transform: scale(200%) translateX(25%);
+    transform: scale(100%);
   }
   
 }
