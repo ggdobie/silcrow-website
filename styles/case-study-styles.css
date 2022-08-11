@@ -59,6 +59,7 @@ section h3 {
 .diagram .illustration img {
   transform: scale(200%);
   transform-origin: center left;
+  max-width: 400px;
 }
 
 .diagram .info-card {
@@ -163,12 +164,24 @@ section h3 {
 
 @media (min-width: 640px) {
   
+  .diagram {
+    padding-top: 250px;
+    padding-bottom: 140px;
+  }
+  
+  .diagram .info {
+    padding-top: 80px; 
+    padding-bottom: 80px;
+  }
+  
   .diagram .info-card {
-    padding: 50px;
+    padding: 30px;
   }
   
   .diagram .illustration img {
-    transform: scale(100%);
+    max-width: none;
+    transform: scale(95%);
+    transform-origin: center;
   }
   
 }
@@ -200,6 +213,8 @@ section h3 {
   .diagram {
     padding-top: 0;
     padding-bottom: 0;
+    height: 150vh;
+    max-height: 900px;
   }
   
   .diagram .illustration img {
@@ -217,7 +232,42 @@ section h3 {
   
 }
 
+@media (min-width: 1194px) {
+  
+  .diagram {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 200vh;
+    max-height: 1200px;
+  }
+  
+  .diagram .illustration img {
+    transform: scale(100%);
+  }
+  
+  .diagram .info-card {
+    padding: 50px;
+  }
+  
+  .diagram .info {
+    padding-top: 140px; 
+    padding-bottom: 140px;
+  }
+  
+}
+
 @media (min-width: 1920px) {
+  
+  .diagram {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-height: 1500px;
+  }
+   
+  .diagram .info {
+    padding-top: 200px;
+    padding-bottom: 390px;
+  }
   
   section h3 {
     margin-top: 6em;

@@ -8,8 +8,8 @@ section * {
 
 .diagram {
   align-content: start;
-  padding-left: 11px;
-  padding-right: 11px;
+  padding-first: 11px;
+  padding-second: 11px;
 }
 
 .diagram .info {
@@ -27,8 +27,25 @@ section * {
     grid-column: 2 / -2;
   }
   
-  .diagram .illustration {
+  .diagram .illustration, .diagram .info {
     grid-column: 1 / -1;
+  }
+  
+  .diagram .info {
+    grid-template-columns: repeat(var(--master-column-count), 1fr);
+    grid-column-gap: var(--gutter);
+  }
+  
+}
+
+@media (min-width: 800px) {
+  
+  .diagram .info-card.first {
+    grid-column: 3 / -2;
+  }
+  
+  .diagram .info-card.second {
+    grid-column: 2 / -3;
   }
   
 }
@@ -40,20 +57,21 @@ section * {
   }
   
   .diagram .info {
-    grid-template-columns: repeat(10, 1fr);
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(var(--master-column-count), 1fr);
     grid-gap: var(--gutter);
   }
   
-  .diagram .info, .diagram .illustration {
+  .diagram .illustration {
     grid-column: 2 / -2;
   }
   
-  .diagram .info-card.left {
-    grid-column: 2 / 7;
+  .diagram .info-card.first {
+    grid-column: 7 / -2;
   }
   
-  .diagram .info-card.right {
-    grid-column: -2 / -7;
+  .diagram .info-card.second {
+    grid-column: 3 / -6;
   }
   
   .testimonial * {
@@ -70,6 +88,18 @@ section * {
   
 }
 
+@media (min-width: 1194px) {
+  
+  .diagram .info-card.first {
+    grid-column: 8 / -3;
+  }
+  
+  .diagram .info-card.second {
+    grid-column: 5 / -6;
+  }
+  
+}
+
 @media (min-width: 1920px) {
   
   section * {
@@ -80,8 +110,16 @@ section * {
     grid-column: 7 / -5;    
   }
   
-  .info-card {
-    grid-column: 7 / span 6;
+  .diagram .illustration {
+    grid-column: 5 / -2;
+  }
+  
+  .diagram .info-card.first {
+    grid-column: -2 / -8;
+  }
+  
+  .diagram .info-card.second {
+    grid-column: 7 / 13;
   }
   
   .testimonial * {
