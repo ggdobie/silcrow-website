@@ -86,7 +86,7 @@ section h3 {
   position: sticky;
   width: 100%;
   top: 25%;
-  z-index: 1;
+  z-index: -1;
   transition: 0.2s ease-out;
 }
 
@@ -257,8 +257,6 @@ section h3 {
     padding-bottom: 0;
     margin-top: -5vw;
     margin-bottom: -5vw;
-    background-color: transparent;
-    z-index: 100;
   }
   
   .layers figure.top figcaption, .layers figure.bottom figcaption {
@@ -301,11 +299,33 @@ section h3 {
 
 @media (min-width: 1194px) {
   
+  .layers.paper {
+    margin-top: -7vw;
+    margin-bottom: -5vw;
+    background-color: transparent;
+    z-index: 100;
+  }
+  
+  .layers figure img {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(110%);
+    box-shadow: -6px 6px var(--ink-100);
+  }
+  
+  .layers figure.bottom {
+    margin-top: -28%;
+  }
+  
+  .layers figure.top figcaption, .layers figure.bottom figcaption {
+    margin: 0;
+    top: 33%;
+    left: 0;
+    text-align: left;
+  }
+  
   .diagram {
-    padding-top: 80px;
     padding-bottom: 80px;
-    height: 200vh;
-    max-height: 1200px;
+    height: 250vh;
+    max-height: 1500px;
   }
   
   .diagram .illustration img {
@@ -317,13 +337,24 @@ section h3 {
   }
   
   .diagram .info {
-    padding-top: 140px; 
     padding-bottom: 140px;
   }
   
 }
 
 @media (min-width: 1920px) {
+  
+  .layers figure img {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
+    box-shadow: -6px 6px var(--ink-100);
+  }
+  
+  .layers figure.top figcaption, .layers figure.bottom figcaption {
+    margin: 0;
+    top: 40%;
+    right: -20%;
+    text-align: right;
+  }
   
   .diagram {
     padding-top: 200px;

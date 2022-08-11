@@ -90,6 +90,10 @@ section * {
 
 @media (min-width: 1194px) {
   
+  .layers figure {
+    grid-column: 5 / -3;
+  }
+  
   .diagram .info-card.first {
     grid-column: 8 / -3;
   }
@@ -101,6 +105,10 @@ section * {
 }
 
 @media (min-width: 1920px) {
+  
+  .layers figure {
+    grid-column: 6 / -5;
+  }
   
   section * {
     grid-column: 7 / -3;
