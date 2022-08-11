@@ -226,6 +226,14 @@ section h3 {
 
 @media (min-width: 800px) {
   
+  .layers figure.top figcaption {
+    margin-top: 40px;
+  }
+  
+  .layers figure.bottom figcaption {
+    margin-bottom: 40px;
+  }
+  
   .diagram {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -244,19 +252,40 @@ section h3 {
 
 @media (min-width: 900px) {
   
+  .layers.paper {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -5vw;
+    margin-bottom: -5vw;
+    background-color: transparent;
+    z-index: 100;
+  }
+  
+  .layers figure.top figcaption, .layers figure.bottom figcaption {
+    margin: 0;
+    top: 42%;
+    left: -27%;
+    text-align: left;
+  }
+  
   section {
     min-height: 100vh;
   }
   
   .diagram {
-    padding-top: 0;
-    padding-bottom: 0;
+    z-index: -1;
+    padding-top: 20vw;
+    padding-bottom: 80px;
     height: 150vh;
     max-height: 900px;
   }
   
+  .diagram .info {
+    padding-top: 20vw;
+  }
+  
   .diagram .illustration img {
-    transform: scale(110%) translateX(0);
+    transform: scale(100%) translateX(0);
   }
   
   .summary h2 {
