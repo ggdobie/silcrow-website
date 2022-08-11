@@ -27,7 +27,7 @@ section * {
     grid-column: 2 / -2;
   }
   
-  .diagram .illustration, .diagram .info {
+  .flow .illustration, .diagram .info {
     grid-column: 1 / -1;
   }
   
@@ -62,8 +62,12 @@ section * {
     grid-gap: var(--gutter);
   }
   
-  .diagram .illustration {
+  .flow .illustration {
     grid-column: 2 / -2;
+  }
+  
+  .layers .info {
+    align-content: center;
   }
   
   .diagram .info-card.first {
@@ -90,7 +94,7 @@ section * {
 
 @media (min-width: 1194px) {
   
-  .layers figure {
+  .comparison figure {
     grid-column: 5 / -3;
   }
   
@@ -106,7 +110,7 @@ section * {
 
 @media (min-width: 1920px) {
   
-  .layers figure {
+  .comparison figure {
     grid-column: 6 / -5;
   }
   
@@ -118,8 +122,16 @@ section * {
     grid-column: 7 / -5;    
   }
   
-  .diagram .illustration {
+  .flow .illustration {
     grid-column: 5 / -2;
+  }
+  
+  .layers .illustration {
+    grid-column: 7 / -7;
+  }
+  
+  .iteration .illustration {
+    grid-column: 7 / -2;
   }
   
   .diagram .info-card.first {

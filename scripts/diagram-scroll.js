@@ -1,5 +1,5 @@
 const sectionTag = document.querySelector(".diagram") 
-const illustrationTag = document.querySelector(".diagram .illustration")
+const illustrationTag = document.querySelector(".flow .illustration")
 let mobileBreakpoint = true
 
 const moveIllustration = function() {
