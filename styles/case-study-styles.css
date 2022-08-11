@@ -333,8 +333,8 @@ section h3 {
   
   .comparison figure.top figcaption, .comparison figure.bottom figcaption {
     margin: 0;
-    top: 33%;
-    left: 0;
+    top: 40%;
+    left: -10%;
     text-align: left;
   }
   
@@ -349,7 +349,7 @@ section h3 {
   }
   
   .diagram .info-card {
-    padding: 50px;
+    padding: 40px;
   }
   
   .diagram .info {
@@ -381,6 +381,10 @@ section h3 {
   .diagram .info {
     padding-top: 200px;
     padding-bottom: 390px;
+  }
+  
+  .diagram .info-card {
+    padding: 50px;
   }
    
   .iteration .info {
