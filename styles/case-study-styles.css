@@ -39,6 +39,7 @@ section h3 {
 .comparison figure {
   position: relative;
   max-width: 480px;
+  -webkit-transform: translateZ(1px);
 }
 
 .comparison figure img {
