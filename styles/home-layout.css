@@ -181,6 +181,10 @@ footer .carbon {
     grid-column: 2 / -2;
   }
   
+  .responsible .signature {
+    grid-column-start: 2;
+  }
+  
   figure .quotemark {
     margin-bottom: 120px;
   }
