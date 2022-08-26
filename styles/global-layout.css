@@ -9,7 +9,6 @@
   display:grid;
   grid-template-columns: repeat(var(--master-column-count), 1fr);
   grid-column-gap: var(--gutter);
-  grid-row-gap: 0;
   
   padding-left: 35px;
   padding-right: 35px;

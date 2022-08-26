@@ -123,6 +123,11 @@ footer .colophon {
   order: 3;
 }
 
+footer .colophon .details{
+  display: grid;
+  grid-row-gap: 6px;
+}
+
 footer .contact {
   grid-column: -1 / -3;
   text-align: right;
