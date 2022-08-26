@@ -2,7 +2,7 @@ section {
   align-content: center;
 }
 
-section *, footer * {
+section *, .gallery *, footer * {
   grid-column: 1 / -1;
 }
 
@@ -29,6 +29,11 @@ section *, footer * {
   order: 1;
 }
 
+.gallery .image-container {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
 footer nav {
   display: flex;
   align-items: center;
@@ -40,7 +45,7 @@ footer .details * {
 
 @media (min-width: 640px) {
   
-  section *, footer * {
+  section *, .gallery *, footer * {
     grid-column: 2 / -2;
   }
   
@@ -51,6 +56,10 @@ footer .details * {
   .diagram .info {
     grid-template-columns: repeat(var(--master-column-count), 1fr);
     grid-column-gap: var(--gutter);
+  }
+  
+  .gallery .image-container {
+    grid-row-gap: 40px;
   }
   
   footer .details {
@@ -85,7 +94,7 @@ footer .details * {
 
 @media (min-width: 900px) {
   
-  section * {
+  section *, .gallery * {
     grid-column: 5 / -3;
   }
   
@@ -158,6 +167,45 @@ footer .details * {
   
   .gallery-cta .cta-icon-container {
     grid-column: 2 / 4;
+  }
+  
+  .gallery .image-container {
+    grid-column: 3 / -2;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: var(--gutter);
+    grid-row-gap: 50px;
+  }
+  
+  .gallery .image-container .gallery-image {
+    object-fit: cover;   
+    height: 33vw;
+    width:100%
+  }
+  
+  .gallery .image-container .gi-01 {
+    grid-column: 1 / -1;
+  }
+  
+  .gallery .image-container .gi-02 {
+    grid-column: 2 / 8;
+    height:25vw;
+  }
+  
+  .gallery .image-container .gi-03 {
+    grid-column: 8 / -2;
+    height:25vw;
+  }
+  
+  .gallery .image-container .gi-04 {
+    grid-column: 2 / -2;
+  }
+  
+  .gallery .image-container .gi-05 {
+    grid-column: 1 / 10;
+  }
+  
+  .gallery .image-container .gi-06 {
+    grid-column: 10 / -1;
   }
   
 }

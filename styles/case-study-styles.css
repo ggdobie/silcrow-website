@@ -249,6 +249,23 @@ section h3 {
   margin-left: 0.4em;
 }
 
+.gallery {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.gallery .image-container img {
+  border-radius: 20px;
+}
+
+.gallery.hidden {
+  overflow: hidden;
+  height: 0px;
+  opacity: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 footer {
   padding: 52px 0;
 }
