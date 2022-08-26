@@ -194,4 +194,8 @@ section * {
     grid-column: 3 / 5;
   }
   
+  .gallery-cta .cta-text-container {
+    grid-column: 7 / 14;
+  }
+  
 }
