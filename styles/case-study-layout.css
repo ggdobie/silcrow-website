@@ -29,6 +29,46 @@ section * {
   order: 1;
 }
 
+footer {
+  align-items: center;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+footer .backlink {
+  /* float: left; */
+}
+
+footer .contact::before {
+  content:"";
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid var(--ink-100);
+  grid-column: 1 / -1;
+  display: block;
+  padding-bottom: 20px;
+}
+/* 
+footer .backlink.home {
+  grid-column: 1 / 2;
+}
+
+footer .backlink.work {
+  grid-column: 2 / 3;
+}
+
+footer .backlink.about {
+  grid-column: 3 / 4;
+} */
+
+footer .contact {
+  grid-column: 1 / -1;
+}
+
+footer .copyright {
+  grid-column: 1 / -1;
+}
+
 @media (min-width: 640px) {
   
   section * {

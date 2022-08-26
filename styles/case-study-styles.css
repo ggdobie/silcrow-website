@@ -249,6 +249,40 @@ section h3 {
   margin-left: 0.4em;
 }
 
+footer .caret {
+  content: "";
+  background-color: var(--silcrow);
+  -webkit-mask-image: url("../images/icon-caret.svg");
+  mask-image: var(--caret-svg);
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  width: 9px;
+  height: 5px;
+  margin-left: 6px;
+  margin-bottom: 1px;
+  transition: 0.3s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+footer .contact {
+  margin-top: 40px;
+}
+
+footer .copyright {
+  margin-top: 10px;
+}
+
+/* footer .backlink {
+  position: relative;
+}
+
+footer .backlink h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
 @media (min-width: 640px) {
   
   .comparison figure {
