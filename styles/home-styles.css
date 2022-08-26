@@ -393,11 +393,6 @@ footer .details {
   padding-bottom: 30px;
 }
 
-footer .colophon .details{
-  display: grid;
-  grid-row-gap: 6px;
-}
-
 footer .carbon {
   border-top: 1px solid var(--ink-100);
   padding-top: 28px;
