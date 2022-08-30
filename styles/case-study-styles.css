@@ -2,6 +2,60 @@ body {
   background-color: var(--paper);
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 34px;
+}
+
+/* header nav {
+  display: grid;
+} */
+
+header nav .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header nav .backlink.home img {
+  width: 18px;
+}
+
+header nav .backlink.home {
+  padding: 3px;
+  width: max-content;
+  mix-blend-mode: exclusion;
+}
+
+header nav .caret {
+  content: "";
+  background-color: #6F49B0;
+  -webkit-mask-image: url("../images/icon-caret.svg");
+  mask-image: var(--caret-svg);
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  width: 13px;
+  height: 7px;
+  transform: rotate(-90deg);
+  transition: 0.15s;
+}
+
+header nav .case-study-logo {
+  margin-bottom: -8px;
+  height: 30px;
+  transition: 0.15s;
+}
+
+.retracted {
+  transform: translateX(-30%);
+  opacity: 0;
+}
+
 main {
   contain: paint;
   transition: 0.3s;
@@ -11,6 +65,18 @@ section {
   min-height: 80vh;
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+section.banner {
+  background-color: #140e24;
+  color: #26173f;
+  height: 100vh;
+  text-align: center;
+}
+section.banner h1 {
+  text-shadow: -0.5px 0.5px 0 #AA6BE4, 0.5px 0.5px 0 #AA6BE4, 0.5px -0.5px 0 #AA6BE4, -0.5px -0.5px 0 #AA6BE4;
+  font-size: 5.4rem;
+  line-height: 0.85;
 }
 
 section.tan {
@@ -510,6 +576,10 @@ footer .details .contact {
 }
 
 @media (min-width: 1920px) {
+  
+  header nav .backlink.home {
+    grid-column: 3 / span 1;
+  }
   
   .comparison figure img {
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
