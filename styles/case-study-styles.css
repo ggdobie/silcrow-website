@@ -217,6 +217,7 @@ section h3 {
 .cta {
   min-height: unset;
   align-items: center;
+  cursor: pointer;
 }
 
 .cta .cta-icon-container {
