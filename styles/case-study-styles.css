@@ -262,6 +262,11 @@ section h3 {
 
 .gallery .image-container img {
   border-radius: 20px;
+  box-shadow:
+    0px 5.3px 6.8px rgba(9, 24, 51, 0.024),
+    0px 17.6px 22.1px rgba(9, 24, 51, 0.036),
+    0px 79px 118px rgba(9, 24, 51, 0.06)
+  ;
 }
 
 .hidden {
