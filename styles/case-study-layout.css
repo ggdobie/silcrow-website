@@ -2,7 +2,7 @@ section {
   align-content: center;
 }
 
-section *, .gallery *, footer * {
+section *, .gallery .image-container *, footer * {
   grid-column: 1 / -1;
 }
 
@@ -21,18 +21,15 @@ section *, .gallery *, footer * {
   margin-bottom: 1em;
 }
 
-.gallery-cta .cta-icon-container {
+.cta .cta-icon-container {
   order: 2;
 }
 
-.gallery-cta .cta-text-container {
+.cta .cta-text-container {
   order: 1;
 }
 
 .gallery .image-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: var(--gutter);
   grid-row-gap: 20px;
 }
 
@@ -70,6 +67,10 @@ section *, .gallery *, footer * {
   grid-column: 3 / span 2;
 }
 
+.gallery .cta-container {
+  grid-column: 1 / -1;
+}
+
 footer nav {
   display: flex;
   align-items: center;
@@ -83,10 +84,6 @@ footer .details * {
   
   section *, footer * {
     grid-column: 2 / -2;
-  }
-  
-  .gallery * {
-    grid-column: 2 / -1;
   }
   
   .flow .illustration, .diagram .info {
@@ -107,6 +104,15 @@ footer .details * {
   .gallery .image-container .gi-04, 
   .gallery .image-container .gi-05 {
     height: 320px;
+    grid-column: 2 / -2;
+  }
+  
+  .gallery .image-container .gi-03 {
+    grid-column: 2 / span 2;
+  }
+  
+  .gallery .image-container .gi-06 {
+    grid-column: 4 / span 2;
   }
   
   .gallery .image-container .gi-03,
@@ -132,18 +138,14 @@ footer .details * {
     grid-column: 2 / -3;
   }
   
-  .gallery-cta .cta-icon-container {
+  .cta .cta-icon-container {
     order: 1;
     grid-column: 2 / 4;
   }
   
-  .gallery-cta .cta-text-container {
+  .cta .cta-text-container {
     order: 2;
     grid-column: 4 / 7;
-  }
-  
-  .gallery * {
-    grid-column: 2 / -2;
   }
   
   .gallery .image-container .gi-03,
@@ -155,7 +157,7 @@ footer .details * {
 
 @media (min-width: 900px) {
   
-  section *, .gallery * {
+  section * {
     grid-column: 5 / -2;
   }
   
@@ -193,12 +195,11 @@ footer .details * {
     grid-column: 5 / 12;
   }
   
-  .gallery-cta .cta-icon-container {
-
+  .cta .cta-icon-container {
     grid-column: 2 / 5;
   }
   
-  .gallery-cta .cta-text-container {
+  .cta .cta-text-container {
     grid-column: 5 / 12;
   }
   
@@ -207,6 +208,15 @@ footer .details * {
   .gallery .image-container .gi-04, 
   .gallery .image-container .gi-05 {
     height: 380px;
+    grid-column: 5 / -2;
+  }
+  
+  .gallery .image-container .gi-03 {
+    grid-column: 5 / span 3;
+  }
+  
+  .gallery .image-container .gi-06 {
+    grid-column: 8 / span 4;
   }
   
   footer nav {
@@ -233,14 +243,11 @@ footer .details * {
     grid-column: 5 / -6;
   }
   
-  .gallery-cta .cta-icon-container {
+  .cta .cta-icon-container {
     grid-column: 2 / 4;
   }
   
   .gallery .image-container {
-    grid-column: 3 / -2;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: var(--gutter);
     grid-row-gap: 50px;
   }
   
@@ -258,29 +265,29 @@ footer .details * {
   .gallery .image-container .gi-06 { order: 6; }
   
   .gallery .image-container .gi-01 {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
   }
   
   .gallery .image-container .gi-02 {
-    grid-column: 2 / 8;
+    grid-column: 3 / 10;
     height:25vw;
   }
   
   .gallery .image-container .gi-03 {
-    grid-column: 8 / -2;
+    grid-column: 10 / -3;
     height:25vw;
   }
   
   .gallery .image-container .gi-04 {
-    grid-column: 2 / -2;
+    grid-column: 3 / -3;
   }
   
   .gallery .image-container .gi-05 {
-    grid-column: 1 / 10;
+    grid-column: 2 / 12;
   }
   
   .gallery .image-container .gi-06 {
-    grid-column: 10 / -1;
+    grid-column: 12 / -2;
   }
   
 }
@@ -335,12 +342,38 @@ footer .details * {
     grid-column: 7 / 14;
   }
   
-  .gallery-cta .cta-icon-container {
+  .cta .cta-icon-container {
     grid-column: 3 / 5;
   }
   
-  .gallery-cta .cta-text-container {
+  .cta .cta-text-container {
     grid-column: 7 / 14;
+  }
+  
+  .gallery .image-container .gi-01 {
+    grid-column: 3 / -3;
+  }
+  
+  .gallery .image-container .gi-02 {
+    grid-column: 4 / 13;
+    height:25vw;
+  }
+  
+  .gallery .image-container .gi-03 {
+    grid-column: 13 / -4;
+    height:25vw;
+  }
+  
+  .gallery .image-container .gi-04 {
+    grid-column: 3 / -3;
+  }
+  
+  .gallery .image-container .gi-05 {
+    grid-column: 2 / 16;
+  }
+  
+  .gallery .image-container .gi-06 {
+    grid-column: 16 / -2;
   }
   
   footer nav {

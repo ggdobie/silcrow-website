@@ -16,7 +16,7 @@
 		<link rel="icon" href="../images/favicon.ico" />
 	</head>
 	<body>
-		<main>
+		<main class="hidden">
 			<section class="grid-primary">
 				<h1 class="hero-text">Working apart, together</h1>
 			</section>
@@ -95,7 +95,7 @@
 				</div>
 			</section>
 			<a href="#">
-				<section class="gallery-cta grid-primary">
+				<section class="cta show-gallery grid-primary">
 					<div class="cta-icon-container">
 						<div class="gallery-icon"></div>
 					</div>
@@ -106,8 +106,8 @@
 				</section>
 			</a>
 		</main>
-		<div class="gallery grid-primary">
-			<div class="image-container">
+		<div class="gallery">
+			<div class="image-container grid-primary">
 				<img src="../images/gallery-image-01.png" class="gallery-image gi-01"/>
 				<img src="../images/gallery-image-02.png" class="gallery-image gi-02"/>
 				<img src="../images/gallery-image-03.png" class="gallery-image gi-03"/>
@@ -115,6 +115,16 @@
 				<img src="../images/gallery-image-05.png" class="gallery-image gi-05"/>
 				<img src="../images/gallery-image-06.png" class="gallery-image gi-06"/>
 			</div>
+			<a href="#" class="cta-container">
+				<section class="cta show-main grid-primary">
+					<div class="cta-icon-container">
+						<div class="gallery-icon"></div>
+					</div>
+					<div class="cta-text-container">
+						<h3>Back to the analysis</h3>
+					</div>
+				</section>
+			</a>
 		</div>
 		<footer class="grid-primary">
 			<nav>
@@ -132,6 +142,7 @@
 
 <script src="../scripts/utils.js"></script>	
 <script src="../scripts/diagram-scroll.js"></script>
+<script src="../scripts/case-study-interaction.js"></script>
 
 
 

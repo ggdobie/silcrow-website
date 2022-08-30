@@ -4,6 +4,7 @@ body {
 
 main {
   contain: paint;
+  transition: 0.3s;
 }
 
 section {
@@ -20,7 +21,7 @@ section.paper {
   background-color: var(--paper);
 }
 
-section.gallery-cta {
+section.cta {
   background-color: var(--double-dagger-100);
 }
 
@@ -213,30 +214,30 @@ section h3 {
   font-style: italic;
 }
 
-.gallery-cta {
+.cta {
   min-height: unset;
   align-items: center;
 }
 
-.gallery-cta .cta-icon-container {
+.cta .cta-icon-container {
   height: 70px;
   margin-top: 2rem;
 }
 
-.gallery-cta .cta-icon-container {
+.cta .cta-icon-container {
   background-image: url("../images/icon-gallery.svg");
   width: 166px;
   height: 70px;
   background-repeat: no-repeat;
 }
 
-.gallery-cta h3 {
+.cta h3 {
   margin-top: 6px;
   margin-bottom: 0;
   line-height: 1;
 }
 
-.gallery-cta h3::after {
+.cta h3::after {
   content: "";
   background-color: var(--double-dagger);
   -webkit-mask-image: url("../images/icon-arrow-right.svg");
@@ -250,6 +251,10 @@ section h3 {
 }
 
 .gallery {
+  transition: 0.3s;
+}
+
+.gallery .image-container {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -258,7 +263,7 @@ section h3 {
   border-radius: 20px;
 }
 
-.gallery.hidden {
+.hidden {
   overflow: hidden;
   height: 0px;
   opacity: 0;
@@ -380,7 +385,7 @@ footer .details .contact {
     margin-bottom: 2em;
   }
   
-  .gallery-cta .cta-icon-container {
+  .cta .cta-icon-container {
     margin: 0;
   }
   
@@ -432,7 +437,7 @@ footer .details .contact {
   }
   
     
-  .gallery-cta h3::after {
+  .cta h3::after {
     width: 40px;
     height: 24px;
     margin-bottom: -0.1em;
