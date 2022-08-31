@@ -1,7 +1,7 @@
 const galleryCta = document.querySelector(".show-gallery")
 const mainCta = document.querySelector(".show-main")
 const scrollBadge = document.querySelector(".scrollBadge")
-const firstSection = document.querySelector(".intro")
+const firstSection = document.querySelector(".scrollTarget")
 
 const gallerySection = document.querySelector(".gallery")
 const mainSection = document.querySelector("main")
