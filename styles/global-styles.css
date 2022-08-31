@@ -102,6 +102,7 @@ a::selection,
 img::selection {
   background: var(--silcrow-900);
   color: var(--paper);
+  text-shadow: none;
 }
 
 .reversed p::selection,

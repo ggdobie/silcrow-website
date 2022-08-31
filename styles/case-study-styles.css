@@ -1,3 +1,11 @@
+:root {
+  --hero-text-color-dark: #140e24;
+  --hero-text-color-light: #140e24d3;
+  --hero-stroke-color: #AA6BE4;
+  --banner-bg-initial-width: 3424px;
+  --banner-bg-initial-height: 2408px;
+}
+
 body {
   background-color: var(--paper);
 }
@@ -65,14 +73,51 @@ section {
 
 section.banner {
   background-color: #140e24;
-  color: #26173f;
+  color: var(--hero-text-color-light);
   height: 100vh;
-  text-align: center;
+  contain: paint;
 }
+
+section.banner h1 span {
+  display: block;
+  line-height: 0.65;
+  z-index: 0;
+}
+
 section.banner h1 {
-  text-shadow: -0.5px 0.5px 0 #AA6BE4, 0.5px 0.5px 0 #AA6BE4, 0.5px -0.5px 0 #AA6BE4, -0.5px -0.5px 0 #AA6BE4;
-  font-size: 5.4rem;
-  line-height: 0.85;
+  text-shadow: -0.5px 0.5px 0 var(--hero-stroke-color), 0.5px 0.5px 0 var(--hero-stroke-color), 0.5px -0.5px 0 var(--hero-stroke-color), -0.5px -0.5px 0 var(--hero-stroke-color);
+  font-size: 23vw;
+}
+
+section.banner h1 span:nth-child(1) {
+  z-index: 3;
+}
+
+section.banner h1 span:nth-child(2) {
+  color: var(--hero-text-color-dark);
+  margin-left: 0.85em;
+  z-index: 2;
+}
+
+section.banner h1 span:nth-child(3) {
+  margin-left: 0.35em;
+  margin-top: 0.15em;
+  position: relative;
+  z-index: -1;
+}
+
+section.banner h1 span:nth-child(3)::before {
+  content: "";
+  background-image: url("../images/banner-bg-jointly.svg");
+  background-size: cover;
+  width: 457vmin;
+  height: 321vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.2%, -50%);
+  transform-origin: center;
+  z-index: -1;
 }
 
 section.tan {
