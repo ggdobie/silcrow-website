@@ -104,6 +104,7 @@ section h3 {
   display: block;
   line-height: 0.65;
   z-index: 0;
+  /* transition: margin 0.2s, transform 0.2s; */
 }
 
 .banner h1 {
@@ -472,6 +473,12 @@ footer .details .contact {
     width: max-content;
   }
   
+  .banner .scrollBadge {
+    right: 0;
+    left: revert;
+    transform: translate(calc(100% - 0.03em), 60%);
+  }
+  
   .comparison figure {
     max-width: none;
   }
@@ -549,14 +556,11 @@ footer .details .contact {
   :root {
     --banner-bg-scale-factor: 385vmin;
   }
-  
-  .banner h1 span:nth-child(3) {
-    margin-left: 1.48em;
-    margin-top: 0.09em;
-  }
-  
-  .banner h1 span:nth-child(3)::before {
-    transform: translate(calc(-50% + 0.5em), calc(-50% - 0.05em)) rotate(5deg);
+   
+  .banner .scrollBadge {
+    right: revert;
+    left: 0;
+    transform: translate(calc(-100% - 0.1em), 50%);
   }
   
   .comparison.paper {
@@ -626,6 +630,29 @@ footer .details .contact {
 
 @media (min-width: 1194px) {
   
+  .banner h1 {
+    font-size: 17.5vw;
+  }
+  
+  .banner h1 span {
+    line-height: 0.57;    
+  }
+  
+  .banner h1 span:nth-child(3) {
+    margin-left: 1.48em;
+    margin-top: 0.09em;
+  }
+  
+  .banner h1 span:nth-child(3)::before {
+    transform: translate(calc(-50% + 0.5em), calc(-50% - 0.05em)) rotate(5deg);
+  }
+  
+  .banner .scrollBadge {
+    right: 0;
+    left: revert;
+    transform: translate(calc(100% - 0.01em), 50%);
+  }
+  
   .comparison.paper {
     margin-top: -7vw;
     margin-bottom: -5vw;
@@ -675,6 +702,16 @@ footer .details .contact {
     grid-column: 3 / span 1;
   }
   
+  .banner h1 {
+    font-size: 17vw;
+  }
+  
+  .banner .scrollBadge {
+    right: 0;
+    left: revert;
+    transform: translate(calc(100% - 0.05em), 0.09em);
+  }
+  
   .comparison figure img {
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
     box-shadow: -6px 6px var(--ink-100);
@@ -722,9 +759,3 @@ footer .details .contact {
   }
   
 }
-
-/* @keyframes bounce {
-  0% { transform: translateY(-10%); }
-  50% { transform: translateY(10%); }
-  100% { transform: translateY(-10%); }
-} */
