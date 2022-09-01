@@ -94,9 +94,10 @@ section h3 {
 .banner {
   background-color: #140e24;
   color: var(--hero-text-color-light);
-  height: 120vh;
+  height: 110vh;
+  min-height: 760px;
   contain: paint;
-  padding-bottom: 60vh;
+  padding-bottom: 450px;
   position: relative;
 }
 
@@ -164,42 +165,46 @@ section h3 {
 .banner .scrollTarget {
   position: absolute;
   left: 50%;
-  bottom: 20vh;
+  bottom: 270px;
 }
 
 .intro {
   position: relative;
-  padding-top: 200px;
+  padding-top: 180px;
 }
 
 .intro .skills-badge {
   width: calc(108px * var(--skills-badge-scale-factor));
   height: calc(88px * var(--skills-badge-scale-factor));
-  background-color: var(--silcrow);
+  background-color: #8e6bc5;
   mask-repeat: no-repeat;
   background-repeat: no-repeat;
   position: absolute;
+  transition: opacity 0.08s;
+  /* mix-blend-mode: overlay; */
 }
 
 .intro .skills-badge.ux-design {
-  -webkit-mask-image: url("../images/skills-badge-user-experience-design.svg");;
-  mask-image: url("../images/skills-badge-user-experience-design.svg");;
-  top: -6rem;
-  left: 2rem;
+  -webkit-mask-image: url("../images/skills-badge-user-experience-design.svg");
+  mask-image: url("../images/skills-badge-user-experience-design.svg");
+  top: -176px;
+  left: 42px;
 }
 
 .intro .skills-badge.user-flow {
-  -webkit-mask-image: url("../images/skills-badge-user-flow.svg");;
-  mask-image: url("../images/skills-badge-user-flow.svg");;
-  top: -2rem;
-  left: 11rem;
+  -webkit-mask-image: url("../images/skills-badge-user-flow.svg");
+  mask-image: url("../images/skills-badge-user-flow.svg");
+  top: -32px;
+  left: -16px;
+  transition-delay: 0.4s
 }
 
 .intro .skills-badge.design-systems {
-  -webkit-mask-image: url("../images/skills-badge-design-systems.svg");;
-  mask-image: url("../images/skills-badge-design-systems.svg");;
-  top: 3.5rem;
-  left: -1rem;
+  -webkit-mask-image: url("../images/skills-badge-design-systems.svg");
+  mask-image: url("../images/skills-badge-design-systems.svg");
+  top: -72px;
+  left: 176px;
+  transition-delay: 0.3s
 }
 
 .comparison {
@@ -504,6 +509,26 @@ footer .details .contact {
   
   :root {
     --banner-bg-scale-factor: 350vmin;
+    --skills-badge-scale-factor: 1.6;
+  }
+  
+  .banner {
+    min-height: 960px;
+  }
+  
+  .intro .skills-badge.ux-design {
+    top: -176px;
+    left: 42px;
+  }
+  
+  .intro .skills-badge.user-flow {
+    top: -38px;
+    left: -86px;
+  }
+  
+  .intro .skills-badge.design-systems {
+    top: -82px;
+    left: 226px;
   }
   
   .banner h1 {
@@ -603,6 +628,21 @@ footer .details .contact {
     left: 0;
     transform: translate(calc(-100% - 0.1em), 50%);
   }
+    
+  .intro .skills-badge.ux-design {
+    top: -176px;
+    left: -32px;
+  }
+  
+  .intro .skills-badge.user-flow {
+    top: 38px;
+    left: -206px;
+  }
+  
+  .intro .skills-badge.design-systems {
+    top: -62px;
+    left: 156px;
+  }
   
   .comparison.paper {
     padding-top: 0;
@@ -694,6 +734,15 @@ footer .details .contact {
     transform: translate(calc(100% - 0.01em), 50%);
   }
   
+  .intro {
+    padding-top: 50px;
+  }
+
+  .intro .skills-badge.user-flow {
+    top: 38px;
+    left: -106px;
+  }
+  
   .comparison.paper {
     margin-top: -7vw;
     margin-bottom: -5vw;
@@ -739,6 +788,10 @@ footer .details .contact {
 
 @media (min-width: 1920px) {
   
+  :root {
+    --skills-badge-scale-factor: 2;
+  }
+  
   header nav .backlink.home {
     grid-column: 3 / span 1;
   }
@@ -751,6 +804,25 @@ footer .details .contact {
     right: 0;
     left: revert;
     transform: translate(calc(100% - 0.05em), 0.09em);
+  }
+  
+  .banner .scrollTarget {
+    bottom: 320px;
+  }
+  
+  .intro .skills-badge.ux-design {
+    top: -266px;
+    left: 42px;
+  }
+  
+  .intro .skills-badge.user-flow {
+    top: -42px;
+    left: -86px;
+  }
+  
+  .intro .skills-badge.design-systems {
+    top: -250px;
+    left: -286px;
   }
   
   .comparison figure img {
