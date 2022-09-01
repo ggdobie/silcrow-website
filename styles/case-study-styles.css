@@ -2,9 +2,8 @@
   --hero-text-color-dark: #140e24;
   --hero-text-color-light: #140e24d3;
   --hero-stroke-color: #AA6BE4;
-  --banner-bg-initial-width: 3424px;
-  --banner-bg-initial-height: 2408px;
   --banner-bg-scale-factor: 450vmin;
+  --skills-badge-scale-factor: 1.4;
 }
 
 body {
@@ -147,7 +146,7 @@ section h3 {
 
 .banner .scrollBadge {
   content: "";
-  background-color: var(--silcrow);
+  background-color: var(--paper);
   -webkit-mask-image: url("../images/icon-arrow-badge.svg");
   mask-image: url("../images/icon-arrow-badge.svg");
   display: inline-block;
@@ -166,6 +165,41 @@ section h3 {
   position: absolute;
   left: 50%;
   bottom: 20vh;
+}
+
+.intro {
+  position: relative;
+  padding-top: 200px;
+}
+
+.intro .skills-badge {
+  width: calc(108px * var(--skills-badge-scale-factor));
+  height: calc(88px * var(--skills-badge-scale-factor));
+  background-color: var(--silcrow);
+  mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.intro .skills-badge.ux-design {
+  -webkit-mask-image: url("../images/skills-badge-user-experience-design.svg");;
+  mask-image: url("../images/skills-badge-user-experience-design.svg");;
+  top: -6rem;
+  left: 2rem;
+}
+
+.intro .skills-badge.user-flow {
+  -webkit-mask-image: url("../images/skills-badge-user-flow.svg");;
+  mask-image: url("../images/skills-badge-user-flow.svg");;
+  top: -2rem;
+  left: 11rem;
+}
+
+.intro .skills-badge.design-systems {
+  -webkit-mask-image: url("../images/skills-badge-design-systems.svg");;
+  mask-image: url("../images/skills-badge-design-systems.svg");;
+  top: 3.5rem;
+  left: -1rem;
 }
 
 .comparison {
