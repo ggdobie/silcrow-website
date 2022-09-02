@@ -1,17 +1,19 @@
 const caret = document.querySelector("header nav .caret")
-const logo = document.querySelector("header nav .case-study-logo")
+const clientLogo = document.querySelector("header nav .case-study-logo")
+const silcrowLogo = document.querySelector("header nav .backlink.home")
 const scrollTarget = document.querySelector(".scrollTarget")
+const bannerSection = document.querySelector(".banner")
 const badges = document.querySelectorAll(".skills-badge")
 
 const scrollEffects = function() {
 
 	if (window.pageYOffset > 0){
 		caret.classList.add("retracted")
-		logo.classList.add("retracted")
+		clientLogo.classList.add("retracted")
 	}
 	else {
 		caret.classList.remove("retracted")
-		logo.classList.remove("retracted")
+		clientLogo.classList.remove("retracted")
 	}
 	
 	if (window.pageYOffset > scrollTarget.offsetTop - 300){
@@ -23,6 +25,13 @@ const scrollEffects = function() {
 		badges.forEach(badge => {
 			badge.classList.add("hidden")
 		})
+	}
+	
+	if (window.pageYOffset > bannerSection.getBoundingClientRect().bottom + window.innerHeight){
+		silcrowLogo.classList.add("retracted")
+	}
+	else {
+		silcrowLogo.classList.remove("retracted")
 	}
 	
 }

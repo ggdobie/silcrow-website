@@ -33,6 +33,7 @@ header nav .backlink.home {
   padding: 3px;
   width: max-content;
   mix-blend-mode: exclusion;
+  transition: 0.15s;
 }
 
 header nav .caret {
