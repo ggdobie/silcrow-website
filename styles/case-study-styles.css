@@ -208,7 +208,7 @@ section h3 {
 }
 
 .comparison {
-  padding-bottom: 45vw;
+  padding-bottom: 55vw;
 }
 
 .comparison figure {
@@ -336,6 +336,28 @@ section h3 {
 }
 
 .layers {
+  padding-top: 0px;
+  height: 300vw;
+  justify-content: space-between;
+}
+
+.layers .architecture img {
+  margin-top: 160px;
+}
+
+.layers .furniture img {
+  margin-top: 80px;
+}
+
+.layers .activity img {
+  margin-top: 0px;
+}
+
+.layers .info {
+  padding-top: 15vh;
+}
+
+.layers {
   z-index: -1;
   padding-bottom: 10vh;
 }
@@ -367,6 +389,10 @@ section h3 {
 .testimonial figure figcaption {
   border-top: 1px solid var(--silcrow-500);
   padding-top: 20px;
+}
+
+.iteration {
+  height: 180vw;
 }
 
 .summary h2 {
@@ -545,6 +571,10 @@ footer .details .contact {
     transform: translate(calc(100% - 0.03em), 60%);
   }
   
+  .comparison {
+    padding-bottom: 15vw;
+  }
+  
   .comparison figure {
     max-width: none;
   }
@@ -567,6 +597,25 @@ footer .details .contact {
     max-width: none;
     transform: scale(95%);
     transform-origin: center;
+  }
+  
+  .layers {
+    height: 250vw;
+    padding-top: 10vw;
+  }
+  
+  .layers .illustration img {
+    transform: scale(125%); 
+  }
+  
+  .iteration {
+    padding-top: 20vw;
+    padding-bottom: 0;
+    height: 110vw;
+  }
+  
+  .iteration .illustration img {
+    transform: scale(120%);
   }
   
   footer {
@@ -604,6 +653,23 @@ footer .details .contact {
   
   .flow .illustration img {
     transform: scale(120%) translateX(0);
+  }
+  
+  .layers {
+    height: 220vw;
+    padding-bottom: 20vw;
+  }
+  
+  .layers .architecture img {
+    margin-top: 240px;
+  }
+  
+  .layers .furniture img {
+    margin-top: 120px;
+  }
+  
+  .iteration {
+    padding-top: 20vw;
   }
   
   section h3 {
@@ -666,16 +732,28 @@ footer .details .contact {
     z-index: -1;
     padding-top: 20vw;
     padding-bottom: 80px;
-    height: 150vh;
-    max-height: 900px;
   }
   
   .diagram .info {
+    padding-top: 10vw;
+  }
+  
+  .flow .info {
     padding-top: 20vw;
   }
   
   .flow .illustration img {
     transform: scale(100%) translateX(0);
+  }
+  
+  .layers {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 180vw;
+  }
+  
+  .layers .illustration img {
+    transform: scale(110%) translateY(-100px);
   }
   
   .summary h2 {
@@ -687,7 +765,16 @@ footer .details .contact {
     padding: 1.35em 0;
   }
   
-    
+  .iteration {
+    padding-bottom: 0;
+    z-index: 10;
+    height: 95vw;
+  }
+  
+  .iteration .info {
+    padding-top: 20vw;
+  }
+  
   .cta h3::after {
     width: 40px;
     height: 24px;
@@ -739,8 +826,8 @@ footer .details .contact {
   }
 
   .intro .skills-badge.user-flow {
-    top: 38px;
-    left: -106px;
+    top: 18px;
+    left: -186px;
   }
   
   .comparison.paper {
@@ -767,9 +854,13 @@ footer .details .contact {
   }
   
   .diagram {
-    padding-bottom: 80px;
-    height: 250vh;
-    max-height: 1500px;
+    /* padding-bottom: 80px;
+    height: 250vh; */
+    /* max-height: 1500px; */
+  }
+  
+  .flow {
+    height: 90vw;
   }
   
   .flow .illustration img {
@@ -782,6 +873,27 @@ footer .details .contact {
   
   .diagram .info {
     padding-bottom: 140px;
+  }
+  
+  .layers {
+    height: 180vw;
+  }
+  
+  .layers .illustration img {
+    transform: scale(100%) translateY(-11vw);
+    transform-origin: bottom;
+  }
+  
+  .iteration {
+    padding-top: 0;
+  }
+  
+  .iteration .info {
+    padding-top: 100px;
+  }
+  
+  .iteration .illustration img {
+    transform: scale(110%) translateY(-6vw);
   }
   
 }
@@ -840,7 +952,7 @@ footer .details .contact {
   .diagram {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-height: 1500px;
+    /* max-height: 1500px; */
   }
    
   .diagram .info {
@@ -851,10 +963,56 @@ footer .details .contact {
   .diagram .info-card {
     padding: 50px;
   }
+  
+  .layers {
+    height: 150vw;
+  }
+  
+  .layers .architecture {
+    order: 2;
+  }
+  .layers .furniture {
+    order: 3;
+  }
+  .layers .activity {
+    order: 4;
+  }
+  
+  .layers .info {
+    order: 1;
+    height: auto;
+    position: sticky;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-70%);
+  }
+  
+  .layers .illustration img {
+    transform: scale(110%) translateY(-4vw);
+  }
+  
+  .iteration {
+    padding-top: 6vw;
+    padding-bottom: 0;
+    height: 60vw;
+  }
    
   .iteration .info {
-    padding-top: 380px;
-    padding-bottom: 390px;
+    padding-top: 300px;
+    /* padding-bottom: 390px; */
+  }
+  
+  .iteration .illustration {
+    top: revert;
+    bottom: -100px;
+  }
+  
+  .iteration .illustration img {
+    transform: scale(100%);
+  }
+  
+  .summary {
+    padding-top: 13rem;
   }
   
   section h3 {
