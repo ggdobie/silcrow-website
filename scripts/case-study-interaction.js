@@ -1,5 +1,6 @@
-const galleryCta = document.querySelector(".show-gallery")
-const mainCta = document.querySelector(".show-main")
+const galleryCtas = document.querySelectorAll(".show-gallery")
+const mainCtas = document.querySelectorAll(".show-main")
+
 const scrollBadge = document.querySelector(".scrollBadge")
 const firstSection = document.querySelector(".scrollTarget")
 
@@ -7,19 +8,35 @@ const gallerySection = document.querySelector(".gallery")
 const mainSection = document.querySelector("main")
 
 
-galleryCta.addEventListener("click", function() {
-	
+const showMain = function () {
+  
+  gallerySection.classList.add("hidden")
+  mainSection.classList.remove("hidden")
+  mainSection.scrollIntoView( {behavior: "smooth"} )
+  
+}
+
+const showGallery = function () {
+  
   gallerySection.classList.remove("hidden")
   mainSection.classList.add("hidden")
   gallerySection.scrollIntoView( {behavior: "smooth"} )
   
+}
+
+galleryCtas.forEach(cta => {
+  
+  cta.addEventListener("click", function() {    
+    showGallery()
+  })
+  
 })
 
-mainCta.addEventListener("click", function() {
-	
-  gallerySection.classList.add("hidden")
-  mainSection.classList.remove("hidden")
-  mainSection.scrollIntoView( {behavior: "smooth"} )
+mainCtas.forEach(cta => {
+  
+  cta.addEventListener("click", function() {    
+    showMain()
+  })
   
 })
 

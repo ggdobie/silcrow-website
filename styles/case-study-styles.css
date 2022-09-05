@@ -92,6 +92,37 @@ section h3 {
   margin-top: 2em;
 }
 
+.mode-switcher {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  z-index: 1000;
+  background-color: var(--paper);
+  border-radius: 8px;
+  margin: 31px 35px 0 0;
+  box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
+}
+
+.mode-switcher .tab {
+  /* cursor: pointer; */
+}  
+  
+.mode-switcher .tab:first-child {
+  padding: 1.5em 0.8em 1.5em 1.5em;
+}
+
+.mode-switcher .tab:last-child {
+  padding: 1.5em 1.5em 1.5em 0.8em;  
+}
+
+.mode-switcher .divider {
+  content:"/";
+  color: var(--silcrow-500);
+  padding: 1.5em 0;
+  cursor: default;
+}
+
 .banner {
   background-color: #140e24;
   color: var(--hero-text-color-light);
