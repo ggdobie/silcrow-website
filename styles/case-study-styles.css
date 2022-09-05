@@ -338,7 +338,7 @@ section h3 {
 
 .layers {
   padding-top: 0px;
-  height: 300vw;
+  height: 320vw;
   justify-content: space-between;
 }
 
@@ -369,6 +369,7 @@ section h3 {
 
 .layers .illustration figcaption {
   position: absolute;
+  transition: 0.3s;
 }
 
 .layers .architecture figcaption {

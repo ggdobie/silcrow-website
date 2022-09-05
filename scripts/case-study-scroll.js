@@ -4,6 +4,8 @@ const silcrowLogo = document.querySelector("header nav .backlink.home")
 const scrollTarget = document.querySelector(".scrollTarget")
 const bannerSection = document.querySelector(".banner")
 const badges = document.querySelectorAll(".skills-badge")
+const layerSection = document.querySelector(".layers")
+const layerCaptions = document.querySelectorAll(".illustration figcaption")
 
 const scrollEffects = function() {
 
@@ -21,17 +23,23 @@ const scrollEffects = function() {
 			badge.classList.remove("hidden")
 		})
 	}
-	else {
-		badges.forEach(badge => {
-			badge.classList.add("hidden")
-		})
-	}
 	
 	if (window.pageYOffset > bannerSection.getBoundingClientRect().bottom + window.innerHeight){
 		silcrowLogo.classList.add("retracted")
 	}
 	else {
 		silcrowLogo.classList.remove("retracted")
+	}
+	
+	if (window.pageYOffset + window.innerHeight > layerSection.offsetTop + layerSection.getBoundingClientRect().height){
+		layerCaptions.forEach(caption => {
+			caption.classList.add("retracted")
+		})
+	}
+	else {
+		layerCaptions.forEach(caption => {
+			caption.classList.remove("retracted")
+		})
 	}
 	
 }
