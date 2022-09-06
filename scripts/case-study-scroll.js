@@ -9,13 +9,27 @@ const badges = document.querySelectorAll(".skills-badge")
 const layerSection = document.querySelector(".layers")
 const layerCaptions = document.querySelectorAll(".illustration figcaption")
 
-let scrollCompare = window.pageYOffset || document.documentElement.scrollTop;
+let scrollCompare = window.pageYOffset || document.documentElement.scrollTop
+let galleryActive = false
 
 const scrollEffects = function() {
 	
-// Hide client logo unless at top of the page
+	let scrollY = window.pageYOffset || document.documentElement.scrollTop
 	
-	if (window.pageYOffset > 0) {
+	if (gallerySection.classList.contains("hidden")) {
+		galleryActive = false
+	}
+	else {
+		galleryActive = true		
+	}
+	
+// Hide caret and client logo unless at top of the page
+	
+	if (galleryActive == true) {
+		caret.classList.add("retracted")
+		clientLogo.classList.add("retracted")
+	}
+	else if (scrollY > 0) {
 		caret.classList.add("retracted")
 		clientLogo.classList.add("retracted")
 	}
@@ -26,25 +40,25 @@ const scrollEffects = function() {
 	
 // Show the skills badges once the bottom of the banner is reached
 	
-	if (window.pageYOffset > scrollTarget.offsetTop - 300) {
+	if (scrollY > scrollTarget.offsetTop - 300) {
 		badges.forEach(badge => {
 			badge.classList.remove("hidden")
 		})
 	}
 	
 // Conditionally show the logo & mode switcher tabs on scroll up
-	
-	let scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+	let bannerRegion = bannerSection.getBoundingClientRect().bottom + window.innerHeight
 	
 	if (scrollY < scrollCompare) {
 		silcrowLogo.classList.remove("retracted")
 		modeSwitcher.classList.remove("retracted")
 	} 
-	else if (window.pageYOffset > bannerSection.getBoundingClientRect().bottom + window.innerHeight) {
+	else if (scrollY > bannerRegion) {
 		silcrowLogo.classList.add("retracted")
 		modeSwitcher.classList.add("retracted")
 	}
-	else if (window.pageYOffset < bannerSection.getBoundingClientRect().bottom + window.innerHeight) {
+	else {
 		silcrowLogo.classList.remove("retracted")
 		modeSwitcher.classList.add("retracted")
 	}
@@ -53,7 +67,7 @@ const scrollEffects = function() {
 	
 // Hide the layer captions once the bottom of the layers section has been reached
 	
-	if (window.pageYOffset + window.innerHeight > layerSection.offsetTop + layerSection.getBoundingClientRect().height) {
+	if (scrollY + window.innerHeight > layerSection.offsetTop + layerSection.getBoundingClientRect().height) {
 		layerCaptions.forEach(caption => {
 			caption.classList.add("retracted")
 		})

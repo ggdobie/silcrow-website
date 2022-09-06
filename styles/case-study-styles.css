@@ -114,8 +114,8 @@ section h3 {
   opacity: 0;
 }
 
-.mode-switcher .tab {
-  /* cursor: pointer; */
+.mode-switcher .tab.selected {
+  color: var(--silcrow);
 }  
   
 .mode-switcher .tab:first-child {
@@ -541,10 +541,14 @@ section h3 {
 
 .hidden {
   overflow: hidden;
-  height: 0px;
+  height: 0;
   opacity: 0;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.banner.hidden {
+  display: none;
 }
 
 /* .gallery.hidden {
