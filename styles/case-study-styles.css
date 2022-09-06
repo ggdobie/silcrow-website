@@ -100,13 +100,15 @@ section h3 {
   bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
   z-index: 1000;
   background-color: var(--paper);
   border-radius: 8px;
-  /* margin: 31px 35px 0 0; */
   box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
   transition: 0.3s;
+  padding: 14px 10px 10px 10px;
+  
+  display: grid;
+  grid-template-columns: auto auto auto; 
 }
 
 .mode-switcher.retracted {
@@ -115,21 +117,46 @@ section h3 {
 }
 
 .mode-switcher .tab.selected {
-  color: var(--silcrow);
-}  
+  color: var(--silcrow-text);
+}
   
-.mode-switcher .tab:first-child {
-  padding: 1.5em 0.8em 1.5em 1.5em;
+.mode-switcher .tab {
+  padding: 10px;
 }
 
-.mode-switcher .tab:last-child {
-  padding: 1.5em 1.5em 1.5em 0.8em;  
+.mode-switcher .tab .active-area {
+  position: relative;
+}
+
+.mode-switcher .tab .active-area .active-indicator,
+.mode-switcher .tab .active-area .progress-indicator {
+  height: 2px;
+}
+
+.mode-switcher .tab .active-area .active-indicator {
+  background-color: var(--silcrow-300);
+  position: absolute;
+  top: -6px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.mode-switcher .tab.selected .active-area .active-indicator {
+  opacity: 1;
+}
+
+.mode-switcher .tab .active-area .active-indicator .progress-indicator {
+  background-color: var(--silcrow);
+  width: 100%;
+  transform: scaleX(50%);
+  transform-origin: top left;
 }
 
 .mode-switcher .divider {
   content:"/";
   color: var(--silcrow-500);
-  padding: 1.5em 0;
+  padding: 10px 0;
   cursor: default;
 }
 
@@ -722,6 +749,37 @@ footer .details .contact {
 
 @media (min-width: 800px) {
   
+  .mode-switcher {
+    bottom: unset;
+    top: 50%;
+    left: 0;
+    transform: rotate(-90deg) translateX(-50%);
+    transform-origin: top left;
+    border-radius: 0 0 8px 8px;
+    padding: 18px 20px 14px 20px;
+  }
+  
+  .mode-switcher.retracted {
+    transform: rotate(-90deg) translate(-50%, -50px);
+    opacity: 0;
+  }
+  
+  .mode-switcher .tab.show-main {
+    order: 3;
+  }
+  
+  .mode-switcher .divider {
+    order: 2;
+  }
+  
+  .mode-switcher .tab.show-gallery {
+    order: 1;
+  }
+  
+  .mode-switcher .tab .active-area .active-indicator .progress-indicator {
+    transform-origin: top right;
+  }
+  
   .comparison figure.top figcaption {
     margin-top: 40px;
   }
@@ -780,13 +838,7 @@ footer .details .contact {
   :root {
     --banner-bg-scale-factor: 385vmin;
   }
-   
-  .banner .scrollBadge {
-    right: revert;
-    left: 0;
-    transform: translate(calc(-100% - 0.1em), 50%);
-  }
-    
+  
   .intro .skills-badge.ux-design {
     top: -176px;
     left: -32px;
@@ -1023,6 +1075,10 @@ footer .details .contact {
   
   header nav .backlink.home {
     grid-column: 3 / span 1;
+  }
+  
+  .mode-switcher {
+    padding: 26px 28px 22px 28px;
   }
   
   .banner h1 {
