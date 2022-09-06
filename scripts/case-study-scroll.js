@@ -2,19 +2,30 @@ const caret = document.querySelector("header nav .caret")
 const clientLogo = document.querySelector("header nav .case-study-logo")
 const silcrowLogo = document.querySelector("header nav .backlink.home")
 const header = document.querySelector("header")
+
 const modeSwitcher = document.querySelector(".mode-switcher")
 const scrollTarget = document.querySelector(".scrollTarget")
+
+const progressIndicators = document.querySelectorAll(".progress-indicator")
+
 const bannerSection = document.querySelector(".banner")
 const badges = document.querySelectorAll(".skills-badge")
+
 const layerSection = document.querySelector(".layers")
 const layerCaptions = document.querySelectorAll(".illustration figcaption")
 
+const body = document.body
+const html = document.documentElement
+
 let scrollCompare = window.pageYOffset || document.documentElement.scrollTop
+
 let galleryActive = false
 
+let viewportHeight = window.innerHeight
+let pageHeight = body.offsetHeight
+let scrollableHeight = pageHeight - viewportHeight
+
 const scrollEffects = function() {
-	
-	let scrollY = window.pageYOffset || document.documentElement.scrollTop
 	
 	if (gallerySection.classList.contains("hidden")) {
 		galleryActive = false
@@ -22,6 +33,21 @@ const scrollEffects = function() {
 	else {
 		galleryActive = true		
 	}
+	
+	let scrollY = window.pageYOffset || document.documentElement.scrollTop
+	
+// Set the progress indicator percentage to the scroll progress
+	
+	viewportHeight = window.innerHeight
+	pageHeight = body.offsetHeight
+	scrollableHeight = pageHeight - viewportHeight
+	
+	const pageProgress = scrollY / scrollableHeight
+	const normalisedProgress = Math.round(pageProgress*1000) / 1000
+	
+	progressIndicators.forEach(progressIndicator => {
+		progressIndicator.style.transform = "scaleX(" + normalisedProgress + ")"
+	})	
 	
 // Hide caret and client logo unless at top of the page
 	
@@ -50,15 +76,17 @@ const scrollEffects = function() {
 
 	let bannerRegion = bannerSection.getBoundingClientRect().bottom + window.innerHeight
 	
+	// Scrolling up
 	if (scrollY <= scrollCompare) {
 		silcrowLogo.classList.remove("retracted")
 		modeSwitcher.classList.remove("retracted")
 	} 
-	else if (scrollY > bannerRegion) {
+	// Scrolling down
+	else if (scrollY > bannerRegion && window.matchMedia("(max-width: 900px)").matches) {
 		silcrowLogo.classList.add("retracted")
 		modeSwitcher.classList.add("retracted")
 	}
-	else {
+	else if (window.matchMedia("(max-width: 900px)").matches) {
 		silcrowLogo.classList.remove("retracted")
 		modeSwitcher.classList.add("retracted")
 	}
@@ -82,6 +110,15 @@ const scrollEffects = function() {
 
 window.addEventListener("scroll", function() {
 	
+  scrollEffects()
+  
+})
+
+window.addEventListener("resize", function() {
+	
+  viewportHeight = window.innerHeight
+  pageHeight = body.offsetHeight  
+  
   scrollEffects()
   
 })
