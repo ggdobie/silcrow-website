@@ -50,7 +50,7 @@ const scrollEffects = function() {
 
 	let bannerRegion = bannerSection.getBoundingClientRect().bottom + window.innerHeight
 	
-	if (scrollY < scrollCompare) {
+	if (scrollY <= scrollCompare) {
 		silcrowLogo.classList.remove("retracted")
 		modeSwitcher.classList.remove("retracted")
 	} 
