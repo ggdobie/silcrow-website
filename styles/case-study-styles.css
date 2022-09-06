@@ -32,8 +32,7 @@ header nav .backlink.home img {
 header nav .backlink.home {
   padding: 3px;
   width: max-content;
-  mix-blend-mode: exclusion;
-  transition: 0.15s;
+  transition: 0.3s;
 }
 
 header nav .caret {
@@ -54,6 +53,10 @@ header nav .case-study-logo {
   margin-bottom: -8px;
   height: 30px;
   transition: 0.15s;
+}
+
+header.ghosted {
+  mix-blend-mode: difference;
 }
 
 .retracted {
@@ -94,14 +97,21 @@ section h3 {
 
 .mode-switcher {
   position: fixed;
-  top: 0;
-  right: 0;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   z-index: 1000;
   background-color: var(--paper);
   border-radius: 8px;
-  margin: 31px 35px 0 0;
+  /* margin: 31px 35px 0 0; */
   box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
+  transition: 0.3s;
+}
+
+.mode-switcher.retracted {
+  transform: translate(-50%, 50px);
+  opacity: 0;
 }
 
 .mode-switcher .tab {
