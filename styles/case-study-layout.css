@@ -100,13 +100,13 @@ footer .details * {
     grid-column: 1 / -1;
   }
   
-  .flow .illustration, .diagram .info {
-    grid-column: 1 / -1;
-  }
-  
   .diagram .info {
     grid-template-columns: repeat(var(--master-column-count), 1fr);
     grid-column-gap: var(--gutter);
+  }
+  
+  .flow .illustration, .diagram .info {
+    grid-column: 1 / -1;
   }
   
   .gallery .image-container {
@@ -195,16 +195,16 @@ footer .details * {
     grid-column-gap: var(--gutter);
   }
   
-  .flow .illustration {
-    grid-column: 2 / -2;
-  }
-  
   .diagram .info-card.first {
     grid-column: 7 / -2;
   }
   
   .diagram .info-card.second {
     grid-column: 3 / -6;
+  }
+  
+  .flow .illustration {
+    grid-column: 2 / -2;
   }
   
   .testimonial * {
@@ -334,16 +334,24 @@ footer .details * {
 
 @media (min-width: 1920px) {
   
-  .comparison figure {
-    grid-column: 6 / -5;
-  }
-  
   section * {
     grid-column: 7 / -3;
   }
   
   section .large-text {
     grid-column: 7 / -5;    
+  }
+  
+  .comparison figure {
+    grid-column: 6 / -5;
+  }
+  
+  .diagram .info-card.first {
+    grid-column: -2 / -8;
+  }
+  
+  .diagram .info-card.second {
+    grid-column: 7 / 13;
   }
   
   .flow .illustration {
@@ -356,14 +364,6 @@ footer .details * {
   
   .iteration .illustration {
     grid-column: 7 / -2;
-  }
-  
-  .diagram .info-card.first {
-    grid-column: -2 / -8;
-  }
-  
-  .diagram .info-card.second {
-    grid-column: 7 / 13;
   }
   
   .testimonial * {

@@ -27,6 +27,7 @@ let scrollableHeight = pageHeight - viewportHeight
 
 const scrollEffects = function() {
 	
+// Set gallery active state
 	if (gallerySection.classList.contains("hidden")) {
 		galleryActive = false
 	}
@@ -89,7 +90,7 @@ const scrollEffects = function() {
 				modeSwitcher.classList.remove("retracted")
 			}
 		}		
-	//scrolling down (narrow)
+	//Scrolling down (narrow)
 		else {
 			if (scrollY < bannerRegion) {
 				silcrowLogo.classList.remove("retracted")
@@ -101,6 +102,7 @@ const scrollEffects = function() {
 			}
 		}		
 	}
+	
 	// Logic for wide breakpoints
 	if (window.matchMedia("(min-width: 900px)").matches) {	
 	// Scrolling up	(wide)
@@ -114,7 +116,7 @@ const scrollEffects = function() {
 				modeSwitcher.classList.remove("retracted")
 			}
 		}		
-	//scrolling down (wide)
+	//Scrolling down (wide)
 		else {
 			if (scrollY == 0) {
 				silcrowLogo.classList.remove("retracted")
@@ -126,16 +128,6 @@ const scrollEffects = function() {
 			}
 		}		
 	}
-
-	// Scrolling down
-	// else if (scrollY > bannerRegion && window.matchMedia("(max-width: 900px)").matches) {
-	// 	silcrowLogo.classList.add("retracted")
-	// 	modeSwitcher.classList.add("retracted")
-	// }
-	// else if (window.matchMedia("(max-width: 900px)").matches) {
-	// 	silcrowLogo.classList.remove("retracted")
-	// 	modeSwitcher.classList.add("retracted")
-	// }
 	
 	scrollCompare = scrollY <= 0 ? 0 : scrollY;
 	
@@ -161,9 +153,6 @@ window.addEventListener("scroll", function() {
 })
 
 window.addEventListener("resize", function() {
-	
-  viewportHeight = window.innerHeight
-  pageHeight = body.offsetHeight  
   
   scrollEffects()
   
