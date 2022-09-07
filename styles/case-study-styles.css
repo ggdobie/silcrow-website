@@ -10,6 +10,33 @@ body {
   background-color: var(--paper);
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.hidden {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.banner.hidden {
+  display: none;
+}
+
+.retracted {
+  transform: translateX(-30%);
+  opacity: 0;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -17,6 +44,7 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 34px 0;
+  mix-blend-mode: difference;
 }
 
 header nav .breadcrumbs {
@@ -25,14 +53,14 @@ header nav .breadcrumbs {
   gap: 14px;
 }
 
-header nav .backlink.home img {
-  width: 18px;
-}
-
 header nav .backlink.home {
   padding: 3px;
   width: max-content;
   transition: 0.3s;
+}
+
+header nav .backlink.home img {
+  width: 18px;
 }
 
 header nav .caret {
@@ -53,15 +81,6 @@ header nav .case-study-logo {
   margin-bottom: -8px;
   height: 30px;
   transition: 0.15s;
-}
-
-header.ghosted {
-  mix-blend-mode: difference;
-}
-
-.retracted {
-  transform: translateX(-30%);
-  opacity: 0;
 }
 
 main {
@@ -115,10 +134,6 @@ section h3 {
   transform: translate(-50%, 50px);
   opacity: 0;
 }
-
-.mode-switcher .tab.selected {
-  color: var(--silcrow-text);
-}
   
 .mode-switcher .tab {
   padding: 10px;
@@ -142,6 +157,10 @@ section h3 {
   transition: opacity 0.3s;
 }
 
+.mode-switcher .tab.selected {
+  color: var(--silcrow-text);
+}
+
 .mode-switcher .tab.selected .active-area .active-indicator {
   opacity: 1;
 }
@@ -149,7 +168,6 @@ section h3 {
 .mode-switcher .tab .active-area .active-indicator .progress-indicator {
   background-color: var(--silcrow);
   width: 100%;
-  transform: scaleX(50%);
   transform-origin: top left;
 }
 
@@ -161,7 +179,7 @@ section h3 {
 }
 
 .banner {
-  background-color: #140e24;
+  background-color: var(--hero-text-color-dark);
   color: var(--hero-text-color-light);
   height: 110vh;
   min-height: 760px;
@@ -174,7 +192,6 @@ section h3 {
   display: block;
   line-height: 0.65;
   z-index: 0;
-  /* transition: margin 0.2s, transform 0.2s; */
 }
 
 .banner h1 {
@@ -250,7 +267,6 @@ section h3 {
   background-repeat: no-repeat;
   position: absolute;
   transition: opacity 0.08s;
-  /* mix-blend-mode: overlay; */
 }
 
 .intro .skills-badge.ux-design {
@@ -289,8 +305,6 @@ section h3 {
 .comparison figure img {
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(130%);
   box-shadow: -6px 6px var(--ink-100);
-  /* max-width: 480px; */
-  /* transform-origin: center; */
 }
 
 .comparison figure.top {
@@ -342,16 +356,6 @@ section h3 {
   border-radius: 20px;
   box-shadow: 0px 11px 14px rgba(233, 226, 222, 0.5);
   padding: 24px;
-}
-
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
 }
 
 .diagram .info-card .dropcap {
@@ -408,6 +412,8 @@ section h3 {
   padding-top: 0px;
   height: 320vw;
   justify-content: space-between;
+  z-index: -1;
+  padding-bottom: 15vh;
 }
 
 .layers .architecture img {
@@ -424,11 +430,6 @@ section h3 {
 
 .layers .info {
   padding-top: 15vh;
-}
-
-.layers {
-  z-index: -1;
-  padding-bottom: 15vh;
 }
 
 .layers .illustration img {
@@ -493,7 +494,7 @@ section h3 {
 }
 
 .summary h2 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .summary .credits ul li {
@@ -518,15 +519,11 @@ section h3 {
 }
 
 .cta .cta-icon-container {
-  height: 70px;
-  margin-top: 2rem;
-}
-
-.cta .cta-icon-container {
   background-image: url("../images/icon-gallery.svg");
   width: 166px;
   height: 70px;
   background-repeat: no-repeat;
+  margin-top: 2rem;
 }
 
 .cta h3 {
@@ -562,20 +559,7 @@ section h3 {
   box-shadow:
     0px 5.3px 6.8px rgba(9, 24, 51, 0.024),
     0px 17.6px 22.1px rgba(9, 24, 51, 0.036),
-    0px 79px 118px rgba(9, 24, 51, 0.06)
-  ;
-}
-
-.hidden {
-  overflow: hidden;
-  height: 0;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.banner.hidden {
-  display: none;
+    0px 79px 118px rgba(9, 24, 51, 0.06);
 }
 
 /* .gallery.hidden {
