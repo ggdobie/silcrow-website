@@ -98,6 +98,10 @@ footer .details * {
     grid-column: 4 / 7;
   }
   
+  .cta.show-main .cta-text-container {
+    grid-column: 2 / 6;
+  }
+  
 }
 
 @media (min-width: 900px) {
@@ -144,7 +148,8 @@ footer .details * {
     grid-column: 2 / 5;
   }
   
-  .cta .cta-text-container {
+  .cta .cta-text-container,
+  .cta.show-main .cta-text-container {
     grid-column: 5 / 12;
   }
   
