@@ -76,20 +76,66 @@ const scrollEffects = function() {
 
 	let bannerRegion = bannerSection.getBoundingClientRect().bottom + window.innerHeight
 	
-	// Scrolling up
-	if (scrollY <= scrollCompare) {
-		silcrowLogo.classList.remove("retracted")
-		modeSwitcher.classList.remove("retracted")
-	} 
+	// Logic for narrow breakpoints
+	if (window.matchMedia("(max-width: 900px)").matches) {	
+	// Scrolling up	(narrow)
+		if (scrollY <= scrollCompare) {
+			if (scrollY == 0 && galleryActive == false) {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.add("retracted")
+			}
+			else {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.remove("retracted")
+			}
+		}		
+	//scrolling down (narrow)
+		else {
+			if (scrollY < bannerRegion) {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.add("retracted")
+			}
+			else {
+				silcrowLogo.classList.add("retracted")
+				modeSwitcher.classList.add("retracted")
+			}
+		}		
+	}
+	// Logic for wide breakpoints
+	if (window.matchMedia("(min-width: 900px)").matches) {	
+	// Scrolling up	(wide)
+		if (scrollY <= scrollCompare) {
+			if (scrollY == 0 && galleryActive == false) {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.add("retracted")	
+			}
+			else {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.remove("retracted")
+			}
+		}		
+	//scrolling down (wide)
+		else {
+			if (scrollY == 0) {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.add("retracted")
+			}
+			else {
+				silcrowLogo.classList.remove("retracted")
+				modeSwitcher.classList.remove("retracted")
+			}
+		}		
+	}
+
 	// Scrolling down
-	else if (scrollY > bannerRegion && window.matchMedia("(max-width: 900px)").matches) {
-		silcrowLogo.classList.add("retracted")
-		modeSwitcher.classList.add("retracted")
-	}
-	else if (window.matchMedia("(max-width: 900px)").matches) {
-		silcrowLogo.classList.remove("retracted")
-		modeSwitcher.classList.add("retracted")
-	}
+	// else if (scrollY > bannerRegion && window.matchMedia("(max-width: 900px)").matches) {
+	// 	silcrowLogo.classList.add("retracted")
+	// 	modeSwitcher.classList.add("retracted")
+	// }
+	// else if (window.matchMedia("(max-width: 900px)").matches) {
+	// 	silcrowLogo.classList.remove("retracted")
+	// 	modeSwitcher.classList.add("retracted")
+	// }
 	
 	scrollCompare = scrollY <= 0 ? 0 : scrollY;
 	

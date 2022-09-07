@@ -22,7 +22,7 @@ header {
 header nav .breadcrumbs {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 header nav .backlink.home img {
@@ -553,7 +553,7 @@ section h3 {
 }
 
 .gallery .image-container {
-  padding-top: 3rem;
+  padding-top: 7rem;
   padding-bottom: 3rem;
 }
 
@@ -751,7 +751,7 @@ footer .details .contact {
   
   .mode-switcher {
     bottom: unset;
-    top: 50%;
+    top: 40%;
     left: 0;
     transform: rotate(-90deg) translateX(-50%);
     transform-origin: top left;
@@ -837,6 +837,10 @@ footer .details .contact {
   
   :root {
     --banner-bg-scale-factor: 385vmin;
+  }
+  
+  header nav .breadcrumbs {
+    margin-left: 16px;
   }
   
   .intro .skills-badge.ux-design {
@@ -1071,6 +1075,11 @@ footer .details .contact {
   
   :root {
     --skills-badge-scale-factor: 2;
+  }
+  
+  header nav .breadcrumbs {
+    margin-left: 20px;
+    gap: 20px;
   }
   
   header nav .backlink.home {
