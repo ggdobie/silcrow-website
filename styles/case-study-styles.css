@@ -615,6 +615,10 @@ footer .details .contact {
     padding-bottom: 140px;
   }
   
+  .cta .cta-icon-container {
+    width: 133px;
+  }
+  
 }
 
 @media (min-width: 1920px) {
@@ -666,6 +670,10 @@ footer .details .contact {
   
   .summary h3 {
     margin-top: 6em;
+  }
+  
+  .cta .cta-icon-container {
+    width: 166px;
   }
 
   footer {
