@@ -58,6 +58,7 @@
 
 .intro-blurb .intro-text.reversed {
   color: var(--paper);
+  background-color: transparent;
 }
 
 .content-container {
