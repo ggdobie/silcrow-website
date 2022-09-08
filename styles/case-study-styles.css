@@ -408,6 +408,10 @@ footer {
   padding: 52px 0;
 }
 
+footer.tan {
+  background-color: var(--silcrow-000);
+}
+
 footer .caret {
   content: "";
   background-color: var(--silcrow);
