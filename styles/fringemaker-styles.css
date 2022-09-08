@@ -5,6 +5,10 @@
   --banner-bg-scale-factor: 450vmin;
 }
 
+header {
+  mix-blend-mode: normal;
+}
+
 .banner {
   background-color: var(--hero-text-color-dark);
   color: var(--hero-text-color-light);
