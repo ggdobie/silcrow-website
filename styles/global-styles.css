@@ -126,6 +126,7 @@ img::selection {
 
 p {
   line-height: 1.44;
+  font-variant-numeric: oldstyle-nums;
 }
 
 p+p {

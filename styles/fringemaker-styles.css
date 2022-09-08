@@ -14,6 +14,7 @@
   text-shadow: -0.5px 0.5px 0 var(--hero-stroke-color), 0.5px 0.5px 0 var(--hero-stroke-color), 0.5px -0.5px 0 var(--hero-stroke-color), -0.5px -0.5px 0 var(--hero-stroke-color);
   font-size: 23vw;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
 
 .banner h1 span {
@@ -28,13 +29,12 @@
 
 .banner h1 span:nth-child(2) {
   color: var(--hero-text-color-dark);
-  margin-left: 0.85em;
   z-index: 2;
+  margin-left: 0.12em;
+  letter-spacing: -0.026em;
 }
 
 .banner h1 span:nth-child(3) {
-  margin-left: 0.35em;
-  margin-top: 0.15em;
   position: relative;
   z-index: -1;
 }
@@ -62,37 +62,24 @@
 
 }
 
-.comparison figure {
+.comparison picture {
   position: relative;
   max-width: 480px;
   -webkit-transform: translateZ(1px);
 }
 
-.comparison figure img {
+.comparison picture img {
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-  box-shadow: -6px 6px var(--ink-100);
+  /* box-shadow: -6px 6px var(--ink-100); */
 }
 
-.comparison figure.top {
+.comparison picture.top {
   z-index: 1;
 }
 
-.comparison figure.bottom {
+.comparison picture.bottom {
   margin-top: -14%;
   z-index: 0;
-}
-
-.comparison figure.top figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.comparison figure.bottom figcaption {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-align: right;
 }
 
 .flow .illustration {
@@ -206,7 +193,7 @@
     padding-bottom: 15vw;
   }
   
-  .comparison figure {
+  .comparison picture {
     max-width: none;
   }
   
@@ -249,11 +236,11 @@
 
 @media (min-width: 800px) {
   
-  .comparison figure.top figcaption {
+  .comparison picture.top figcaption {
     margin-top: 40px;
   }
   
-  .comparison figure.bottom figcaption {
+  .comparison picture.bottom figcaption {
     margin-bottom: 40px;
   }
   
@@ -314,8 +301,8 @@
     padding-bottom: 80px;
   }
   
-  .comparison figure.top figcaption,
-  .comparison figure.bottom figcaption {
+  .comparison picture.top figcaption,
+  .comparison picture.bottom figcaption {
     margin: 0;
     top: 42%;
     left: -27%;
@@ -367,11 +354,6 @@
     line-height: 0.57;    
   }
   
-  .banner h1 span:nth-child(3) {
-    margin-left: 1.48em;
-    margin-top: 0.09em;
-  }
-  
   .banner h1 span:nth-child(3)::before {
     transform: translate(calc(-50% + 0.5em), calc(-50% - 0.05em)) rotate(5deg);
   }
@@ -393,17 +375,17 @@
     z-index: 100;
   }
   
-  .comparison figure img {
+  .comparison picture img {
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-    box-shadow: -6px 6px var(--ink-100);
+    /* box-shadow: -6px 6px var(--ink-100); */
   }
   
-  .comparison figure.bottom {
-    margin-top: -24%;
+  .comparison picture.bottom {
+    margin-top: -84%;
   }
   
-  .comparison figure.top figcaption,
-  .comparison figure.bottom figcaption {
+  .comparison picture.top figcaption,
+  .comparison picture.bottom figcaption {
     margin: 0;
     top: 40%;
     left: -10%;
@@ -488,13 +470,13 @@
     left: -286px;
   }
   
-  .comparison figure img {
+  .comparison picture img {
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
     box-shadow: -6px 6px var(--ink-100);
   }
   
-  .comparison figure.top figcaption,
-  .comparison figure.bottom figcaption {
+  .comparison picture.top figcaption,
+  .comparison picture.bottom figcaption {
     margin: 0;
     top: 40%;
     right: -20%;
