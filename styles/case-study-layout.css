@@ -52,10 +52,6 @@ footer .details * {
     grid-column: 2 / -2;
   }
   
-  .banner {
-    align-content: start;
-  }
-  
   .banner * {
     grid-column: 1 / -1;
   }

@@ -84,6 +84,10 @@
 
 @media (min-width: 900px) {
   
+  section.banner * {
+    grid-column: 1 / -1;
+  }
+  
   .flow .illustration {
     grid-column: 2 / -2;
   }

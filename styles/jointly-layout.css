@@ -40,6 +40,10 @@
 
 @media (min-width: 640px) {
   
+  .banner {
+    align-content: start;
+  }
+  
   .flow .illustration {
     grid-column: 1 / -1;
   }

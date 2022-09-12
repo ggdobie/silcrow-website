@@ -5,6 +5,11 @@
   --banner-bg-scale-factor: 450vmin;
 }
 
+header nav .breadcrumbs .case-study-logo {
+  margin-bottom: -8px;
+  height: 30px;
+}
+
 .banner {
   background-color: var(--hero-text-color-dark);
   color: var(--hero-text-color-light);
@@ -193,6 +198,10 @@
   
   :root {
     --banner-bg-scale-factor: 350vmin;
+  }
+  
+  .banner {
+    min-height: 960px;
   }
   
   .banner h1 {

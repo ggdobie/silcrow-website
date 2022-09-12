@@ -1,8 +1,13 @@
 :root {
-  --hero-text-color-dark: #F16775;
+  --hero-text-color-dark: #ec616f;
   --hero-text-color-light: #F16775d3;
   --hero-stroke-color: #ffffff;
   --banner-bg-scale-factor: 450vmin;
+}
+
+header nav .breadcrumbs .case-study-logo {
+  margin-bottom: -4px;
+  height: 36px;
 }
 
 header {
@@ -11,36 +16,62 @@ header {
 
 .banner {
   background-color: var(--hero-text-color-dark);
-  color: var(--hero-text-color-light);
+  color: var(--paper);
+  justify-items: center;
 }
 
 .banner h1 {
-  text-shadow: -0.5px 0.5px 0 var(--hero-stroke-color), 0.5px 0.5px 0 var(--hero-stroke-color), 0.5px -0.5px 0 var(--hero-stroke-color), -0.5px -0.5px 0 var(--hero-stroke-color);
-  font-size: 23vw;
-  margin-top: 2rem;
+
+  font-size: 16.667vmin;
   text-transform: uppercase;
+  
+  text-shadow: 0.04em 0.03em 0em rgba(234, 89, 102, 1),
+  0.03em 0.02em 0em rgba(234, 89, 102, 1),
+  0.02em 0.03em 0em rgba(234, 89, 102, 1),
+  0px 0.08em 0.06em rgba(181, 77, 88, 1),
+  0.04em 0.08em 0.05em rgba(0, 0, 0, 0.25),  
+  0.05em 0.06em 0em rgba(0, 0, 0, 0.25);
+  
+  line-height: 0.85;
+  background-color: #F16775;
+  
+  width: max-content;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  padding: 0.5em;
+  
+  /* transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg) translate(-10%, 10%); */
+  transform: rotate(30deg) skew(-30deg);
+  transform-origin: top center;
+  /* display: none; */
+  
+  /* position: relative; */
 }
 
 .banner h1 span {
   display: block;
-  line-height: 0.65;
   z-index: 0;
 }
 
 .banner h1 span:nth-child(1) {
-  z-index: 3;
 }
 
 .banner h1 span:nth-child(2) {
-  color: var(--hero-text-color-dark);
-  z-index: 2;
-  margin-left: 0.12em;
   letter-spacing: -0.026em;
 }
 
 .banner h1 span:nth-child(3) {
-  position: relative;
-  z-index: -1;
+}
+
+.banner .test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: red;
 }
 
 .intro .skills-badge {
@@ -84,6 +115,19 @@ header {
 .comparison picture.bottom {
   margin-top: -14%;
   z-index: 0;
+}
+
+.testimonial {
+  background-color: var(--dagger-100);
+  color: var(--asterisk);
+}
+
+.testimonial figure blockquote .quotemark {
+  background-color: var(--dagger-900);
+}
+
+.testimonial figure figcaption {
+  border-top: 1px solid var(--dagger-500);
 }
 
 .flow .illustration {
@@ -166,10 +210,6 @@ header {
   
   .banner h1 {
     font-size: 23vmin;
-  }
-  
-  .banner h1 span {
-    width: max-content;
   }
   
   .banner .scrollBadge {
@@ -351,15 +391,7 @@ header {
 @media (min-width: 1194px) {
   
   .banner h1 {
-    font-size: 17.5vw;
-  }
-  
-  .banner h1 span {
-    line-height: 0.57;    
-  }
-  
-  .banner h1 span:nth-child(3)::before {
-    transform: translate(calc(-50% + 0.5em), calc(-50% - 0.05em)) rotate(5deg);
+    font-size: 10.5vw;
   }
   
   .banner .scrollBadge {
@@ -450,7 +482,7 @@ header {
 @media (min-width: 1920px) {
   
   .banner h1 {
-    font-size: 17vw;
+    font-size: 12vw;
   }
   
   .banner .scrollBadge {

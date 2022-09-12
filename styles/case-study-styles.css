@@ -70,8 +70,6 @@ header nav .breadcrumbs .caret {
 }
 
 header nav .breadcrumbs .case-study-logo {
-  margin-bottom: -8px;
-  height: 30px;
   transition: 0.15s;
 }
 
@@ -458,10 +456,6 @@ footer .details .contact {
   
   :root {
     --skills-badge-scale-factor: 1.6;
-  }
-  
-  .banner {
-    min-height: 960px;
   }
   
   .diagram {
