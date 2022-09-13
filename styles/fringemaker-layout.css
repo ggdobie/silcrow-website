@@ -176,6 +176,10 @@
 
 @media (min-width: 1920px) {
   
+  .intro *, .comparison * {
+    grid-column: 7 / -5;
+  }
+  
   .comparison figure {
     grid-column: 6 / -5;
   }

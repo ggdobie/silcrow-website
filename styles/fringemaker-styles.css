@@ -4,8 +4,9 @@
   --hero-stroke-color: #ffffff;
   --banner-bg-scale-factor: 450vmin;
   
-  --banner-offsetX: 51%;
-  --banner-offsetY: 54%;
+  --banner-offsetX: 42%;
+  --banner-offsetY: 38%;
+  --banner-scale-factor: 1;
 }
 
 header nav .breadcrumbs .case-study-logo {
@@ -23,9 +24,9 @@ header {
   min-height: unset;
 }
 
-.banner h1 {
+.banner h1.hero-text {
 
-  font-size: 16.667vmin;
+  font-size: calc(var(--banner-scale-factor)*16.667vmin);
   text-transform: uppercase;
   line-height: 0.85;
   
@@ -43,7 +44,6 @@ header {
   position: absolute;
   top: var(--banner-offsetY);
   left: var(--banner-offsetX);
-  /* padding: 0.5em; */
   
   /* transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg) translate(-10%, 10%); */
   transform: rotate(30deg) skew(-30deg);
@@ -60,31 +60,41 @@ header {
 }
 
 .banner .banner-bg {
-  width: 218vmin;
+  width: calc(var(--banner-scale-factor)*218vmin);
   max-width: unset;
   position: absolute;
   top: var(--banner-offsetY);
   left: var(--banner-offsetX);
-  transform: translate(-47.5%, -24%);
+  transform: translate(-47.5%, -14%);
+}
+
+.banner .banner-bg-two {
+  width: calc(var(--banner-scale-factor)*218vmin);
+  max-width: unset;
+  position: absolute;
+  bottom: -43%;
+  left: var(--banner-offsetX);
+  transform: translate(-47.5%, 0);
+  mix-blend-mode: multiply;
 }
 
 .intro .skills-badge {
-  background-color: #430b13;
+  background-color: #eb4f63;
 }
 
 .intro .skills-badge.ux-design {
   -webkit-mask-image: url("../images/skills-badge-user-experience-design.svg");
   mask-image: url("../images/skills-badge-user-experience-design.svg");
-  top: -66px;
+  top: -36px;
   left: -8px;
+  transition-delay: 0.2s
 }
 
 .intro .skills-badge.ui-design {
   -webkit-mask-image: url("../images/skills-badge-user-interface-design.svg");
   mask-image: url("../images/skills-badge-user-interface-design.svg");
-  top: -30px;
-  left: 176px;
-  transition-delay: 0.3s
+  top: -89px;
+  right: -18px;
 }
 
 .intro .skills-badge.design-systems {
@@ -199,7 +209,9 @@ header {
 @media (min-width: 640px) {
   
   :root {
-    --banner-bg-scale-factor: 350vmin;
+    --banner-offsetX: 57%;
+    --banner-offsetY: 24%;
+    --banner-scale-factor: 0.8;
   }
   
   .banner .scrollBadge {
@@ -209,18 +221,15 @@ header {
   }
   
   .intro .skills-badge.ux-design {
-    top: -176px;
-    left: 42px;
+    top: -50px;
+    left: unset;
+    right: -88px;
   }
   
-  .intro .skills-badge.user-flow {
-    top: -38px;
-    left: -86px;
-  }
-  
-  .intro .skills-badge.design-systems {
-    top: -82px;
-    left: 226px;
+  .intro .skills-badge.ui-design {
+    top: 18px;
+    right: unset;
+    left: 26px;
   }
   
   .comparison {
@@ -270,6 +279,10 @@ header {
 
 @media (min-width: 800px) {
   
+  :root {
+    --banner-offsetY: 34%;
+  }
+  
   .comparison picture.top figcaption {
     margin-top: 40px;
   }
@@ -312,22 +325,26 @@ header {
 @media (min-width: 900px) {
 
   :root {
-    --banner-bg-scale-factor: 385vmin;
-  }
+  --banner-offsetX: 65%;
+  --banner-offsetY: 34%;
+  --banner-scale-factor: 1;
+}
   
   .intro .skills-badge.ux-design {
-    top: -176px;
-    left: -32px;
+    top: -43px;
+    right: 102px;
   }
   
-  .intro .skills-badge.user-flow {
-    top: 38px;
+  .intro .skills-badge.ui-design {
+    top: 68px;
     left: -206px;
   }
   
-  .intro .skills-badge.design-systems {
-    top: -62px;
-    left: 156px;
+  .intro {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80vh;
+    min-height: 500px;
   }
   
   .comparison.paper {
@@ -380,15 +397,20 @@ header {
 
 @media (min-width: 1194px) {
   
+  :root {
+    --banner-offsetX: 61.3%;
+    --banner-scale-factor: 0.9;
+  }
+  
   .banner .scrollBadge {
     right: 0;
     left: revert;
     transform: translate(calc(100% - 0.01em), 50%);
   }
 
-  .intro .skills-badge.user-flow {
-    top: 18px;
-    left: -186px;
+  .intro .skills-badge.ux-design {
+    top: -35px;
+    right: 426px;
   }
   
   .comparison.paper {
@@ -467,6 +489,11 @@ header {
 
 @media (min-width: 1920px) {
   
+  :root {
+    --banner-offsetX: 61%;
+    --banner-scale-factor: 1;
+  }
+  
   .banner .scrollBadge {
     right: 0;
     left: revert;
@@ -474,18 +501,13 @@ header {
   }
   
   .intro .skills-badge.ux-design {
-    top: -266px;
-    left: 42px;
+    top: 266px;
+    left: -302px;
   }
   
-  .intro .skills-badge.user-flow {
+  .intro .skills-badge.ui-design {
     top: -42px;
     left: -86px;
-  }
-  
-  .intro .skills-badge.design-systems {
-    top: -250px;
-    left: -286px;
   }
   
   .comparison picture img {
