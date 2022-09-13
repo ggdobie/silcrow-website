@@ -3,6 +3,9 @@
   --hero-text-color-light: #F16775d3;
   --hero-stroke-color: #ffffff;
   --banner-bg-scale-factor: 450vmin;
+  
+  --banner-offsetX: 51%;
+  --banner-offsetY: 54%;
 }
 
 header nav .breadcrumbs .case-study-logo {
@@ -15,15 +18,19 @@ header {
 }
 
 .banner {
-  background-color: var(--hero-text-color-dark);
-  color: var(--paper);
+  background-color: #77C3E5;
   justify-items: center;
+  min-height: unset;
 }
 
 .banner h1 {
 
   font-size: 16.667vmin;
   text-transform: uppercase;
+  line-height: 0.85;
+  
+  color: var(--paper);
+  background-color: transparent;
   
   text-shadow: 0.04em 0.03em 0em rgba(234, 89, 102, 1),
   0.03em 0.02em 0em rgba(234, 89, 102, 1),
@@ -32,46 +39,33 @@ header {
   0.04em 0.08em 0.05em rgba(0, 0, 0, 0.25),  
   0.05em 0.06em 0em rgba(0, 0, 0, 0.25);
   
-  line-height: 0.85;
-  background-color: #F16775;
-  
   width: max-content;
   position: absolute;
-  top: 30%;
-  left: 50%;
-  padding: 0.5em;
+  top: var(--banner-offsetY);
+  left: var(--banner-offsetX);
+  /* padding: 0.5em; */
   
   /* transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg) translate(-10%, 10%); */
   transform: rotate(30deg) skew(-30deg);
   transform-origin: top center;
-  /* display: none; */
-  
-  /* position: relative; */
+}
+
+.banner h1 span::selection {
+  color: var(--asterisk);
+  background: var(--dagger);
 }
 
 .banner h1 span {
   display: block;
-  z-index: 0;
 }
 
-.banner h1 span:nth-child(1) {
-}
-
-.banner h1 span:nth-child(2) {
-  letter-spacing: -0.026em;
-}
-
-.banner h1 span:nth-child(3) {
-}
-
-.banner .test {
+.banner .banner-bg {
+  width: 218vmin;
+  max-width: unset;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  transform: translateX(-50%);
-  height: 1px;
-  background-color: red;
+  top: var(--banner-offsetY);
+  left: var(--banner-offsetX);
+  transform: translate(-47.5%, -24%);
 }
 
 .intro .skills-badge {
@@ -81,14 +75,14 @@ header {
 .intro .skills-badge.ux-design {
   -webkit-mask-image: url("../images/skills-badge-user-experience-design.svg");
   mask-image: url("../images/skills-badge-user-experience-design.svg");
-  top: -176px;
-  left: 42px;
+  top: -66px;
+  left: -8px;
 }
 
 .intro .skills-badge.ui-design {
   -webkit-mask-image: url("../images/skills-badge-user-interface-design.svg");
   mask-image: url("../images/skills-badge-user-interface-design.svg");
-  top: -72px;
+  top: -30px;
   left: 176px;
   transition-delay: 0.3s
 }
@@ -206,10 +200,6 @@ header {
   
   :root {
     --banner-bg-scale-factor: 350vmin;
-  }
-  
-  .banner h1 {
-    font-size: 23vmin;
   }
   
   .banner .scrollBadge {
@@ -390,10 +380,6 @@ header {
 
 @media (min-width: 1194px) {
   
-  .banner h1 {
-    font-size: 10.5vw;
-  }
-  
   .banner .scrollBadge {
     right: 0;
     left: revert;
@@ -480,10 +466,6 @@ header {
 }
 
 @media (min-width: 1920px) {
-  
-  .banner h1 {
-    font-size: 12vw;
-  }
   
   .banner .scrollBadge {
     right: 0;
