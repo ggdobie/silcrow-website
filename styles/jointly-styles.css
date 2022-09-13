@@ -58,6 +58,23 @@ header nav .breadcrumbs .case-study-logo {
   z-index: -1;
 }
 
+.banner .scrollBadge {
+  content: "";
+  background-color: var(--paper);
+  -webkit-mask-image: url("../images/icon-arrow-badge.svg");
+  mask-image: url("../images/icon-arrow-badge.svg");
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  width: 70px;
+  height: 94px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-0.3em, 130%);
+  cursor: pointer;
+}
+
 .intro .skills-badge {
   background-color: #8e6bc5;
 }

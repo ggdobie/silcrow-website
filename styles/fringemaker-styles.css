@@ -68,7 +68,7 @@ header {
   transform: translate(-47.5%, -14%);
 }
 
-.banner .banner-bg-two {
+/* .banner .banner-bg-two {
   width: calc(var(--banner-scale-factor)*218vmin);
   max-width: unset;
   position: absolute;
@@ -76,6 +76,27 @@ header {
   left: var(--banner-offsetX);
   transform: translate(-47.5%, 0);
   mix-blend-mode: multiply;
+} */
+
+
+.banner .scrollBadge {
+  background-color: var(--asterisk);
+  width: calc(var(--banner-scale-factor)*22.2vmin);
+  height: calc(var(--banner-scale-factor)*22.2vmin);
+  position: absolute;
+  top: var(--banner-offsetY);
+  left: var(--banner-offsetX);
+  cursor: pointer;
+  border-radius: 50%;
+  mix-blend-mode: color-dodge;
+  filter: blur(20px);
+  opacity: 0;
+  transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*56.9vmin), calc(var(--banner-scale-factor)*59.2vmin));
+  transition: opacity 0.2s;
+}
+
+.banner .scrollBadge:hover:not(:focus):not(:active) {
+  opacity: 1;
 }
 
 .intro .skills-badge {
@@ -215,9 +236,7 @@ header {
   }
   
   .banner .scrollBadge {
-    right: 0;
-    left: revert;
-    transform: translate(calc(100% - 0.03em), 60%);
+
   }
   
   .intro .skills-badge.ux-design {
@@ -328,7 +347,11 @@ header {
   --banner-offsetX: 65%;
   --banner-offsetY: 34%;
   --banner-scale-factor: 1;
-}
+  }
+  
+  .banner .scrollBadge {
+    transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*9vmin), calc(var(--banner-scale-factor)*67vmin));  
+  }
   
   .intro .skills-badge.ux-design {
     top: -43px;
@@ -403,9 +426,7 @@ header {
   }
   
   .banner .scrollBadge {
-    right: 0;
-    left: revert;
-    transform: translate(calc(100% - 0.01em), 50%);
+
   }
 
   .intro .skills-badge.ux-design {
@@ -495,9 +516,7 @@ header {
   }
   
   .banner .scrollBadge {
-    right: 0;
-    left: revert;
-    transform: translate(calc(100% - 0.05em), 0.09em);
+    
   }
   
   .intro .skills-badge.ux-design {
