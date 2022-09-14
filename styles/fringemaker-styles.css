@@ -154,6 +154,12 @@ header {
   border-top: 1px solid var(--dagger-500);
 }
 
+.badges .illustration img {
+  transform: scale(180%);
+  /* transform-origin: center left; */
+  max-width: 400px;  
+}
+
 .flow .illustration {
   transition: 0.2s ease-out;
 }
