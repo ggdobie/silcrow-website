@@ -119,25 +119,25 @@ header {
   right: -18px;
 }
 
-.comparison {
+.mockup {
   padding-top: 60px;
   margin-top: -50px;
   justify-items: center;
 }
 
-.comparison picture {
+.mockup picture {
   position: relative;
   transform: scale(140%) rotate(-30deg);
   max-width: 350px;
 }
 
-/* .comparison picture img {
+/* .mockup picture img {
   filter: drop-shadow(0px 5.3px 6.8px rgba(9, 24, 51, 0.024)) 
   drop-shadow(0px 17.6px 22.1px rgba(9, 24, 51, 0.076)) 
   drop-shadow(0px 79px 118px rgba(9, 24, 51, 0.1));
 } */
 
-.comparison p {
+.mockup p {
   margin-top: 130px;
 }
 
@@ -250,7 +250,7 @@ header {
     left: 26px;
   }
   
-  .comparison {
+  .mockup {
     padding-bottom: 15vw;
   }
   
@@ -303,12 +303,12 @@ header {
     padding-top: 180px;
   }
   
-  .comparison picture {
+  .mockup picture {
     transform: scale(120%) rotate(-30deg);
     max-width: unset;
   }
   
-  .comparison p {
+  .mockup p {
     margin-top: 160px;
   }
   
@@ -427,12 +427,12 @@ header {
     right: 426px;
   }
   
-  .comparison {
+  .mockup {
     min-height: 660px;
     margin-top: -30px;
   }
   
-  .comparison picture {
+  .mockup picture {
     transform: scale(240%) rotate(-30deg) translate(15%, 18%);
     max-width: 300px;
   }
@@ -514,11 +514,11 @@ header {
     left: -86px;
   }
   
-  .comparison {
+  .mockup {
     min-height: 660px;
   }
   
-  .comparison picture {
+  .mockup picture {
     transform: scale(240%) rotate(-30deg) translate(15%, 18%);
     max-width: 300px;
   }

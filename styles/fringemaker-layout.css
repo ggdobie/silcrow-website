@@ -1,5 +1,5 @@
   
-/* .comparison picture {
+/* .mockup picture {
   grid-column: 1 / -1;
 } */
 
@@ -123,19 +123,15 @@
 
 @media (min-width: 1194px) {
   
-  .comparison {
-    margin-top: -30px;
-  }
-  
-  .comparison figure {
+  .mockup figure {
     grid-column: 5 / -3;
   }
   
-  .comparison picture {
+  .mockup picture {
     grid-column: 5 / 9;
   }
   
-  .comparison p {
+  .mockup p {
     grid-column: 9 / -3;
   }
   
@@ -193,19 +189,19 @@
 
 @media (min-width: 1920px) {
   
-  .intro *, .comparison * {
+  .intro *, .mockup * {
     grid-column: 7 / -5;
   }
   
-  .comparison {
+  .mockup {
     margin-top: 0;
   }
   
-  .comparison picture {
+  .mockup picture {
     grid-column: 6 / 10;
   }
   
-  .comparison p {
+  .mockup p {
     grid-column: 11 / -5;
   }
   
