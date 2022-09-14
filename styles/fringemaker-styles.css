@@ -68,17 +68,6 @@ header {
   transform: translate(-47.5%, -14%);
 }
 
-/* .banner .banner-bg-two {
-  width: calc(var(--banner-scale-factor)*218vmin);
-  max-width: unset;
-  position: absolute;
-  bottom: -43%;
-  left: var(--banner-offsetX);
-  transform: translate(-47.5%, 0);
-  mix-blend-mode: multiply;
-} */
-
-
 .banner .scrollBadge {
   background-color: var(--asterisk);
   width: calc(var(--banner-scale-factor)*22.2vmin);
@@ -97,6 +86,18 @@ header {
 
 .banner .scrollBadge:hover:not(:focus):not(:active) {
   opacity: 1;
+}
+
+.intro {
+  /* height: auto; */
+  min-height: 60vh;
+  /* padding-top: unset; */
+  padding-bottom: 0;
+  padding-top: 60px;
+}
+
+.intro h2 {
+  line-height: 0.96;
 }
 
 .intro .skills-badge {
@@ -118,28 +119,26 @@ header {
   right: -18px;
 }
 
-.intro .skills-badge.design-systems {
-
+.comparison {
+  padding-top: 60px;
+  margin-top: -50px;
+  justify-items: center;
 }
 
 .comparison picture {
   position: relative;
-  max-width: 480px;
-  -webkit-transform: translateZ(1px);
+  transform: scale(140%) rotate(-30deg);
+  max-width: 350px;
 }
 
-.comparison picture img {
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-  /* box-shadow: -6px 6px var(--ink-100); */
-}
+/* .comparison picture img {
+  filter: drop-shadow(0px 5.3px 6.8px rgba(9, 24, 51, 0.024)) 
+  drop-shadow(0px 17.6px 22.1px rgba(9, 24, 51, 0.076)) 
+  drop-shadow(0px 79px 118px rgba(9, 24, 51, 0.1));
+} */
 
-.comparison picture.top {
-  z-index: 1;
-}
-
-.comparison picture.bottom {
-  margin-top: -14%;
-  z-index: 0;
+.comparison p {
+  margin-top: 130px;
 }
 
 .testimonial {
@@ -255,10 +254,6 @@ header {
     padding-bottom: 15vw;
   }
   
-  .comparison picture {
-    max-width: none;
-  }
-  
   .flow .illustration img {
     max-width: none;
     transform: scale(95%);
@@ -302,12 +297,19 @@ header {
     --banner-offsetY: 34%;
   }
   
-  .comparison picture.top figcaption {
-    margin-top: 40px;
+  .intro {
+    min-height: 80vh;
+    padding-bottom: 8rem;
+    padding-top: 180px;
   }
   
-  .comparison picture.bottom figcaption {
-    margin-bottom: 40px;
+  .comparison picture {
+    transform: scale(120%) rotate(-30deg);
+    max-width: unset;
+  }
+  
+  .comparison p {
+    margin-top: 160px;
   }
   
   .flow .illustration img {
@@ -370,19 +372,6 @@ header {
     min-height: 500px;
   }
   
-  .comparison.paper {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .comparison picture.top figcaption,
-  .comparison picture.bottom figcaption {
-    margin: 0;
-    top: 42%;
-    left: -27%;
-    text-align: left;
-  }
-  
   .flow .info {
     padding-top: 20vw;
   }
@@ -428,33 +417,24 @@ header {
   .banner .scrollBadge {
 
   }
+  
+  .intro {
+    min-height: 560px;
+  }
 
   .intro .skills-badge.ux-design {
     top: -35px;
     right: 426px;
   }
   
-  .comparison.paper {
-    margin-top: -7vw;
-    background-color: transparent;
-    z-index: 100;
+  .comparison {
+    min-height: 660px;
+    margin-top: -30px;
   }
   
-  .comparison picture img {
-    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-    /* box-shadow: -6px 6px var(--ink-100); */
-  }
-  
-  .comparison picture.bottom {
-    margin-top: -84%;
-  }
-  
-  .comparison picture.top figcaption,
-  .comparison picture.bottom figcaption {
-    margin: 0;
-    top: 40%;
-    left: -10%;
-    text-align: left;
+  .comparison picture {
+    transform: scale(240%) rotate(-30deg) translate(15%, 18%);
+    max-width: 300px;
   }
   
   .flow {
@@ -510,6 +490,11 @@ header {
 
 @media (min-width: 1920px) {
   
+   
+  .intro {
+    min-height: 860px;
+  }
+  
   :root {
     --banner-offsetX: 61%;
     --banner-scale-factor: 1;
@@ -529,17 +514,13 @@ header {
     left: -86px;
   }
   
-  .comparison picture img {
-    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
-    box-shadow: -6px 6px var(--ink-100);
+  .comparison {
+    min-height: 660px;
   }
   
-  .comparison picture.top figcaption,
-  .comparison picture.bottom figcaption {
-    margin: 0;
-    top: 40%;
-    right: -20%;
-    text-align: right;
+  .comparison picture {
+    transform: scale(240%) rotate(-30deg) translate(15%, 18%);
+    max-width: 300px;
   }
   
   .layers {

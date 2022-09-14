@@ -1,3 +1,8 @@
+  
+/* .comparison picture {
+  grid-column: 1 / -1;
+} */
+
 .gallery .image-container .gi-01,
 .gallery .image-container .gi-02,
 .gallery .image-container .gi-04, 
@@ -118,8 +123,20 @@
 
 @media (min-width: 1194px) {
   
+  .comparison {
+    margin-top: -30px;
+  }
+  
   .comparison figure {
     grid-column: 5 / -3;
+  }
+  
+  .comparison picture {
+    grid-column: 5 / 9;
+  }
+  
+  .comparison p {
+    grid-column: 9 / -3;
   }
   
   .layers .illustration,
@@ -180,8 +197,16 @@
     grid-column: 7 / -5;
   }
   
-  .comparison figure {
-    grid-column: 6 / -5;
+  .comparison {
+    margin-top: 0;
+  }
+  
+  .comparison picture {
+    grid-column: 6 / 10;
+  }
+  
+  .comparison p {
+    grid-column: 11 / -5;
   }
   
   .diagram .info-card.first {
