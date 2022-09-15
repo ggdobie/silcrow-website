@@ -173,16 +173,6 @@ footer .details * {
     grid-column: 2 / 4;
   }
   
-  .gallery .image-container {
-    grid-row-gap: 50px;
-  }
-  
-  .gallery .image-container .gallery-image img {
-    object-fit: cover;   
-    height: 33vw;
-    width:100%;
-  }
-  
 }
 
 @media (min-width: 1920px) {

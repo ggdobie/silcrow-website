@@ -1,46 +1,18 @@
   
-/* .mockup picture {
+.gallery .image-container .gallery-image {
   grid-column: 1 / -1;
-} */
+}
 
-.gallery .image-container .gi-01,
-.gallery .image-container .gi-02,
-.gallery .image-container .gi-04, 
 .gallery .image-container .gi-05 {
-  grid-column: 1 / -1;
-}
-
-.gallery .image-container .gi-01 img,
-.gallery .image-container .gi-02 img,
-.gallery .image-container .gi-04 img, 
-.gallery .image-container .gi-05 img{
-  object-fit: cover;
-  object-position: left center;
-  height: 260px;
-  width: 100%;
-}
-
-.gallery .image-container .gi-01 { order: 1; }
-.gallery .image-container .gi-02 { order: 2; }
-.gallery .image-container .gi-04 { order: 3; }
-.gallery .image-container .gi-05 { order: 4; }
-.gallery .image-container .gi-03 { order: 5; }
-.gallery .image-container .gi-06 { order: 6; }
-
-.gallery .image-container .gi-03 img,
-.gallery .image-container .gi-06 img{
-  object-fit: cover;
-  object-position: 38% bottom;
-  height: 70vw;
-  width: 100%;
-}
-
-.gallery .image-container .gi-03 {
   grid-column: 1 / span 2;
 }
 
 .gallery .image-container .gi-06 {
   grid-column: 3 / span 2;
+}
+
+.gallery .image-container .gallery-image img {
+  width: 100%;
 }
 
 @media (min-width: 640px) {
@@ -53,40 +25,38 @@
     grid-column: 1 / -1;
   }
   
-  .gallery .image-container .gi-01,
-  .gallery .image-container .gi-02,
-  .gallery .image-container .gi-04, 
-  .gallery .image-container .gi-05 {
-    grid-column: 2 / -2;
-  }
-  
-  .gallery .image-container .gi-01 img,
-  .gallery .image-container .gi-02 img,
-  .gallery .image-container .gi-04 img, 
-  .gallery .image-container .gi-05 img {
-    height: 320px;
-  }
-  
-  .gallery .image-container .gi-03 {
-    grid-column: 2 / span 2;
-  }
-  
-  .gallery .image-container .gi-06 {
-    grid-column: 4 / span 2;
-  }
-  
-  .gallery .image-container .gi-03 img,
-  .gallery .image-container .gi-06 img {
-    height: 65vw;
+  .gallery .image-container .gallery-image {
+    grid-column: span 3;
   }
 
 }
 
 @media (min-width: 800px) {
   
-  .gallery .image-container .gi-03 img,
-  .gallery .image-container .gi-06 img {
-    height: 55vw;
+  .gallery .image-container .gi-01 {
+    grid-column: 2 / span 3;
+  }
+  
+  .gallery .image-container .gi-02 {
+    grid-column: 5 / span 2;
+    align-self: end;
+  }
+  
+  .gallery .image-container .gi-03 {
+    grid-column: 2 / span 2;
+    align-self: start;
+  }
+  
+  .gallery .image-container .gi-04 {
+    grid-column: 4 / span 3;
+  }
+  
+  .gallery .image-container .gi-05 {
+    grid-column: 2 / span 2;
+  }
+  
+  .gallery .image-container .gi-06 {
+    grid-column: 4 / span 2;
   }
   
 }
@@ -104,26 +74,16 @@
   .flow .illustration {
     grid-column: 2 / -2;
   }
-
-  .gallery .image-container .gi-01,
-  .gallery .image-container .gi-02,
-  .gallery .image-container .gi-04, 
-  .gallery .image-container .gi-05 {
-    grid-column: 5 / -2;
+  
+  .gallery .image-container {
+    grid-row-gap: 80px;
   }
   
-  .gallery .image-container .gi-01 img,
-  .gallery .image-container .gi-02 img,
-  .gallery .image-container .gi-04 img, 
-  .gallery .image-container .gi-05 img {
-    height: 380px;
+  .gallery .image-container .gallery-image:nth-child(odd) {
+    grid-column: 3 / span 4;
   }
   
-  .gallery .image-container .gi-03 {
-    grid-column: 5 / span 3;
-  }
-  
-  .gallery .image-container .gi-06 {
+  .gallery .image-container .gallery-image:nth-child(even) {
     grid-column: 8 / span 4;
   }
   
@@ -156,49 +116,17 @@
     grid-column: 6 / -2;
   }
   
-  .gallery .image-container .gallery-image img {
-    object-fit: cover;   
-    height: 33vw;
-    width:100%;
+  .gallery .image-container {
+    grid-row-gap: 40px;
   }
   
-  .gallery .image-container .gi-01 { order: 1; }
-  .gallery .image-container .gi-02 { order: 2; }
-  .gallery .image-container .gi-03 { order: 3; }
-  .gallery .image-container .gi-04 { order: 4; }
-  .gallery .image-container .gi-05 { order: 5; }
-  .gallery .image-container .gi-06 { order: 6; }
-  
-  .gallery .image-container .gi-01 {
-    grid-column: 2 / -2;
+  .gallery .image-container .gallery-image:nth-child(odd), .gallery .image-container .gallery-image:nth-child(even) {
+    grid-column: span 4;
   }
   
-  .gallery .image-container .gi-02 {
-    grid-column: 3 / 10;
-  }
-  
-  .gallery .image-container .gi-02 img {  
-    height:25vw;
-  }
-  
-  .gallery .image-container .gi-03 {
-    grid-column: 10 / -3;
-  }
-  
-  .gallery .image-container .gi-03 img {
-    height:25vw;
-  }
-  
-  .gallery .image-container .gi-04 {
-    grid-column: 3 / -3;
-  }
-  
-  .gallery .image-container .gi-05 {
-    grid-column: 2 / 12;
-  }
-  
-  .gallery .image-container .gi-06 {
-    grid-column: 12 / -2;
+  .gallery .image-container .gallery-image:nth-child(1), 
+  .gallery .image-container .gallery-image:nth-child(4) {
+    grid-column: 3 / span 4;
   }
   
 }
@@ -241,36 +169,23 @@
     grid-column: 7 / -2;
   }
   
-  .gallery .image-container .gi-01 {
-    grid-column: 3 / -3;
+  .gallery .image-container {
+    grid-row-gap: 110px;
   }
   
-  .gallery .image-container .gi-02 {
-    grid-column: 4 / 13;
+  .gallery .image-container .gallery-image:nth-child(1), 
+  .gallery .image-container .gallery-image:nth-child(4) {
+    grid-column: 5 / span 4;
   }
   
-  .gallery .image-container .gi-02 img {
-    height:25vw;
+  .gallery .image-container .gallery-image:nth-child(2), 
+  .gallery .image-container .gallery-image:nth-child(5) {
+    grid-column: 10 / span 4;
   }
   
-  .gallery .image-container .gi-03 {
-    grid-column: 13 / -4;
-  }
-  
-  .gallery .image-container .gi-03 img {
-    height:25vw;
-  }
-  
-  .gallery .image-container .gi-04 {
-    grid-column: 3 / -3;
-  }
-  
-  .gallery .image-container .gi-05 {
-    grid-column: 2 / 16;
-  }
-  
-  .gallery .image-container .gi-06 {
-    grid-column: 16 / -2;
+  .gallery .image-container .gallery-image:nth-child(3), 
+  .gallery .image-container .gallery-image:nth-child(6) {
+    grid-column: 15 / span 4;
   }
   
 }
