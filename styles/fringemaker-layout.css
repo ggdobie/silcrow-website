@@ -45,6 +45,10 @@
 
 @media (min-width: 640px) {
   
+  .badges .info-card.first {
+    grid-column: 2 / -3;
+  }
+  
   .flow .illustration {
     grid-column: 1 / -1;
   }
@@ -88,6 +92,10 @@
 }
 
 @media (min-width: 900px) {
+  
+  .badges .info-card.first {
+    grid-column: 3 / -6;
+  }
   
   section.banner * {
     grid-column: 1 / -1;
@@ -133,6 +141,14 @@
   
   .mockup p {
     grid-column: 9 / -3;
+  }
+  
+  .badges .illustration {
+    grid-column: 6 / -3;
+  }
+  
+  .badges .info-card.first {
+    grid-column: 5 / -6;
   }
   
   .layers .illustration,
@@ -209,6 +225,10 @@
     grid-column: -2 / -8;
   }
   
+  .badges .illustration {
+    grid-column: 1 / 9;
+  }
+    
   .flow .illustration {
     grid-column: 5 / -2;
   }

@@ -154,10 +154,43 @@ header {
   border-top: 1px solid var(--dagger-500);
 }
 
-.badges .illustration img {
-  transform: scale(180%);
-  /* transform-origin: center left; */
-  max-width: 400px;  
+.badges {
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+  z-index: 2;
+}
+
+.badges .info {
+  padding-top: 45vh;
+}
+
+.badges .illustration .svg {
+  transform: scale(220%) translateX(-10%);
+  transform-origin: center left;
+  max-width: 370px;
+}
+
+.badge {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.badge.n-02 {
+  animation-delay: 0.1s;
+}
+.badge.n-03 {
+  animation-delay: 0.2s;
+}
+.badge.n-04 {
+  animation-delay: 0.3s;
+}
+.badge.n-05 {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-30px); }
+  50% { transform: translateY(30px); }
+  100% { transform: translateY(-30px); }
 }
 
 .flow .illustration {
@@ -240,10 +273,6 @@ header {
     --banner-scale-factor: 0.8;
   }
   
-  .banner .scrollBadge {
-
-  }
-  
   .intro .skills-badge.ux-design {
     top: -50px;
     left: unset;
@@ -258,6 +287,16 @@ header {
   
   .mockup {
     padding-bottom: 15vw;
+  }
+
+  .badges {
+    padding-top: 14vw;
+    padding-bottom: 14vw;
+  }
+  
+  .badges .illustration .svg {
+    transform: scale(200%) translateX(12%);
+    max-width: unset;
   }
   
   .flow .illustration img {
@@ -378,6 +417,16 @@ header {
     min-height: 500px;
   }
   
+  .badges {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+  
+  .badges .illustration .svg {
+    transform: scale(200%) translateX(-8%);
+    max-width: 510px;
+  }
+  
   .flow .info {
     padding-top: 20vw;
   }
@@ -420,10 +469,6 @@ header {
     --banner-scale-factor: 0.9;
   }
   
-  .banner .scrollBadge {
-
-  }
-  
   .intro {
     min-height: 560px;
   }
@@ -442,6 +487,11 @@ header {
     transform: scale(240%) rotate(-30deg) translate(15%, 18%);
     max-width: 300px;
   }
+  
+  .badges .illustration .svg {
+    transform: scale(180%) translateX(-12%);
+    max-width: 700px;
+  }  
   
   .flow {
     height: 90vw;
@@ -496,7 +546,6 @@ header {
 
 @media (min-width: 1920px) {
   
-   
   .intro {
     min-height: 860px;
   }
@@ -504,10 +553,6 @@ header {
   :root {
     --banner-offsetX: 61%;
     --banner-scale-factor: 1;
-  }
-  
-  .banner .scrollBadge {
-    
   }
   
   .intro .skills-badge.ux-design {
@@ -527,6 +572,15 @@ header {
   .mockup picture {
     transform: scale(240%) rotate(-30deg) translate(15%, 18%);
     max-width: 300px;
+  }
+  
+  .badges {
+    height: 1300px;
+  }
+  
+  .badges .illustration .svg {
+    transform: scale(200%) translateX(-12%);
+    max-width: 900px;
   }
   
   .layers {
