@@ -22,7 +22,7 @@
 
 @media (min-width: 640px) {
   
-  .badges .info-card.first {
+  .badges .info-card.right {
     grid-column: 2 / -3;
   }
   
@@ -68,7 +68,7 @@
 
 @media (min-width: 900px) {
   
-  .badges .info-card.first {
+  .badges .info-card.right {
     grid-column: 3 / -6;
   }
   
@@ -120,7 +120,7 @@
     grid-column: 6 / -3;
   }
   
-  .badges .info-card.first {
+  .badges .info-card.right {
     grid-column: 5 / -6;
   }
   
@@ -172,7 +172,7 @@
     grid-column: 11 / -5;
   }
   
-  .diagram .info-card.first {
+  .diagram .info-card.right {
     grid-column: -2 / -8;
   }
   
