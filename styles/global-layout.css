@@ -57,7 +57,7 @@
   
   .grid-primary, .grid-secondary, .grid-tertiary {
     padding-left: calc(var(--gutter)/2);
-    padding-right: calc(var(--gutter)/2);;
+    padding-right: calc(var(--gutter)/2);
     grid-column-gap: var(--gutter);
   }
   

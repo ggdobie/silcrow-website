@@ -193,6 +193,38 @@ header {
   100% { transform: translateY(-30px); }
 }
 
+section.mangyoku {
+  background-color: #7d8a9e;
+  display: revert;
+  padding: 0;
+  height: 150vw;
+  min-height: unset;
+}
+
+section.mangyoku .info {
+  grid-template-columns: repeat(var(--master-column-count), 1fr);
+  padding: 9vw 35px;
+}
+
+.mangyoku .illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: unset;
+  left: unset;
+  width: 120vw;
+}
+
+section .info .info-card.overlay {
+  background-color: rgba(125, 138, 158, 0.9);
+  color: var(--paper);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: max-content;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
 .flow .illustration {
   transition: 0.2s ease-out;
 }
@@ -367,6 +399,19 @@ header {
   
   .mockup p {
     margin-top: 160px;
+  }  
+  
+  section.mangyoku {
+    height: 40rem;
+  }
+  
+  section.mangyoku .info {
+    grid-template-columns: repeat(var(--master-column-count), 1fr);
+    padding: 9vw 35px;
+  }
+  
+  .mangyoku .illustration {
+    width: 46rem;
   }
   
   .flow .illustration img {
@@ -437,6 +482,20 @@ header {
   .badges .illustration .svg {
     transform: scale(200%) translateX(-8%);
     max-width: 510px;
+  }
+  
+  section.mangyoku {
+    height: 40rem;
+  }
+  
+  section.mangyoku .info {
+    padding-left: calc(var(--gutter)/2);
+    padding-right: calc(var(--gutter)/2);
+    grid-column-gap: var(--gutter);
+  }
+  
+  .mangyoku .illustration {
+    width: 46rem;
   }
   
   .flow .info {
@@ -594,6 +653,14 @@ header {
     transform: scale(200%) translateX(-12%);
     max-width: 900px;
   }
+  
+  section.mangyoku {
+    height: 50rem;
+  }
+  
+  .mangyoku .illustration {
+    width: 58rem;
+  }  
   
   .layers {
     height: 170vw;
