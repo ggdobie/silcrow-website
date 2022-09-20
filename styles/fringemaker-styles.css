@@ -170,14 +170,6 @@ header {
   max-width: 370px;
 }
 
-.prototype .illustration {
-  /* transform: translateX(var(--gutter)); */
-}
-
-.prototype .info {
-  padding-bottom: 35px;
-}
-
 .badge {
   animation: bounce 1.5s ease-in-out infinite;
 }
@@ -199,6 +191,14 @@ header {
   0% { transform: translateY(-30px); }
   50% { transform: translateY(30px); }
   100% { transform: translateY(-30px); }
+}
+
+.prototype .illustration {
+  /* transform: translateX(var(--gutter)); */
+}
+
+.prototype .info {
+  padding-bottom: 30vw;
 }
 
 section.mangyoku {
@@ -347,8 +347,9 @@ section .info .info-card.overlay {
   }
   
   .badges .illustration .svg {
-    transform: scale(200%) translateX(12%);
+    transform: scale(200%) translateX(-26%);
     max-width: unset;
+    transform-origin: center center;
   }
   
   .prototype {
@@ -515,7 +516,7 @@ section .info .info-card.overlay {
   }
   
   .badges .illustration .svg {
-    transform: scale(200%) translateX(-38%);
+    transform: scale(200%) translateX(-8%);
     max-width: 510px;
   }
   
@@ -525,8 +526,8 @@ section .info .info-card.overlay {
   }
   
   .prototype .info {
-    padding-top: 37vw;
-    padding-bottom: 47vw;
+    padding-top: 15vw;
+    padding-bottom: 56vw;
   }
   
   .prototype .illustration {
@@ -613,10 +614,27 @@ section .info .info-card.overlay {
     max-width: 300px;
   }
   
+  .badges .illustration {
+    grid-column: 1 / span 8;
+  }
+  
   .badges .illustration .svg {
     transform: scale(180%) translateX(-12%);
-    max-width: 700px;
+    max-width: 800px;
   }  
+  
+  .prototype .illustration {
+    max-width: 480px;
+  }
+  
+  .prototype .info {
+    padding-top: 13rem;
+    padding-bottom: 31rem;
+  }
+  
+  .prototype .info .info-card:last-child {
+    grid-column: 5 / -6;
+  }
   
   .flow {
     height: 90vw;
@@ -703,9 +721,25 @@ section .info .info-card.overlay {
     height: 1300px;
   }
   
+  .badges .illustration {
+    grid-column: 4 / span 8;    
+  }
+  
   .badges .illustration .svg {
-    transform: scale(200%) translateX(-12%);
+    transform: scale(200%) translateX(0);
     max-width: 900px;
+  }
+  
+  .prototype .illustration {
+    grid-column: 7 / 12;
+  }
+  
+  .prototype .info {
+    padding-bottom: 33rem;
+  }
+  
+  .prototype .info .info-card:last-child {
+    grid-column: 10 / span 6;
   }
   
   section.mangyoku {
