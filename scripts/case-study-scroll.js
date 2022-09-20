@@ -133,12 +133,12 @@ const scrollEffects = function() {
 	
 // Hide the layer captions once the bottom of the layers section has been reached
 	
-	if (scrollY + window.innerHeight > layerSection.offsetTop + layerSection.getBoundingClientRect().height) {
+	if (layerSection && scrollY + window.innerHeight > layerSection.offsetTop + layerSection.getBoundingClientRect().height) {
 		layerCaptions.forEach(caption => {
 			caption.classList.add("retracted")
 		})
 	}
-	else {
+	else if (layerSection) {
 		layerCaptions.forEach(caption => {
 			caption.classList.remove("retracted")
 		})
