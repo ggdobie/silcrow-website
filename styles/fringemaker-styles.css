@@ -233,78 +233,6 @@ section.mangyoku .info {
   padding: 1rem;
 }
 
-.flow .illustration {
-  transition: 0.2s ease-out;
-}
-
-.flow .illustration img {
-  transform: scale(200%);
-  transform-origin: center left;
-  max-width: 400px;
-}
-
-.layers {
-  padding-top: 0px;
-  height: 320vw;
-  justify-content: space-between;
-  z-index: -1;
-  padding-bottom: 15vh;
-}
-
-.layers .architecture img {
-  margin-top: 200px;
-}
-
-.layers .furniture img,
-.layers .furniture figcaption {
-  margin-top: 100px;
-}
-
-.layers .activity img,
-.layers .activity figcaption {
-  margin-top: 0px;
-}
-
-.layers .info {
-  padding-top: 15vh;
-}
-
-.layers .illustration img {
-  transform: scale(105%); 
-}
-
-.layers .illustration figcaption {
-  position: absolute;
-  transition: 0.3s;
-}
-
-.layers .architecture figcaption {
-  bottom: 8vw;
-  right: 0;
-  width: 90px;
-  text-align: right;
-}
-
-.layers .furniture figcaption {
-  bottom: 28vw;
-  width: 80px;
-}
-
-.layers .activity figcaption {
-  top: 0;
-  right: 0;
-  width: 50px;
-  text-align: right;
-}
-
-.iteration {
-  height: 180vw;
-}
-
-.iteration .info {
-  padding-top: 72vw;
-}
-
 .gallery .image-container {
   padding-bottom: 7rem;
 }
@@ -365,41 +293,6 @@ section.mangyoku .info {
     transform-origin: top left;
   }
   
-  .flow .illustration img {
-    max-width: none;
-    transform: scale(95%);
-    transform-origin: center;
-  }
-  
-  .layers {
-    height: 250vw;
-    padding-top: 10vw;
-  }
-  
-  .layers .illustration img {
-    transform: scale(115%); 
-  }
-  
-  .layers .illustration figcaption {
-    top: unset;
-    right: 10px;
-    left: unset;
-    bottom: 14vw;
-    width: auto;
-    text-align: left;
-    transform: translateX(100%);
-  }
-  
-  .iteration {
-    padding-top: 20vw;
-    padding-bottom: 0;
-    height: 110vw;
-  }
-  
-  .iteration .illustration img {
-    transform: scale(120%);
-  }
-  
 }
 
 @media (min-width: 800px) {
@@ -448,35 +341,6 @@ section.mangyoku .info {
   
   .prototype .illustration {
     transform: none;
-  }
-    
-  .flow .illustration img {
-    transform: scale(120%) translateX(0);
-  }
-  
-  .layers {
-    height: 220vw;
-    padding-bottom: 20vw;
-  }
-  
-  .layers .architecture img {
-    margin-top: 240px;
-  }
-  
-  .layers .furniture img {
-    margin-top: 120px;
-  }
-  
-  .layers .illustration figcaption {
-    right: unset;
-    left: -12vw;
-    bottom: 20vw;
-    text-align: left;
-    transform: translateX(0);
-  }
-  
-  .iteration {
-    padding-top: 20vw;
   }
   
 }
@@ -553,39 +417,6 @@ section.mangyoku .info {
     width: 46rem;
   }
   
-  .flow .info {
-    padding-top: 20vw;
-  }
-  
-  .flow .illustration img {
-    transform: scale(100%) translateX(0);
-  }
-  
-  .layers {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: 180vw;
-  }
-  
-  .layers .illustration img {
-    transform: scale(110%) translateY(-100px);
-  }
-  
-  .layers .illustration figcaption {
-    left: -20vw;
-    bottom: 24vw;
-  }
-  
-  .iteration {
-    padding-bottom: 0;
-    z-index: 10;
-    height: 95vw;
-  }
-  
-  .iteration .info {
-    padding-top: 20vw;
-  }
-  
 }
 
 @media (min-width: 1194px) {
@@ -634,55 +465,6 @@ section.mangyoku .info {
   
   .prototype .info .info-card:last-child {
     grid-column: 5 / -6;
-  }
-  
-  .flow {
-    height: 90vw;
-  }
-  
-  .flow .illustration img {
-    transform: scale(100%);
-  }
-  
-  .layers {
-    height: 180vw;
-  }
-  
-  .layers .architecture img,
-  .layers .architecture figcaption {
-    margin-top: 300px;
-  }
-  
-  .layers .furniture img,
-  .layers .furniture figcaption {
-    margin-top: 150px;
-  }
-  
-  .layers .activity img,
-  .layers .activity figcaption {
-    margin-top: 0px;
-  }
-  
-  .layers .illustration figcaption {
-    bottom: 29vw;
-    left: -6vw;
-  }
-  
-  .layers .illustration img {
-    transform: scale(100%) translateY(-11vw);
-    transform-origin: bottom;
-  }
-  
-  .iteration {
-    padding-top: 0;
-  }
-  
-  .iteration .info {
-    padding-top: 100px;
-  }
-  
-  .iteration .illustration img {
-    transform: scale(110%) translateY(-6vw);
   }
   
 }
@@ -748,72 +530,6 @@ section.mangyoku .info {
   
   .mangyoku .illustration {
     width: 58rem;
-  }  
-  
-  .layers {
-    height: 170vw;
-  }
-  
-  .layers .architecture {
-    order: 2;
-  }
-  .layers .furniture {
-    order: 3;
-  }
-  .layers .activity {
-    order: 4;
-  }
-  
-  .layers .info {
-    order: 1;
-    height: auto;
-    position: sticky;
-    padding: 0;
-    top: 50%;
-    transform: translateY(-70%);
-  }
-  
-  .layers .illustration img {
-    transform: scale(110%) translateY(-4vw);
-  }
-  
-  .layers .architecture img,
-  .layers .architecture figcaption {
-    margin-top: 400px;
-  }
-  
-  .layers .furniture img,
-  .layers .furniture figcaption {
-    margin-top: 200px;
-  }
-  
-  .layers .activity img,
-  .layers .activity figcaption {
-    margin-top: 0px;
-  }
-  
-  .layers .illustration figcaption {
-    bottom: 18vw;
-    left: -7vw;
-  }
-  
-  .iteration {
-    padding-top: 6vw;
-    padding-bottom: 0;
-    height: 60vw;
-  }
-   
-  .iteration .info {
-    padding-top: 300px;
-  }
-  
-  .iteration .illustration {
-    top: revert;
-    bottom: -100px;
-  }
-  
-  .iteration .illustration img {
-    transform: scale(100%);
   }
   
 }
