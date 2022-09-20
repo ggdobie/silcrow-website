@@ -254,6 +254,15 @@ section.mangyoku .info {
   padding: 1rem;
 }
 
+.cta.show-gallery {
+  background-color: #5d6a81;
+  color: var(--paper);
+}
+
+.cta.show-gallery h3::after {
+  background-color: var(--ink-100);
+}
+
 .gallery .image-container {
   padding-bottom: 7rem;
 }
