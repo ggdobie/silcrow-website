@@ -89,11 +89,9 @@ header {
 }
 
 .intro {
-  /* height: auto; */
   min-height: 60vh;
-  /* padding-top: unset; */
-  padding-bottom: 0;
   padding-top: 60px;
+  padding-bottom: 10rem;
 }
 
 .intro h2 {
@@ -125,13 +123,34 @@ header {
   justify-items: center;
 }
 
-.mockup picture {
-  position: relative;
-  transform: scale(140%) rotate(-30deg);
-  max-width: 350px;
+.mockup figure {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--master-column-count), 1fr);
+  grid-column-gap: var(--gutter);
+  justify-items: center;
 }
 
-/* .mockup picture img {
+.mockup figure picture img {
+  width: 100%;
+  transform: scale(140%) rotate(-30deg);
+  transform-origin: bottom left;
+  max-width: 360px;
+}
+
+.mockup figure figcaption {
+  margin-top: -5rem;
+  grid-column: 3 / -1;
+  line-height: 1.4;
+}
+
+.mockup figure figcaption span {
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* .mockup figure picture img {
   filter: drop-shadow(0px 5.3px 6.8px rgba(9, 24, 51, 0.024)) 
   drop-shadow(0px 17.6px 22.1px rgba(9, 24, 51, 0.076)) 
   drop-shadow(0px 79px 118px rgba(9, 24, 51, 0.1));
@@ -253,6 +272,11 @@ section.mangyoku .info {
     --banner-scale-factor: 0.8;
   }
   
+  .intro {
+    padding-top: 10rem;
+    padding-botom: 12rem;
+  }
+  
   .intro .skills-badge.ux-design {
     top: -50px;
     left: unset;
@@ -260,13 +284,22 @@ section.mangyoku .info {
   }
   
   .intro .skills-badge.ui-design {
-    top: 18px;
+    top: -12px;
     right: unset;
-    left: 26px;
+    left: -84px;
   }
   
   .mockup {
     padding-bottom: 15vw;
+  }
+  
+  .mockup figure {
+    grid-column: 1 / -1;
+    /* grid-template-columns: repeat(4, 1fr); */
+  }
+  
+  .mockup figure  figcaption{
+    grid-column: 4 / -2;
   }
 
   .badges {
@@ -303,12 +336,11 @@ section.mangyoku .info {
   
   .intro {
     min-height: 80vh;
-    padding-bottom: 8rem;
     padding-top: 180px;
+    padding-bottom: 12rem;
   }
   
-  .mockup picture {
-    transform: scale(120%) rotate(-30deg);
+  .mockup figure picture {
     max-width: unset;
   }
   
@@ -372,6 +404,25 @@ section.mangyoku .info {
     padding-bottom: 0;
     height: 80vh;
     min-height: 500px;
+  }
+  
+  .mockup figure {
+    grid-column: 5 / -2;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .mockup figure picture {
+    grid-column: 1 /  -1;
+  }
+  
+  .mockup figure picture img {
+    max-width: 570px;
+    transform: scale(100%) rotate(-30deg);
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 5 / -1;
+    margin-top: -9rem;
   }
   
   .badges {
@@ -440,9 +491,20 @@ section.mangyoku .info {
     margin-top: -30px;
   }
   
-  .mockup picture {
-    transform: scale(240%) rotate(-30deg) translate(15%, 18%);
-    max-width: 300px;
+  .mockup figure {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  .mockup figure picture img {
+    max-width: 710px;
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 6 / -2;
+  }
+  
+  .mockup figure figcaption span {
+    text-align: left;
   }
   
   .badges .illustration {
@@ -494,9 +556,16 @@ section.mangyoku .info {
     min-height: 660px;
   }
   
-  .mockup picture {
-    transform: scale(240%) rotate(-30deg) translate(15%, 18%);
-    max-width: 300px;
+  .mockup figure picture img {
+    max-width: 780px;
+  }
+  
+  .mockup figure {
+    grid-column: 7 / -5;
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 6 / -1;
   }
   
   .badges {

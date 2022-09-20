@@ -116,7 +116,7 @@
     grid-column: 5 / -3;
   }
   
-  .mockup picture {
+  .mockup figure picture {
     grid-column: 5 / 9;
   }
   
@@ -167,7 +167,7 @@
     margin-top: 0;
   }
   
-  .mockup picture {
+  .mockup figure picture {
     grid-column: 6 / 10;
   }
   
