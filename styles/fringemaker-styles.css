@@ -223,7 +223,7 @@ section.mangyoku .info {
   width: 120vw;
 }
 
-section .info .info-card.overlay {
+.mangyoku .info .info-card.overlay {
   background-color: rgba(125, 138, 158, 0.9);
   color: var(--paper);
   border: 1px solid rgba(255, 255, 255, 0.2);
