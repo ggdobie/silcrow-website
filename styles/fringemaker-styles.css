@@ -89,8 +89,8 @@ header {
 }
 
 .intro {
-  min-height: 60vh;
-  padding-top: 60px;
+  min-height: unset;
+  padding-top: 8rem;
   padding-bottom: 10rem;
 }
 
@@ -118,8 +118,10 @@ header {
 }
 
 .mockup {
-  padding-top: 60px;
+  min-height: unset;
   margin-top: -50px;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
   justify-items: center;
 }
 
@@ -264,6 +266,22 @@ section.mangyoku .info {
   box-shadow: none;
 }
 
+@media (min-width: 480px) {
+  
+  .intro {
+    padding-top: 12rem;
+  }
+  
+  .mockup {
+    padding-top: 10rem;
+  }
+
+  .intro .skills-badge.ux-design {
+    top: 30px;
+  }
+  
+}
+
 @media (min-width: 640px) {
   
   :root {
@@ -290,7 +308,7 @@ section.mangyoku .info {
   }
   
   .mockup {
-    padding-bottom: 15vw;
+    padding-top: 8rem;
   }
   
   .mockup figure {
@@ -478,7 +496,7 @@ section.mangyoku .info {
   }
   
   .intro {
-    min-height: 560px;
+    min-height: unset;
   }
 
   .intro .skills-badge.ux-design {
@@ -487,8 +505,10 @@ section.mangyoku .info {
   }
   
   .mockup {
-    min-height: 660px;
-    margin-top: -30px;
+    min-height: unset;
+    margin-top: 0px;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
   }
   
   .mockup figure {
@@ -553,7 +573,7 @@ section.mangyoku .info {
   }
   
   .mockup {
-    min-height: 660px;
+    padding-bottom: 10rem;
   }
   
   .mockup figure picture img {
