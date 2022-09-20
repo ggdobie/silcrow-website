@@ -14,6 +14,10 @@ header nav .breadcrumbs .case-study-logo {
   height: 36px;
 }
 
+header nav .breadcrumbs .caret {
+  background-color: var(--paper);
+}
+
 header {
   mix-blend-mode: normal;
 }
@@ -269,9 +273,7 @@ section.mangyoku .info {
 
 .gallery .image-container picture img {
   border-radius: unset;
-  filter: drop-shadow(0px 5.3px 6.8px rgba(9, 24, 51, 0.024)) 
-  drop-shadow(0px 17.6px 22.1px rgba(9, 24, 51, 0.076)) 
-  drop-shadow(0px 79px 118px rgba(9, 24, 51, 0.1));
+  filter: drop-shadow(0px 11px 14px rgba(63, 49, 42, 0.09));
   box-shadow: none;
 }
 
