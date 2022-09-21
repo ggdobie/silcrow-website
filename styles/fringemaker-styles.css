@@ -327,7 +327,7 @@ section.mangyoku .info {
     /* grid-template-columns: repeat(4, 1fr); */
   }
   
-  .mockup figure  figcaption{
+  .mockup figure figcaption {
     grid-column: 4 / -2;
   }
 
@@ -367,10 +367,6 @@ section.mangyoku .info {
     min-height: 80vh;
     padding-top: 180px;
     padding-bottom: 12rem;
-  }
-  
-  .mockup figure picture {
-    max-width: unset;
   }
   
   .mockup p {
