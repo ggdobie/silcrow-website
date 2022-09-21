@@ -161,6 +161,10 @@ footer .details * {
 
 @media (min-width: 1194px) {
   
+  section * {
+    grid-column: 5 / -3;
+  }
+  
   .diagram .info-card.right {
     grid-column: 8 / -3;
   }

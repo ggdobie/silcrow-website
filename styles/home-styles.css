@@ -99,7 +99,7 @@
 
 .case-study .illustration::before {
   content: "";
-  background-image: url("../images/case-study-illo-bg.png");
+  background-image: url("../images/case-study-illo-bg-small.webp");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -567,6 +567,7 @@ footer .carbon {
   }
   
   .case-study .illustration::before {
+    background-image: url("../images/case-study-illo-bg-large.webp");
     height: 70vh;
     max-height: 550px;
   }
