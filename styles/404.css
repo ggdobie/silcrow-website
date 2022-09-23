@@ -1,0 +1,78 @@
+body {
+  background: var(--silcrow-900) url("../images/bg-tile-404.svg");
+  background-size: 86px 114px;
+}
+
+main {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  grid-column: 1 / -1;
+  transform: translateY(-20%);
+}
+
+h1 {
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--asterisk);
+}
+
+h2 {
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+
+@media (min-width: 640px) {
+  
+  .message {
+    grid-column: 2 / -2;
+  }
+
+}
+
+@media (min-width: 800px) {
+ 
+ h2 {
+   line-height: 0.9;
+ }
+  
+}
+
+@media (min-width: 900px) {
+  
+  .message {
+    grid-column: 3 / -3;
+  }
+  
+}
+
+@media (min-width: 980px) {
+  
+}
+
+@media (min-width: 1194px) {
+  
+  .message {
+    grid-column: 3 / -3;
+  }
+  
+}
+
+@media (min-width: 1560px) {
+  
+  .message {
+    grid-column: 3 / -5;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  
+  .message {
+    grid-column: 3 / -3;
+  }
+  
+}

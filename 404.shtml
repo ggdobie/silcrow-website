@@ -14,26 +14,24 @@
 		<link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="styles/global-styles.css">
 		<link rel="stylesheet" href="styles/global-layout.css">
-		<link rel="stylesheet" href="styles/svg-data.css">
-		<link rel="stylesheet" href="styles/home-layout.css">
-		<link rel="stylesheet" href="styles/home-styles.css">
+		<link rel="stylesheet" href="styles/404.css">
 		<link rel="icon" href="images/favicon.ico" />
 		<link rel="apple-touch-icon-precomposed" href="images/favicon-180.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon-60.png">
 		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
 		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png"
 		<link rel="mask-icon" href="images/favicon-safari-pinned.svg">
 	</head>
 	<body>
-		<main>
-			<section class="intro-title grid-primary">
-				<div class="title-text">
-					<h2>404</h2>
-					<h3>Page not found</h3>
-				</div>
+		<main class="grid-primary">
+			<section class="message">
+				<h1 class="cap-heading sc">Page not found</h1>
+				<h2 class="hero-text">Ah. I’ve moved or deleted this particular page.</h2>
+				<p><a href="/">Go to the homepage</a><span aria-hidden="true"> →</span></p>
 			</section>
 		</main>
 	</body>
 </html>
+<script src="scripts/resize.js"></script>
