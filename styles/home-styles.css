@@ -612,3 +612,47 @@ footer .carbon {
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  .cap-heading, .quote figcaption, .testimonial figcaption {
+    font-size: 15px;
+    letter-spacing: 0.15em;
+  }
+  
+  .caption {
+    font-size: 16px;
+  }
+  
+  .intro-title .seal .silcrow-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .intro-title .title-text h2 {
+    font-size: 10rem;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+  }
+  
+  .case-study, .quote, .client-list {
+    height: 80vh;
+    min-height: 1200px;
+  }
+  
+  .quote.sara {
+    border-left: solid 1px var(--ink-000); 
+  }
+  
+  .responsible .hero-text {
+    font-size: 10rem;
+  }
+  
+  .responsible .stamp::after {
+    transform: translate(1.3em, 0.49em);
+  }
+  
+  .responsible h2 {
+    margin-bottom: 150px;
+  }
+  
+}

@@ -101,3 +101,14 @@
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  :root{
+    --master-column-count: 30;
+    --gutter: 26px;
+    --split-secondary: 11;
+    --split-tertiary: 8;
+  }
+  
+}

@@ -350,3 +350,19 @@ abbr[title] {
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  html {
+	  font-size: 20px;
+  }
+  
+  h2, .feature-text {
+    font-size: 5rem;
+  }
+  
+  .hero-text {
+	  font-size: 7.5rem;
+  }
+  
+}

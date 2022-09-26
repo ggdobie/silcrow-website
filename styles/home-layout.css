@@ -555,3 +555,88 @@ footer .carbon {
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  .intro-title {
+    min-height: 620px;
+  }
+  
+  .intro-title .seal, .intro-blurb .squiggle {
+    grid-column: 9 / 11;
+  }
+  
+  .intro-title .title-text, .intro-blurb .intro-text {
+    grid-column: 12 / 26;
+  }
+  
+  .intro-blurb {
+    padding-bottom: 20vh;
+  }
+  
+  .client-list {
+    grid-column: span 22;
+  }
+  
+  .case-study.jointly {
+    order: 1;
+  }
+  
+  .quote.lauren {
+    order: 2;
+  }
+  
+  .case-study.fringemaker {
+    order: 3;
+  }
+  
+  .quote.sara {
+    order: 5;
+  }
+  
+  .client-list {
+    order: 4;
+    grid-template-columns: repeat(22, 1fr);
+  }
+  
+  .client-list h2 {
+    grid-column: 2 / 7;
+  }
+  
+  .responsible {
+    order: 6;
+  }
+  
+  .responsible .hero-text {
+    grid-column: 2 / span 20;
+  }
+  
+  .responsible p {
+    grid-column: 15 / -9;
+  }
+  
+  .responsible .signature {
+    grid-column-start: 15;
+  }
+  
+  .responsible .squiggle {
+    grid-column: 12 / -9;
+  }
+  
+  footer .contact {
+    grid-column: 5 / 9;
+  }
+  
+  footer .toggle-colophon {
+    grid-column: 2 / 5;
+  }
+  
+  footer .colophon .references, footer .colophon .details {
+    grid-column: 15 / -2;
+  }
+  
+  footer .carbon {
+    grid-column: -2 / -8;
+  }
+  
+}
