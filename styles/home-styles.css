@@ -615,15 +615,6 @@ footer .carbon {
 
 @media (min-width: 2250px) {
   
-  .cap-heading, .quote figcaption, .testimonial figcaption {
-    font-size: 15px;
-    letter-spacing: 0.15em;
-  }
-  
-  .caption {
-    font-size: 16px;
-  }
-  
   .intro-title .seal .silcrow-icon {
     margin-bottom: 1rem;
   }

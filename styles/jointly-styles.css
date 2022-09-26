@@ -619,3 +619,14 @@ header nav .breadcrumbs .case-study-logo {
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  .layers .info {
+    top: 50%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    transform: translateY(0);
+  }
+  
+}

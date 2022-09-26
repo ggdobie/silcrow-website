@@ -1,3 +1,19 @@
+.mockup figure {
+  display: grid;
+  grid-template-columns: repeat(var(--master-column-count), 1fr);
+  grid-column-gap: var(--gutter);
+  justify-items: center;
+}
+
+.mockup figure figcaption {
+  grid-column: 3 / -1;
+}
+
+section.mangyoku .info {
+  grid-template-columns: repeat(var(--master-column-count), 1fr);
+  padding: 9vw 35px;
+}
+
 .prototype .illustration {
   grid-column: 2 / span 2;
 }
@@ -29,6 +45,15 @@
   .badges .info-card.right {
     grid-column: 2 / -3;
   } */
+  
+  .mockup figure {
+    grid-column: 1 / -1;
+    /* grid-template-columns: repeat(4, 1fr); */
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 4 / -2;
+  }
   
   .gallery .image-container .gallery-image {
     max-width: unset;
@@ -68,6 +93,11 @@
     grid-column: 2 / 5;
   }
   
+  section.mangyoku .info {
+    grid-template-columns: repeat(var(--master-column-count), 1fr);
+    padding: 9vw 35px;
+  }
+  
 }
 
 @media (min-width: 900px) {
@@ -75,6 +105,20 @@
   .badges .info-card.right {
     grid-column: 3 / -6;
   } */
+  
+  .mockup figure {
+    grid-column: 5 / -2;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .mockup figure picture {
+    grid-column: 1 /  -1;
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 5 / -1;
+    margin-top: -9rem;
+  }
   
   .badges .illustration {
     grid-column: 1 / span 7;
@@ -86,6 +130,12 @@
   
   .prototype .illustration {
     grid-column: 3 / 8;
+  }
+  
+  section.mangyoku .info {
+    padding-left: calc(var(--gutter)/2);
+    padding-right: calc(var(--gutter)/2);
+    grid-column-gap: var(--gutter);
   }
   
   .gallery .image-container {
@@ -116,16 +166,28 @@
     grid-column: 5 / -3;
   }
   
-  .mockup figure picture {
-    grid-column: 5 / 9;
-  }
-  
   .mockup p {
     grid-column: 9 / -3;
   }
   
+  .mockup figure {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 6 / -2;
+  }
+  
   .badges .illustration {
     grid-column: 6 / -3;
+  }
+  
+  .badges .illustration {
+    grid-column: 1 / span 8;
+  }
+  
+  .prototype .info .info-card:last-child {
+    grid-column: 5 / -6;
   }
   /* 
   .badges .info-card.right {
@@ -167,8 +229,13 @@
     margin-top: 0;
   }
   
-  .mockup figure picture {
-    grid-column: 6 / 10;
+  .mockup figure {
+    grid-column: 7 / -5;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 6 / -1;
   }
   
   .mockup p {
@@ -181,6 +248,18 @@
   
   .badges .illustration {
     grid-column: 1 / 9;
+  }  
+    
+  .badges .illustration {
+    grid-column: 4 / span 8;    
+  }
+  
+  .prototype .info .info-card:last-child {
+    grid-column: 10 / span 6;
+  }
+  
+  .prototype .illustration {
+    grid-column: 7 / 12;
   }
   
   .gallery .image-container {
@@ -210,6 +289,38 @@
   .gallery .image-container .gi-06 {
     grid-column: 15 / span 4;
     align-self: center;   
+  }
+  
+}
+
+@media (min-width: 2250px) {
+  
+  .intro *, .mockup * {
+    grid-column: 12 / -9;
+  }
+  
+  .mockup figure {
+    grid-template-columns: repeat(20, 1fr);
+  }
+  
+  .mockup figure figcaption {
+    grid-column: 11 / -5;
+  }
+  
+  .badges .illustration {
+    grid-column: 7 / span 11;
+  }
+  
+  .diagram .info-card.right {
+    grid-column: -9 / -17;
+  }
+  
+  .prototype .info .info-card:last-child, .diagram .info-card.left {
+    grid-column: 10 / span 8;
+  }
+  
+  .prototype .illustration {
+    grid-column: 12 / span 6;
   }
   
 }

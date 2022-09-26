@@ -240,3 +240,36 @@
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  .comparison figure {
+    grid-column: 11 / span 15;
+  }
+  
+  .diagram .info-card.right {
+    grid-column: -14 / -6;
+  }
+  
+  .flow .illustration {
+    grid-column: 8 / span 21;
+  }
+  
+  .diagram .info-card.left {
+    grid-column: 12 / span 8;
+  }
+  
+  .diagram.flow .info {
+    padding-top: 12vw;
+    padding-bottom: 430px;
+  }
+  
+  .layers .illustration {
+    grid-column: 11 / span 14;
+  }
+  
+  .iteration .illustration {
+    grid-column: 10 / span 19;
+  }
+  
+}
