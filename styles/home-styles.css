@@ -27,7 +27,7 @@
   --width: 100;
   color: var(--silcrow-300);
   font-size: 142px;
-  font-family: Anybody Silcrow Variable;
+  font-family: 'Anybody Silcrow Variable', Trebuchet MS, sans-serif;
   font-variation-settings: 'wght' var(--weight), 'wdth' var(--width);
   transition: 1s;
   padding: 20px;

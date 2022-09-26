@@ -67,7 +67,7 @@
 }
 
 @font-face {
-  font-family: 'Anybody Silcrow Variable', Trebuchet MS, sans-serif;
+  font-family: 'Anybody Silcrow Variable';
   src: url('../fonts/Anybody-Silcrow-Variable.woff2') format('woff2'),
 	   url('../fonts/Anybody-Silcrow-Variable.woff') format('woff') ;
   font-style: normal;
