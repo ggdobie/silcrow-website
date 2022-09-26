@@ -510,6 +510,12 @@ header nav .breadcrumbs .case-study-logo {
     transform: scale(110%) translateY(-6vw);
   }
   
+  .gallery .image-container {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+  }
+  
+  
 }
 
 @media (min-width: 1920px) {
