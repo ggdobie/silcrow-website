@@ -265,7 +265,7 @@ section.mangyoku .info {
   .gallery .image-container {
     grid-row-gap: 5.5rem;
   }
-    
+
   .gallery .image-container .gi-01 {
     grid-column: 5 / span 4;
   }
@@ -321,6 +321,30 @@ section.mangyoku .info {
   
   .prototype .illustration {
     grid-column: 12 / span 6;
+  }
+  
+  .gallery .image-container .gi-01 {
+    grid-column: 6 / span 6;
+  }
+  
+  .gallery .image-container .gi-02 {
+    grid-column: 13 / span 6;
+  }
+  
+  .gallery .image-container .gi-03 {
+    grid-column: 20 / span 6;
+  }
+  
+  .gallery .image-container .gi-04 {
+    grid-column: 6 / span 6;
+  }
+  
+  .gallery .image-container .gi-05 {
+    grid-column: 13 /span 6;
+  }
+  
+  .gallery .image-container .gi-06 {
+    grid-column: 20 / span 6;
   }
   
 }
