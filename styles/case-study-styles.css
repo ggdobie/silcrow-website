@@ -222,7 +222,7 @@ section.cta {
 }
 
 .diagram .info-card .dropcap {
-  font-family: Dropcaps;
+  font-family: Dropcaps, Times New Roman Bold, serif;
   float: left;
   font-size: 2.8rem;
   font-weight: 900;

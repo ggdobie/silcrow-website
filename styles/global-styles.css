@@ -67,7 +67,7 @@
 }
 
 @font-face {
-  font-family: 'Anybody Silcrow Variable';
+  font-family: 'Anybody Silcrow Variable', Trebuchet MS, sans-serif;
   src: url('../fonts/Anybody-Silcrow-Variable.woff2') format('woff2'),
 	   url('../fonts/Anybody-Silcrow-Variable.woff') format('woff') ;
   font-style: normal;
@@ -80,7 +80,7 @@ html {
 body {
   width: 100%;
   
-  font-family: Lyon Text;
+  font-family: Lyon Text, 'Hoefler Text', Georgia, serif;
   color: var(--asterisk);
   
   transition: 0.3s;
@@ -138,7 +138,7 @@ p+p {
 }
 
 h1, h2, .feature-text {
-  font-family: Orleans;
+  font-family: Orleans, Baskerville, Times New Roman, serif;
 }
 
 h2, .feature-text {
@@ -157,7 +157,7 @@ h3 {
 }
 
 em {
-  font-family: Lyon Text;
+  font-family: Lyon Text, 'Hoefler Text', Georgia, serif;
   font-style: italic;
 }
 
@@ -214,13 +214,13 @@ abbr[title] {
 }
 
 .cap-heading, .quote figcaption, .testimonial figcaption {
-  font-family: Lyon Text;
+  font-family: Lyon Text, 'Hoefler Text', Georgia, serif;
   font-size: 13px;
   letter-spacing: 0.1em;
 }
 
 .caption {
-  font-family: Lyon Text;
+  font-family: Lyon Text, 'Hoefler Text', Georgia, serif;
   font-style: italic;
   font-size: 14px;
   font-variant-numeric: oldstyle-nums; 
