@@ -309,6 +309,10 @@ section.cta {
   justify-content: space-between;
 }
 
+.summary .credits ul li .role {
+  padding: 3px;
+}
+
 .summary .credits ul li:last-child {
   border-bottom: 1px solid var(--ink-100);
 }
@@ -411,7 +415,7 @@ footer .caret {
 }
 
 footer nav {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 footer nav .backlink {
