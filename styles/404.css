@@ -25,6 +25,13 @@ h2 {
   line-height: 1;
 }
 
+h1::selection, 
+h2::selection {
+  background: var(--asterisk);
+  color: var(--paper);
+  text-shadow: none;
+}
+
 @media (min-width: 640px) {
   
   .message {
