@@ -588,6 +588,10 @@ footer .carbon {
     font-size: 142px;
   }
   
+  .case-study, .quote {
+    min-height: 1020px;
+  }
+  
   .case-study .illustration, .case-study .illustration:before {
     max-width: 700px;
   }
