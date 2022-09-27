@@ -14,6 +14,8 @@ const badges = document.querySelectorAll(".skills-badge")
 const layerSection = document.querySelector(".layers")
 const layerCaptions = document.querySelectorAll(".illustration figcaption")
 
+const baseSection = document.querySelector(".hide-switcher")
+
 const body = document.body
 const html = document.documentElement
 
@@ -76,6 +78,7 @@ const scrollEffects = function() {
 // Conditionally show the logo & mode switcher tabs on scroll up
 
 	let bannerRegion = bannerSection.getBoundingClientRect().bottom + window.innerHeight
+	let baseRegion = baseSection.getBoundingClientRect().top - window.innerHeight
 	
 	// Logic for narrow breakpoints
 	if (window.matchMedia("(max-width: 900px)").matches) {	
@@ -118,7 +121,7 @@ const scrollEffects = function() {
 		}		
 	//Scrolling down (wide)
 		else {
-			if (scrollY == 0) {
+			if (scrollY == 0 || baseRegion < 0) {
 				silcrowLogo.classList.remove("retracted")
 				modeSwitcher.classList.add("retracted")
 			}
