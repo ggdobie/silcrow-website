@@ -76,3 +76,11 @@ h2 {
   }
   
 }
+
+@media (min-width: 2250px) {
+  
+  .message {
+    grid-column: 5 / -5;
+  }
+  
+}
