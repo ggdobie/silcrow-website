@@ -27,7 +27,7 @@ h2 {
 
 h1::selection, 
 h2::selection {
-  background: var(--ink);
+  background: var(--asterisk);
   color: var(--paper);
   text-shadow: none;
 }
