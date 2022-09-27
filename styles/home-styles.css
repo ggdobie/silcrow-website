@@ -109,6 +109,7 @@
   top: 0;
   left: 0;
   mix-blend-mode: multiply;
+  transition: 0.2s;
 }
 
 .case-study h2 .flush-left, .flush-right {
@@ -145,10 +146,30 @@
   mask-size: auto;
   width: 28px;
   height: 16px;
+  transition: 0.3s;
 }
 
 .case-study .illustration, .case-study h2 {
   z-index: 1;
+}
+
+.case-study:hover .squiggle {
+  background-color: var(--dagger);
+}
+
+.case-study:hover .illustration::before {
+  transform: scale(120%);
+}
+
+.case-study:hover h2::after {
+  background-color: var(--dagger);
+  animation: point 0.9s ease-in-out infinite;
+}
+
+@keyframes point {
+  0% { transform: translateX(0%); }
+  50% { transform: translateX(30%); }
+  100% { transform: translateX(0%); }
 }
 
 figure .quotemark {
