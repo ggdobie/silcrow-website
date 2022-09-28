@@ -425,7 +425,7 @@ footer .copyright {
     grid-column: 1 / 4;
   }
   footer .colophon .details .caption {
-    grid-column: 6 / -1;
+    grid-column: 1 / -1;
   }
 }
 
@@ -475,10 +475,6 @@ footer .copyright {
   
   footer .colophon .references {
     grid-column: 9 / -2;
-  }
-  
-  footer .colophon .details .caption {
-    grid-column: 8 / -1;
   }
   
 }
@@ -551,7 +547,7 @@ footer .copyright {
   }
   
   footer .colophon .details .caption {
-    grid-column: 7 / -1;
+    grid-column: 1 / -1;
   }
   
 }
@@ -629,6 +625,10 @@ footer .copyright {
   
   footer .toggle-colophon {
     grid-column: 2 / 5;
+  }
+  
+  footer .colophon .type {
+    grid-column: 2 / 12;
   }
   
   footer .colophon .references, footer .colophon .details {
