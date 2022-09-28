@@ -415,7 +415,7 @@ footer .details {
   padding-bottom: 30px;
 }
 
-footer .carbon {
+footer .copyright {
   border-top: 1px solid var(--ink-100);
   padding-top: 28px;
 }
@@ -523,7 +523,7 @@ footer .carbon {
     padding-top: 20px;
   }
   
-  footer .carbon {
+  footer .copyright {
     border-top: none;
     padding-top: 0;
   }
