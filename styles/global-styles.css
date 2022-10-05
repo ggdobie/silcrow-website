@@ -32,50 +32,50 @@
 
 @font-face {
   font-family: 'Lyon Text';
-  src: url('../fonts/LyonText-RegularItalic-Web.woff2') format('woff2'),
-	   url('../fonts/LyonText-RegularItalic-Web.woff') format('woff');
   font-weight:  400;
   font-style:   italic;
   font-stretch: normal;
   font-display: swap;
+  src: url('../fonts/LyonText-RegularItalic-Web.woff2') format('woff2'),
+	     url('../fonts/LyonText-RegularItalic-Web.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lyon Text';
-  src: url('../fonts/LyonText-Regular-Web.woff2') format('woff2'),
-	   url('../fonts/LyonText-Regular-Web.woff') format('woff');
   font-weight:  400;
   font-style:   normal;
   font-stretch: normal;
   font-display: swap;
+  src: url('../fonts/LyonText-Regular-Web.woff2') format('woff2'),
+	     url('../fonts/LyonText-Regular-Web.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Orleans';
-  src: url('../fonts/Orleans-Light-Web.woff2') format('woff2'),
-	   url('../fonts/Orleans-Light-Web.woff') format('woff');
   font-weight:  300;
   font-style:   normal;
   font-stretch: normal;
   font-display: swap;
+  src: url('../fonts/Orleans-Light-Web.woff2') format('woff2'),
+	     url('../fonts/Orleans-Light-Web.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Dropcaps';
-  src: url('../fonts/Dropcaps.woff2') format('woff2'),
-	   url('../fonts/Dropcaps.woff') format('woff');
   font-weight:  900;
   font-style:   normal;
   font-stretch: normal;
   font-display: swap;
+  src: url('../fonts/Dropcaps.woff2') format('woff2'),
+	     url('../fonts/Dropcaps.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Anybody Silcrow Variable';
-  src: url('../fonts/Anybody-Silcrow-Variable.woff2') format('woff2'),
-	   url('../fonts/Anybody-Silcrow-Variable.woff') format('woff') ;
   font-style: normal;
   font-display: swap;
+  src: url('../fonts/Anybody-Silcrow-Variable.woff2') format('woff2'),
+	     url('../fonts/Anybody-Silcrow-Variable.woff') format('woff') ;
 }
 
 html {
