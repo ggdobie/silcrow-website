@@ -289,8 +289,12 @@ section.cta {
   transform: translate(40%, 30%) rotate(180deg);
 }
 
+.testimonial.reversed figure .feature-text {
+  color: var(--paper);
+}
+
 .testimonial figure figcaption {
-  border-top: 1px solid var(--silcrow-500);
+  border-top: 1px solid var(--asterisk);
   padding-top: 20px;
 }
 

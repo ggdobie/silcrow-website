@@ -37,6 +37,7 @@
   font-weight:  400;
   font-style:   italic;
   font-stretch: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -46,6 +47,7 @@
   font-weight:  400;
   font-style:   normal;
   font-stretch: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -55,6 +57,7 @@
   font-weight:  300;
   font-style:   normal;
   font-stretch: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -64,6 +67,7 @@
   font-weight:  900;
   font-style:   normal;
   font-stretch: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -71,6 +75,7 @@
   src: url('../fonts/Anybody-Silcrow-Variable.woff2') format('woff2'),
 	   url('../fonts/Anybody-Silcrow-Variable.woff') format('woff') ;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -88,7 +93,10 @@ body {
 
 .reversed {
   background-color: var(--silcrow-900);
-  color: var(--paper);
+}
+
+body.reversed {
+  color: var(--asterisk);
 }
 
 p::selection, 
@@ -105,7 +113,7 @@ span::selection,
 figcaption::selection, 
 a::selection, 
 img::selection {
-  background: var(--silcrow-900);
+  background: var(--silcrow-text);
   color: var(--paper);
   text-shadow: none;
 }
@@ -227,7 +235,7 @@ abbr[title] {
 }
 
 .caption span {
-  color: var(--silcrow);
+  color: var(--silcrow-text);
 }
 
 .large-text {
