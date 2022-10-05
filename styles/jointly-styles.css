@@ -12,7 +12,7 @@ header nav .breadcrumbs .case-study-logo {
 
 .banner {
   background-color: var(--hero-text-color-dark);
-  color: var(--hero-text-color-light);
+  color: var(--paper);
 }
 
 .banner h1 {
@@ -25,6 +25,7 @@ header nav .breadcrumbs .case-study-logo {
   display: block;
   line-height: 0.65;
   z-index: 0;
+  position: relative;
 }
 
 .banner h1 span:nth-child(1) {
@@ -32,15 +33,25 @@ header nav .breadcrumbs .case-study-logo {
 }
 
 .banner h1 span:nth-child(2) {
-  color: var(--hero-text-color-dark);
   margin-left: 0.85em;
   z-index: 2;
+}
+
+.banner h1 span::after {
+  content: attr(data-text);
+  color: var(--hero-text-color-light);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner h1 span:nth-child(2)::after {
+  color: var(--hero-text-color-dark);  
 }
 
 .banner h1 span:nth-child(3) {
   margin-left: 0.35em;
   margin-top: 0.15em;
-  position: relative;
   z-index: -1;
 }
 

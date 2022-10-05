@@ -35,7 +35,7 @@ header {
   line-height: 0.85;
   
   color: var(--paper);
-  background-color: transparent;
+  background-color: #F16775;
   
   text-shadow: 0.04em 0.03em 0em rgba(234, 89, 102, 1),
   0.03em 0.02em 0em rgba(234, 89, 102, 1),
