@@ -233,7 +233,10 @@ section.cta {
   line-height: 0.6;
   margin: 0.4em 0.1em 0.07em 0;
   padding: 0.1em 0.1em 0.1em 0;
-  text-shadow: -1px 1px 0 var(--silcrow), 1px 1px 0 var(--silcrow), 1px -1px 0 var(--silcrow), -1px -1px 0 var(--silcrow);
+}
+
+.diagram .info-card p::before {
+  text-shadow: -1px 1px 0 var(--silcrow-text), 1px 1px 0 var(--silcrow-text), 1px -1px 0 var(--silcrow-text), -1px -1px 0 var(--silcrow-text);
 }
 
 .diagram .info-card p:first-child {
@@ -271,7 +274,7 @@ section.cta {
 }
 
 .dropcap {
-  color: var(--asterisk);
+  color: var(--silcrow-text);
 }
 
 .tan .info-card {
