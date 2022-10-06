@@ -257,8 +257,8 @@ abbr[title] {
   background-color: var(--silcrow);
   -webkit-mask-image: url("../images/bg-tile-squiggle.svg");
   mask-image: var(--squiggle-svg);
-  width:100%;
-  height:8px;
+  width: 100%;
+  height: 8px;
   transition: 0.3s;
 }
 

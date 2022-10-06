@@ -1,5 +1,7 @@
 :root {
   --quote-float-height: -8px;
+  --squiggle-height: 8px;
+  --squiggle-width: 14px;
 }
 
 .intro-title {
@@ -134,16 +136,33 @@
   flex: none;
 }
 
-.case-study h2 .flush-left .squiggle, .flush-right .squiggle {
+.case-study h2 .flush-left .squiggle-container, .flush-right .squiggle-container {
   margin-top: 0.55em;
 }
 
-.case-study h2 .flush-left .squiggle {
-  margin-left: 12px;
+.case-study h2 .flush-left .squiggle-container  {
+  margin-left: var(--squiggle-width);
 }
 
-.case-study h2 .flush-right .squiggle {
-  margin-right: 12px;
+.case-study h2 .flush-right .squiggle-container {
+  margin-right: var(--squiggle-width);
+}
+
+.squiggle-container {
+  width: 100%;
+  height: var(--squiggle-height);
+  transform: skew(39deg);
+  overflow: hidden;
+}
+
+.squiggle-container .squiggle {
+  display: block;
+  width: 200%;
+  height: var(--squiggle-height);
+  transform: skew(-39deg) translateX(-50%);
+  transform-origin: center right;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .case-study h2 em {
@@ -167,12 +186,16 @@
   z-index: 1;
 }
 
-.case-study:hover .squiggle {
+.case-study:hover .squiggle-container .squiggle {
   background-color: var(--dagger);
+  animation: saw 0.9s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-.case-study:hover .illustration::before {
-  transform: scale(120%);
+@keyframes saw {
+  0% { transform: translateX(calc(var(--squiggle-width) - 50%)) skew(-39deg); }
+  100% { transform: translateX(calc(var(--squiggle-width)*2 - 50%)) skew(-39deg); }
 }
 
 .case-study:hover h2::after {
@@ -184,6 +207,10 @@
   0% { transform: translateX(0%); }
   50% { transform: translateX(30%); }
   100% { transform: translateX(0%); }
+}
+
+.case-study:hover .illustration::before {
+  transform: scale(120%);
 }
 
 figure .quotemark {
@@ -571,10 +598,11 @@ footer .copyright {
 
 @media (min-width: 980px) {
   
-  .squiggle {
-    height: 12px;
+  :root {
+    --squiggle-height: 12px;
+    --squiggle-width: 21px;
   }
-  
+
   .case-study h2::after {
     width: 40px;
     height: 24px;
