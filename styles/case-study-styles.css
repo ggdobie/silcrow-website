@@ -562,6 +562,14 @@ footer .details .contact {
     order: 1;
   }
   
+  .mode-switcher .tab {
+    cursor: pointer;
+  }
+  
+  .mode-switcher .tab.selected {
+    pointer-events: none;
+  }
+  
   .mode-switcher .tab .active-area .active-indicator .progress-indicator {
     transform-origin: top right;
   }
