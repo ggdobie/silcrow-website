@@ -366,10 +366,11 @@ footer .toggle-colophon {
 }
 
 footer .colophon {
-  transition: 0.3s ease-in-out;
   overflow: hidden;
   height: auto;
   padding-top: 20px;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 footer .colophon.hidden {
@@ -377,6 +378,8 @@ footer .colophon.hidden {
   height: 0px;
   opacity: 0;
   padding-top: 0px;
+  transform: translateY(-20%);
+  transition: 0.5s ease-in-out;
 }
 
 footer .colophon h2 {
