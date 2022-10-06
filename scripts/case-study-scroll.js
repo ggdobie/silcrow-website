@@ -89,7 +89,7 @@ const scrollEffects = function() {
 				silcrowLogo.classList.remove("retracted")
 				modeSwitcher.classList.add("retracted")
 			}
-			else {
+			else if (baseRegion > 0) {
 				silcrowLogo.classList.remove("retracted")
 				modeSwitcher.classList.remove("retracted")
 			}
