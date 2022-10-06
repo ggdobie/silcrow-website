@@ -498,6 +498,14 @@ footer .copyright {
 
 @media (min-width: 900px) {
   
+  .intro-title {
+    transition: 0.3s;
+  }
+  
+  .intro-blurb .intro-text {
+    transition: 0.3s;
+  }
+  
   .intro-title .seal .silcrow-icon {
     font-size: 136px;
   }
