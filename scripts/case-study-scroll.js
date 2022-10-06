@@ -1,6 +1,7 @@
 const caret = document.querySelector("header nav .caret")
 const clientLogo = document.querySelector("header nav .case-study-logo")
 const silcrowLogo = document.querySelector("header nav .backlink.home")
+const silcrowLogoImage = document.querySelector("header nav .backlink.home img")
 const header = document.querySelector("header")
 
 const modeSwitcher = document.querySelector(".mode-switcher")
@@ -92,6 +93,13 @@ const scrollEffects = function() {
 				silcrowLogo.classList.remove("retracted")
 				modeSwitcher.classList.remove("retracted")
 			}
+			// invert logo if below banner
+			if (scrollY > bannerRegion && silcrowLogoImage.classList.contains("invertable")) {
+				silcrowLogoImage.classList.add("inverted")
+			}
+			else {
+				silcrowLogoImage.classList.remove("inverted")
+			}
 		}		
 	//Scrolling down (narrow)
 		else {
@@ -129,7 +137,14 @@ const scrollEffects = function() {
 				silcrowLogo.classList.remove("retracted")
 				modeSwitcher.classList.remove("retracted")
 			}
-		}		
+		}
+		// invert logo if below banner
+		if (scrollY > bannerRegion && silcrowLogoImage.classList.contains("invertable")) {
+			silcrowLogoImage.classList.add("inverted")
+		}
+		else {
+			silcrowLogoImage.classList.remove("inverted")
+		}	
 	}
 	
 	scrollCompare = scrollY <= 0 ? 0 : scrollY;

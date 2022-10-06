@@ -38,7 +38,7 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 34px 0;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 header nav .breadcrumbs {
@@ -56,6 +56,11 @@ header nav .breadcrumbs .backlink.home {
 
 header nav .breadcrumbs .backlink.home img {
   width: 18px;
+  transition: filter 0.3s;
+}
+
+header nav .breadcrumbs .backlink.home img.inverted {
+  filter: invert(1);
 }
 
 header nav .breadcrumbs .caret {
