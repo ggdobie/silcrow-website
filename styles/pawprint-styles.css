@@ -10,12 +10,12 @@
 }
 
 header nav .breadcrumbs .case-study-logo {
-  margin-bottom: -4px;
-  height: 36px;
+  margin-bottom: -6px;
+  height: 32px;
 }
 
 header nav .breadcrumbs .caret {
-  background-color: var(--paper);
+  background-color: var(--asterisk);
 }
 
 header {
@@ -23,35 +23,21 @@ header {
 }
 
 .banner {
-  background-color: #77C3E5;
-  justify-items: center;
+  background-color: #35E8A7;
   min-height: unset;
 }
 
 .banner h1.hero-text {
 
   font-size: calc(var(--banner-scale-factor)*16.667vmin);
-  text-transform: uppercase;
-  line-height: 0.85;
   
   color: var(--paper);
-  background-color: #F16775;
-  
-  text-shadow: 0.04em 0.03em 0em rgba(234, 89, 102, 1),
-  0.03em 0.02em 0em rgba(234, 89, 102, 1),
-  0.02em 0.03em 0em rgba(234, 89, 102, 1),
-  0px 0.08em 0.06em rgba(181, 77, 88, 1),
-  0.04em 0.08em 0.05em rgba(0, 0, 0, 0.25),  
-  0.05em 0.06em 0em rgba(0, 0, 0, 0.25);
-  
-  width: max-content;
+
   position: absolute;
-  top: var(--banner-offsetY);
-  left: var(--banner-offsetX);
-  
-  /* transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg) translate(-10%, 10%); */
-  transform: rotate(30deg) skew(-30deg);
-  transform-origin: top center;
+  top: 0;
+  right: 0;
+  text-align: right;
+  grid-column: 1
 }
 
 .banner h1 span::selection {
@@ -60,7 +46,33 @@ header {
 }
 
 .banner h1 span {
-  display: block;
+  display: inline-block;
+  margin-bottom: -0.4em;
+  position: absolute;
+  /* background: red; */
+}
+
+.banner h1 span:first-child {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.banner h1 span.ampersand {
+  color: var(--ink);
+  top: 0.62em;
+  right: 0.65em;
+  z-index: 2;
+}
+
+.banner h1 span:last-child {
+  transform-origin: top left;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 1;
+  top: 0.9em;
+  z-index: 0;
+  /* margin-left: -1em; */
 }
 
 .banner .banner-bg {
