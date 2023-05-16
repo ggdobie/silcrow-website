@@ -30,15 +30,16 @@ header {
 
 .banner h1.hero-text {
 
-  font-size: calc(var(--banner-scale-factor)*16.667vmin);
+  font-size: calc(var(--banner-scale-factor)*23vmin);
   
   color: var(--paper);
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1.2em;
+  right: 0.3em;
   text-align: right;
-  grid-column: 1
+  /* transform: translateY(-3.7em); */
+  grid-column: reset;
 }
 
 .banner h1 span::selection {
@@ -50,7 +51,6 @@ header {
   display: inline-block;
   margin-bottom: -0.4em;
   position: absolute;
-  /* background: red; */
 }
 
 .banner h1 span:first-child {
@@ -92,7 +92,8 @@ header {
   left: 50%;
   top: 0;
   transform: translate(-50%, -80%);
-  width: 100%;
+  width: auto;
+  grid-column: unset;
 }
 
 .banner .scrollBadge {
@@ -255,7 +256,7 @@ section.mangyoku {
 .mangyoku .illustration {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 1;
   top: unset;
   left: unset;
   width: 120vw;
