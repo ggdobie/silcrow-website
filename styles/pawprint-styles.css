@@ -25,6 +25,7 @@ header {
 .banner {
   background-color: #35E8A7;
   min-height: unset;
+  height: 90vh;
 }
 
 .banner h1.hero-text {
@@ -82,6 +83,16 @@ header {
   top: var(--banner-offsetY);
   left: var(--banner-offsetX);
   transform: translate(-47.5%, -14%);
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.banner-bjorn {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -80%);
+  width: 100%;
 }
 
 .banner .scrollBadge {
@@ -115,7 +126,7 @@ header {
 }
 
 .intro .skills-badge {
-  background-color: #eb4f63;
+  background-color: var(--asterisk);
 }
 
 .intro .skills-badge.product-design {
