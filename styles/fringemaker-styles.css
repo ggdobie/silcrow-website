@@ -232,7 +232,7 @@ section.mangyoku {
 .mangyoku .illustration {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 1;
   top: unset;
   left: unset;
   width: 120vw;
@@ -361,6 +361,7 @@ section.mangyoku {
   
   .mangyoku .illustration {
     width: 52rem;
+    right: 0;
   }
   
   .prototype {
