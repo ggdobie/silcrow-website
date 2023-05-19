@@ -32,19 +32,12 @@ header {
 }
 
 .banner h1.hero-text {
-
   font-size: calc(var(--banner-scale-factor)*20vmin);
-  
+  line-height: 0.5;
   color: var(--paper);
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* position: absolute;
-  bottom: 0;
-  right: 0.3em; */
-  /* text-align: right; */
-  line-height: 0.5;
 }
 
 .banner h1 span {
@@ -59,20 +52,10 @@ header {
   z-index: 1;
   color: var(--ink);
   transform: translate(-0.5em, 0.15em);
-  /* position: absolute;
-  top: 0.6em;
-  right: 0.58em; */
 }
 
 .banner h1 span:last-child {
   z-index: 2;
-  /* transform-origin: top left;
-  transform: rotate(90deg);
-  position: absolute;
-  right: 1;
-  top: 0.9em; */
-  /* writing-mode: vertical-lr; */
-  /* margin-left: -1em; */
 }
 
 .banner h1 span::selection {
@@ -87,7 +70,6 @@ header {
   top: var(--banner-offsetY);
   left: var(--banner-offsetX);
   transform: translate(-47.5%, -14%);
-  opacity: 0.7;
   z-index: 3;
 }
 
@@ -97,6 +79,7 @@ header {
   top: 0;
   transform: translate(-50%, -80%);
   width: auto;
+  max-width: 250px;
   grid-column: unset;
 }
 
@@ -178,12 +161,6 @@ header {
   margin-bottom: 1em;
   text-align: center;
 }
-
-/* .mockup figure picture img {
-  filter: drop-shadow(0px 5.3px 6.8px rgba(9, 24, 51, 0.024)) 
-  drop-shadow(0px 17.6px 22.1px rgba(9, 24, 51, 0.076)) 
-  drop-shadow(0px 79px 118px rgba(9, 24, 51, 0.1));
-} */
 
 .mockup p {
   margin-top: 130px;
@@ -369,7 +346,40 @@ section.mangyoku {
 @media (min-width: 800px) {
   
   :root {
-    --banner-offsetY: 34%;
+    --banner-offsetY: 14%;
+    --banner-scale-factor: 1.15;
+  }
+  
+  .banner h1.hero-text {
+    align-items: end;
+    position: absolute;
+    bottom: -0.06em;
+    right: 0.3em;
+    text-align: right;
+    line-height: 1;
+    grid-column: unset;
+  }
+  
+  .banner h1 span:last-child {
+    z-index: 0;
+  }
+  
+  .banner h1 span.ampersand {
+    z-index: 2;
+    transform: translate();
+    position: absolute;
+    top: 0.5em;
+    right: 0.09em;
+    font-size: 0.9em;
+  }
+  
+  .banner h1 span:last-child {
+    z-index: 1;
+    writing-mode: vertical-lr;
+  }
+  
+  .banner-bjorn {
+    max-width: 410px;
   }
   
   .intro {
@@ -408,12 +418,6 @@ section.mangyoku {
 }
 
 @media (min-width: 900px) {
-
-  :root {
-  --banner-offsetX: 65%;
-  --banner-offsetY: 34%;
-  --banner-scale-factor: 1;
-  }
   
   .banner .scrollBadge {
     transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*9vmin), calc(var(--banner-scale-factor)*67vmin));  
@@ -483,8 +487,8 @@ section.mangyoku {
 @media (min-width: 1194px) {
   
   :root {
-    --banner-offsetX: 61.3%;
-    --banner-scale-factor: 0.9;
+    --banner-offsetX: 75%;
+    --banner-offsetY: 0;
   }
   
   .intro {
@@ -534,8 +538,11 @@ section.mangyoku {
   }
   
   :root {
-    --banner-offsetX: 61%;
-    --banner-scale-factor: 1;
+    --banner-scale-factor: 1.2;
+  }
+  
+  .banner-bjorn {
+    max-width: unset;
   }
   
   .intro .skills-badge.ux-design {
