@@ -11,7 +11,7 @@
 
 header nav .breadcrumbs .case-study-logo {
   margin-bottom: -6px;
-  height: 32px;
+  height: 28px;
 }
 
 header nav .breadcrumbs .caret {
@@ -70,7 +70,7 @@ header {
   top: var(--banner-offsetY);
   left: var(--banner-offsetX);
   transform: translate(-47.5%, -14%);
-  z-index: 3;
+  z-index: 0;
 }
 
 .banner-bjorn {
@@ -376,6 +376,10 @@ section.mangyoku {
   .banner h1 span:last-child {
     z-index: 1;
     writing-mode: vertical-lr;
+  }
+  
+  .banner .banner-bg {
+    z-index: 3;
   }
   
   .banner-bjorn {
