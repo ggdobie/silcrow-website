@@ -64,7 +64,7 @@ header {
 }
 
 .banner .banner-bg {
-  width: calc(var(--banner-scale-factor)*218vmin);
+  width: calc(var(--banner-scale-factor)*170vmin);
   max-width: unset;
   position: absolute;
   top: var(--banner-offsetY);
@@ -500,6 +500,10 @@ section.mangyoku {
     --banner-offsetY: 0;
   }
   
+  .banner .banner-bg {
+    width: calc(var(--banner-scale-factor)*220vmin);
+  }
+  
   .intro {
     min-height: unset;
   }
@@ -541,6 +545,15 @@ section.mangyoku {
 }
 
 @media (min-width: 1920px) {
+  
+  :root {
+    --banner-offsetX: 93%;
+    --banner-offsetY: 0;
+  }
+  
+  .banner .banner-bg {
+    width: calc(var(--banner-scale-factor)*310vmin);
+  }
   
   .intro {
     min-height: 860px;
