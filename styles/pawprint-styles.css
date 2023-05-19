@@ -15,7 +15,7 @@ header nav .breadcrumbs .case-study-logo {
 }
 
 header nav .breadcrumbs .caret {
-  background-color: var(--asterisk);
+  background-color: var(--dagger-100);
 }
 
 header {
