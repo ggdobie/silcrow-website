@@ -106,7 +106,7 @@ header {
 
 .intro {
   min-height: unset;
-  padding-top: 8rem;
+  padding-top: 17.5rem;
   padding-bottom: 10rem;
 }
 
@@ -121,7 +121,7 @@ header {
 .intro .skills-badge.product-design {
   -webkit-mask-image: url("../images/skills-badge-product-design.svg");
   mask-image: url("../images/skills-badge-product-design.svg");
-  top: -36px;
+  top: 60px;
   left: -8px;
   transition-delay: 0.2s
 }
@@ -129,8 +129,8 @@ header {
 .intro .skills-badge.ui-design {
   -webkit-mask-image: url("../images/skills-badge-user-interface-design.svg");
   mask-image: url("../images/skills-badge-user-interface-design.svg");
-  top: -89px;
-  right: -18px;
+  top: 95px;
+  right: -4px;
 }
 
 .mockup {
@@ -276,7 +276,18 @@ section.mangyoku {
 @media (min-width: 480px) {
   
   .intro {
-    padding-top: 12rem;
+    padding-top: 15rem;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 85px;
+    left: -8px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 45px;
+    right: unset;
+    left: 39%;
   }
   
   .mockup {
@@ -298,20 +309,17 @@ section.mangyoku {
   }
   
   .intro {
-    padding-top: 10rem;
-    padding-botom: 12rem;
+    padding-top: 13rem;
   }
   
-  .intro .skills-badge.ux-design {
-    top: -50px;
-    left: unset;
-    right: -88px;
+  .intro .skills-badge.product-design {
+    top: -25px;
+    left: -118px;
   }
   
   .intro .skills-badge.ui-design {
-    top: -12px;
-    right: unset;
-    left: -84px;
+    top: 38px;
+    left: 86px;
   }
   
   .mockup {
@@ -346,13 +354,13 @@ section.mangyoku {
 
 @media (min-width: 800px) {
   
-  .banner {
-    height: 90vh;
-  }
-  
   :root {
     --banner-offsetY: 14%;
     --banner-scale-factor: 1.15;
+  }
+  
+  .banner {
+    height: 90vh;
   }
   
   .banner h1.hero-text {
@@ -393,8 +401,18 @@ section.mangyoku {
   
   .intro {
     min-height: 80vh;
-    padding-top: 180px;
+    padding-top: 300px;
     padding-bottom: 12rem;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 35px;
+    left: -108px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 98px;
+    left: 76px;
   }
   
   .mockup p {
@@ -432,21 +450,21 @@ section.mangyoku {
     transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*9vmin), calc(var(--banner-scale-factor)*67vmin));  
   }
   
-  .intro .skills-badge.ux-design {
-    top: -43px;
-    right: 102px;
-  }
-  
-  .intro .skills-badge.ui-design {
-    top: 68px;
-    left: -206px;
-  }
-  
   .intro {
-    padding-top: 0;
+    padding-top: 80px;
     padding-bottom: 0;
     height: 80vh;
     min-height: 500px;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 35px;
+    left: 32px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 108px;
+    left: -164px;
   }
   
   .mockup figure picture img {
@@ -508,9 +526,14 @@ section.mangyoku {
     min-height: unset;
   }
 
-  .intro .skills-badge.ux-design {
-    top: -35px;
-    right: 426px;
+  .intro .skills-badge.product-design {
+    top: 95px;
+    left: -68px;
+  }
+
+  .intro .skills-badge.ui-design {
+    top: 222px;
+    left: -204px;
   }
   
   .mockup {
@@ -559,22 +582,22 @@ section.mangyoku {
     min-height: 860px;
   }
   
+  .intro .skills-badge.product-design {
+    top: 75px;
+    left: -440px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 222px;
+    left: -252px;
+  }
+  
   :root {
     --banner-scale-factor: 1.2;
   }
   
   .banner-bjorn {
     max-width: unset;
-  }
-  
-  .intro .skills-badge.ux-design {
-    top: 266px;
-    left: -302px;
-  }
-  
-  .intro .skills-badge.ui-design {
-    top: -42px;
-    left: -86px;
   }
   
   .mockup {
@@ -609,6 +632,11 @@ section.mangyoku {
 }
 
 @media (min-width: 2250px) {
+  
+  .intro .skills-badge.ui-design {
+    top: 222px;
+    left: -650px;
+  }
   
   .prototype .info {
     padding-top: 18rem;
