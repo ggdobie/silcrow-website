@@ -71,6 +71,7 @@ header {
   left: var(--banner-offsetX);
   transform: translate(-47.5%, -14%);
   z-index: 0;
+  grid-column: unset;
 }
 
 .banner-bjorn {
@@ -345,6 +346,10 @@ section.mangyoku {
 
 @media (min-width: 800px) {
   
+  .banner {
+    height: 90vh;
+  }
+  
   :root {
     --banner-offsetY: 14%;
     --banner-scale-factor: 1.15;
@@ -422,10 +427,6 @@ section.mangyoku {
 }
 
 @media (min-width: 900px) {
-  
-  .banner {
-    height: 90vh;
-  }
   
   .banner .scrollBadge {
     transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*9vmin), calc(var(--banner-scale-factor)*67vmin));  
