@@ -107,7 +107,7 @@ header {
 .intro {
   min-height: unset;
   padding-top: 17.5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 
 .intro h2 {
@@ -115,7 +115,7 @@ header {
 }
 
 .intro .skills-badge {
-  background-color: var(--asterisk);
+  background-color: #0f9483;
 }
 
 .intro .skills-badge.product-design {
@@ -135,32 +135,69 @@ header {
 
 .mockup {
   min-height: unset;
-  margin-top: -50px;
-  padding-top: 8rem;
   padding-bottom: 6rem;
   justify-items: center;
+}
+
+.mockup.app {
+  padding-top: 0px;
 }
 
 .mockup figure {
   width: 100%;
 }
 
-.mockup figure picture img {
+.mockup.app figure picture img {
   width: 100%;
-  transform: scale(140%) rotate(-30deg);
+  transform: scale(150%) rotate(-30deg);
   transform-origin: bottom left;
   max-width: 360px;
 }
 
-.mockup figure figcaption {
-  margin-top: -5rem;
+.mockup.app figure picture {
+  order: 2;
+  margin-top: 12rem;
+}
+
+.mockup.app figure figcaption {
+  grid-column: 1 / 3;
+  order: 1;
+  margin-top: 0rem;
   line-height: 1.4;
 }
 
 .mockup figure figcaption span {
   display: block;
   margin-bottom: 1em;
-  text-align: center;
+}
+
+.mockup.dashboard figure {
+  /* transform: translateX(-5vw); */
+}
+
+.mockup.dashboard figure picture {
+  transform: translate(29%, -87%);
+}
+
+.mockup.dashboard figure picture img {
+  width: 100%;
+  transform: scale(210%) rotate(-30deg);
+  /* transform-origin: bottom left; */
+  max-width: 360px;
+}
+
+.mockup.dashboard figure picture {
+  order: 2;
+  z-index: 0;
+}
+
+.mockup.dashboard figure figcaption {
+  order: 1;
+  z-index: 1;
+  transform: translateY(3rem);
+  line-height: 1.4;
+  text-align: right;
+  grid-column: -1 / -3;
 }
 
 .mockup p {
@@ -180,83 +217,48 @@ header {
   border-top: 1px solid var(--dagger-500);
 }
 
-.badges {
-  padding-top: 20vw;
-  padding-bottom: 20vw;
-  z-index: 2;
+.okrs {
+  height: unset;
 }
 
-.badges .info {
-  padding-top: 45vh;
+.okrs .info {
+  position: sticky;
+  padding-top: 1rem;
+  padding-botom: 3rem;
 }
 
-.badges .illustration .svg {
-  transform: scale(220%) translateX(-40%);
-  transform-origin: center left;
-  max-width: 370px;
+.okrs .okr-card {
+  border-radius: 10px;
+  box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
+  padding: 24px;
+  position: relative;
+  background-color: var(--silcrow-050);
 }
 
-.badge {
-  animation: bounce 1.5s ease-in-out infinite;
+.okrs .okr-card {
+  font-style: italic;
+  margin-bottom: 1rem
 }
 
-.badge.n-02 {
-  animation-delay: 0.1s;
-}
-.badge.n-03 {
-  animation-delay: 0.2s;
-}
-.badge.n-04 {
-  animation-delay: 0.3s;
-}
-.badge.n-05 {
-  animation-delay: 0.4s;
+.okrs .okr-card::before {
+  content: "§";
+  font-style: normal;
+  display: block;
+  margin-bottom: 2rem;
+  color: var(--ink-100);
 }
 
-@keyframes bounce {
-  0% { transform: translateY(-30px); }
-  50% { transform: translateY(30px); }
-  100% { transform: translateY(-30px); }
-}
-
-.prototype .illustration {
+.collaboration .illustration {
   /* transform: translateX(var(--gutter)); */
 }
 
-.prototype .info {
+.collaboration .info {
   padding-bottom: 30vw;
 }
 
-section.mangyoku {
-  background-color: #7d8a9e;
-  display: revert;
-  padding: 0;
-  height: 150vw;
-  min-height: unset;
-}
-
-.mangyoku .illustration {
-  position: absolute;
-  bottom: 0;
-  right: 1;
-  top: unset;
-  left: unset;
-  width: 120vw;
-}
-
-.mangyoku .info .info-card.overlay {
-  background-color: rgba(125, 138, 158, 0.9);
-  color: var(--paper);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  width: max-content;
-  box-shadow: none;
-  border-radius: 8px;
-  padding: 1rem;
-}
-
 .cta.show-gallery {
-  background-color: #5d6a81;
-  color: var(--paper);
+  /* background-color: var(--silcrow-050); */
+  /* color: var(--ink); */
 }
 
 .cta.show-gallery h3::after {
@@ -337,15 +339,15 @@ section.mangyoku {
     transform-origin: center center;
   }
   
-  .prototype {
+  .collaboration {
     padding-top: 10rem;
   }
   
-  .prototype .info {
+  .collaboration .info {
     padding-bottom: 12vw;
   }
   
-  .prototype .illustration {
+  .collaboration .illustration {
     transform: translateX(-80px) scale(180%);
     transform-origin: top left;
   }
@@ -417,7 +419,11 @@ section.mangyoku {
   
   .mockup p {
     margin-top: 160px;
-  }  
+  }
+  
+  .okrs .okr-card {
+    transform-origin: right center;
+  }
   
   section.mangyoku {
     height: 40rem;
@@ -428,17 +434,17 @@ section.mangyoku {
     width: 52rem;
   }
   
-  .prototype {
+  .collaboration {
     min-height: unset;
     height: 90rem;
     padding-bottom: 10rem;
   }
   
-  .prototype .info {
+  .collaboration .info {
     padding-bottom: 64vw;
   }
   
-  .prototype .illustration {
+  .collaboration .illustration {
     transform: none;
   }
   
@@ -482,22 +488,22 @@ section.mangyoku {
     max-width: 510px;
   }
   
-  .prototype {
+  .collaboration {
     padding-top: 5rem;
     /* padding-bottom: 20rem; */
   }
   
-  .prototype .info {
+  .collaboration .info {
     padding-top: 15vw;
     padding-bottom: 56vw;
   }
   
-  .prototype .illustration {
+  .collaboration .illustration {
     max-width: unset;
     top: 10%;
   }
   
-  .prototype .illustration img {
+  .collaboration .illustration img {
     width: 100%;
   }
   
@@ -539,7 +545,7 @@ section.mangyoku {
   .mockup {
     min-height: unset;
     margin-top: 0px;
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
   }
   
@@ -547,8 +553,12 @@ section.mangyoku {
     max-width: 710px;
   }
   
-  .mockup figure figcaption span {
+  .mockup.app figure figcaption span {
     text-align: left;
+  }
+  
+  .mockup.dashboard figure figcaption span {
+    text-align: right;
   }
   
   .badges .illustration .svg {
@@ -556,11 +566,11 @@ section.mangyoku {
     max-width: 800px;
   }  
   
-  .prototype .illustration {
+  .collaboration .illustration {
     max-width: 480px;
   }
   
-  .prototype .info {
+  .collaboration .info {
     padding-top: 13rem;
     padding-bottom: 31rem;
   }
@@ -617,7 +627,7 @@ section.mangyoku {
     max-width: 900px;
   }
   
-  .prototype .info {
+  .collaboration .info {
     padding-bottom: 33rem;
   }
   
@@ -638,7 +648,7 @@ section.mangyoku {
     left: -650px;
   }
   
-  .prototype .info {
+  .collaboration .info {
     padding-top: 18rem;
   }
   

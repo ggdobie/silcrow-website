@@ -100,6 +100,10 @@ section.paper {
   background-color: var(--paper);
 }
 
+section.dagger {
+  background-color: var(--dagger-100);
+}
+
 section.cta {
   background-color: var(--double-dagger-100);
 }
