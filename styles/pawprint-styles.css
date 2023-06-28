@@ -513,6 +513,11 @@ header {
     width: 100%;
   }
   
+  .speed .illustration img {
+    transform: scale(100%);
+    max-width: unset;
+  }
+  
   section.mangyoku {
     height: 40rem;
   }
