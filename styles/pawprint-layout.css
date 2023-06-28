@@ -18,8 +18,8 @@ section.mangyoku .info {
   grid-column: 2 / span 2;
 }
 
-.systems .illustration {
-  grid-column: 2 / span 2;
+.speed .illustration {
+  grid-column: 1 / -1;
 }
 
 .gallery .image-container {
@@ -126,6 +126,10 @@ section.mangyoku .info {
   
   .badges .illustration {
     grid-column: 1 / span 7;
+  }
+  
+  .speed .illustration {
+    grid-column: 4 / -2;
   }
   
   section.banner * {

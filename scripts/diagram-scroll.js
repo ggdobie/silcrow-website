@@ -1,6 +1,8 @@
-const sectionTag = document.querySelector(".diagram") 
-const illustrationTag = document.querySelector(".flow .illustration")
+const sectionTag = document.querySelector(".diagram.pan") 
+const illustrationTag = document.querySelector(".pan .illustration")
 let mobileBreakpoint = true
+
+console.log(sectionTag, illustrationTag);
 
 const moveIllustration = function() {
 	
@@ -20,6 +22,7 @@ const moveIllustration = function() {
 		
 		// MOVE THE ILLUSTRATION
 		illustrationTag.style.transform = `translateX(${movement}px)`
+		console.log("hi")
 		
 	}
 	

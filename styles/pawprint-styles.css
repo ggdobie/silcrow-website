@@ -256,6 +256,12 @@ header {
   padding-bottom: 30vw;
 }
 
+.speed .illustration img {
+  transform: scale(160%);
+  transform-origin: center left;
+  max-width: 400px;
+}
+
 .cta.show-gallery {
   /* background-color: var(--silcrow-050); */
   /* color: var(--ink); */
