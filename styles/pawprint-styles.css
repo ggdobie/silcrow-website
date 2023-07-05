@@ -171,10 +171,6 @@ header {
   margin-bottom: 1em;
 }
 
-.mockup.dashboard figure {
-  /* transform: translateX(-5vw); */
-}
-
 .mockup.dashboard figure picture {
   transform: translate(29%, -87%);
 }
@@ -269,11 +265,6 @@ header {
   transform: scale(160%);
   transform-origin: center left;
   max-width: 400px;
-}
-
-.cta.show-gallery {
-  /* background-color: var(--silcrow-050); */
-  /* color: var(--ink); */
 }
 
 .cta.show-gallery h3::after {
@@ -505,7 +496,6 @@ header {
   
   .collaboration {
     padding-top: 5rem;
-    /* padding-bottom: 20rem; */
   }
   
   .collaboration .info {
