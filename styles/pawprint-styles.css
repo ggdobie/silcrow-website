@@ -248,11 +248,20 @@ header {
   color: var(--ink-100);
 }
 
+.collaboration {
+  height: 1130px;
+}
 .collaboration .illustration {
-  /* transform: translateX(var(--gutter)); */
+  margin-top: 20vh;
+  margin-bottom: 30vh;
+}
+
+.collaboration .illustration img {
+  transform: scale(106%);  
 }
 
 .collaboration .info {
+  padding-top: 70vh;
   padding-bottom: 30vw;
 }
 
