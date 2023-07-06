@@ -215,9 +215,15 @@ header {
   height: unset;
 }
 
+.okrs * {
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .okrs .info {
   position: sticky;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-botom: 3rem;
 }
 
@@ -302,6 +308,16 @@ header {
 
   .intro .skills-badge.ux-design {
     top: 30px;
+  }
+  
+  .okrs * {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+  
+  .okrs .card-container .okr-card:last-child {
+    margin-bottom: 4rem;
   }
   
 }
@@ -500,14 +516,8 @@ header {
     transform: translateY(22rem);
   }
   
-  .badges {
+  .okrs {
     padding-top: 10vw;
-    padding-bottom: 10vw;
-  }
-  
-  .badges .illustration .svg {
-    transform: scale(200%) translateX(-8%);
-    max-width: 510px;
   }
   
   .collaboration {
@@ -578,10 +588,10 @@ header {
     transform: scale(92%) rotate(-30deg);
   }
   
-  .badges .illustration .svg {
-    transform: scale(180%) translateX(-12%);
-    max-width: 800px;
-  }  
+  .okrs .card-container .okr-card {
+    font-size: 2.25em;
+    padding: 3rem;
+  }
   
   .collaboration .illustration {
     max-width: 480px;
@@ -640,13 +650,8 @@ header {
     transform: scale(92%) rotate(-30deg);
   }
   
-  .badges {
-    height: 1300px;
-  }
-  
-  .badges .illustration .svg {
-    transform: scale(200%) translateX(0);
-    max-width: 900px;
+  .okrs .card-container {
+    grid-column: -2 / -13;
   }
   
   .collaboration .info {
@@ -668,6 +673,10 @@ header {
   .intro .skills-badge.ui-design {
     top: 222px;
     left: -650px;
+  }
+  
+  .okrs .card-container {
+    grid-column: -9 / -21;
   }
   
   .collaboration .info {
