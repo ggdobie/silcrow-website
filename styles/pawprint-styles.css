@@ -254,6 +254,9 @@ header {
 .collaboration .illustration {
   margin-top: 20vh;
   margin-bottom: 30vh;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .collaboration .illustration img {
@@ -347,29 +350,24 @@ header {
   .mockup {
     padding-top: 8rem;
   }
-
-  .badges {
-    padding-top: 14vw;
-    padding-bottom: 14vw;
-  }
-  
-  .badges .illustration .svg {
-    transform: scale(200%) translateX(-26%);
-    max-width: unset;
-    transform-origin: center center;
-  }
   
   .collaboration {
     padding-top: 10rem;
+    height: 1380px;
   }
   
   .collaboration .info {
-    padding-bottom: 12vw;
+    padding-top: 90vh;
+    /* padding-bottom: 12vw; */
   }
   
   .collaboration .illustration {
-    transform: translateX(-80px) scale(180%);
-    transform-origin: top left;
+    max-width: unset;
+    margin-bottom: 5vh;
+  }
+  
+  .collaboration .illustration img {
+    transform: scale(130%);  
   }
   
 }
@@ -445,6 +443,10 @@ header {
     transform-origin: right center;
   }
   
+  .collaboration .illustration {
+    margin-bottom: 25vh;
+  }
+  
   section.mangyoku {
     height: 40rem;
   }
@@ -454,15 +456,11 @@ header {
     width: 52rem;
   }
   
-  .collaboration {
+  /* .collaboration {
     min-height: unset;
     height: 90rem;
     padding-bottom: 10rem;
-  }
-  
-  .collaboration .info {
-    padding-bottom: 64vw;
-  }
+  } */
   
   .collaboration .illustration {
     transform: none;
@@ -525,13 +523,12 @@ header {
   }
   
   .collaboration .info {
-    padding-top: 15vw;
-    padding-bottom: 56vw;
+    padding-top: 77vh;
   }
   
   .collaboration .illustration {
     max-width: unset;
-    top: 10%;
+    
   }
   
   .collaboration .illustration img {
@@ -593,12 +590,22 @@ header {
     padding: 3rem;
   }
   
+  .collaboration {
+    height: 1470px;
+  }
+  
   .collaboration .illustration {
-    max-width: 480px;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    max-width: 920px;
+  }
+  
+  .collaboration .illustration img {
+    transform: scale(100%);
   }
   
   .collaboration .info {
-    padding-top: 13rem;
+    padding-top: 39rem;
     padding-bottom: 31rem;
   }
   
@@ -654,8 +661,18 @@ header {
     grid-column: -2 / -13;
   }
   
-  .collaboration .info {
-    padding-bottom: 33rem;
+  .collaboration {
+    height: 1660px;
+  }
+  
+  .collaboration .illustration {
+    max-width: unset;
+    margin-top: 0px;
+    max-width: unset;
+  }
+  
+  .collaboration .illustration img {
+    transform: scale(100%);
   }
   
   section.mangyoku {
@@ -679,8 +696,16 @@ header {
     grid-column: -9 / -21;
   }
   
+  .collaboration {
+    height: 1880px;
+  }
+  
   .collaboration .info {
-    padding-top: 18rem;
+    padding-top: 34rem;
+  }
+  
+  .collaboration .illustration {
+    margin-top: 5rem;
   }
   
   .mangyoku .illustration {
