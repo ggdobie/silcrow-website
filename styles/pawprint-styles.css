@@ -447,20 +447,11 @@ header {
     margin-bottom: 25vh;
   }
   
-  section.mangyoku {
-    height: 40rem;
+  .speed .illustration img {
+    transform: scale(135%);
+    transform-origin: center center;
+    max-width: unset;
   }
-
-  
-  .mangyoku .illustration {
-    width: 52rem;
-  }
-  
-  /* .collaboration {
-    min-height: unset;
-    height: 90rem;
-    padding-bottom: 10rem;
-  } */
   
   .collaboration .illustration {
     transform: none;
@@ -535,17 +526,16 @@ header {
     width: 100%;
   }
   
+  .speed .illustration {
+    margin-bottom: 4rem;
+  }
+  
   .speed .illustration img {
     transform: scale(100%);
-    max-width: unset;
-  }
+  }  
   
-  section.mangyoku {
-    height: 40rem;
-  }
-  
-  .mangyoku .illustration {
-    width: 46rem;
+  .speed .info {
+    padding-top: 20vw;
   }
   
 }
@@ -608,6 +598,20 @@ header {
     padding-top: 39rem;
     padding-bottom: 31rem;
   }
+  
+  .speed {
+    height: 1380px;
+    padding-top: 10vw;
+  }
+  
+  .speed .illustration {
+    margin-bottom: 8rem;
+  }
+  
+  .speed .info {
+    padding-top: 30vw;
+  }
+  
   
 }
 
@@ -675,12 +679,8 @@ header {
     transform: scale(100%);
   }
   
-  section.mangyoku {
-    height: 50rem;
-  }
-  
-  .mangyoku .illustration {
-    width: 58rem;
+  .speed {
+    height: 1750px;
   }
   
 }
@@ -708,8 +708,8 @@ header {
     margin-top: 5rem;
   }
   
-  .mangyoku .illustration {
-    width: 70rem;
+  .speed {
+    height: 1970px;
   }
   
 }
