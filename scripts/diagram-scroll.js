@@ -2,8 +2,6 @@ const sectionTag = document.querySelector(".diagram.pan")
 const illustrationTag = document.querySelector(".pan .illustration")
 let mobileBreakpoint = true
 
-console.log(sectionTag, illustrationTag);
-
 const moveIllustration = function() {
 	
 	const scrollY = window.pageYOffset
@@ -22,7 +20,6 @@ const moveIllustration = function() {
 		
 		// MOVE THE ILLUSTRATION
 		illustrationTag.style.transform = `translateX(${movement}px)`
-		console.log("hi")
 		
 	}
 	
