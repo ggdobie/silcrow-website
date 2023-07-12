@@ -263,7 +263,8 @@ header {
 
 .gallery .image-container .gi-01 img,
 .gallery .image-container .gi-02 img,
-.gallery .image-container .gi-04 img {
+.gallery .image-container .gi-04 img,
+.gallery .image-container .gi-05 img {
   border-radius: unset;
   box-shadow: unset;
 }
@@ -564,6 +565,14 @@ header {
     padding-top: 20vw;
   }
   
+  .gallery .image-container .gi-05 img {
+    max-height: 270px;
+  }
+    
+  .gallery .image-container .gi-02 {
+    align-content: space-between;
+  }
+  
 }
 
 @media (min-width: 1194px) {
@@ -638,6 +647,21 @@ header {
     padding-top: 30vw;
   }
   
+  .gallery .image-container .gi-01 {
+    padding: 32px;
+  }
+  
+  .gallery .image-container .gi-02 img {
+    width: 77%;
+  }
+  
+  .gallery .image-container .gi-03 picture:last-child {
+    align-self: end;
+  }
+  
+  .gallery .image-container .gi-01 {
+    max-width: unset;
+  }
   
 }
 
@@ -707,6 +731,32 @@ header {
   
   .speed {
     height: 1750px;
+  }
+  
+  .gallery .image-container .gi-01 {
+    padding: 80px;
+  }
+  
+  .gallery .image-container .gi-02,
+  .gallery .image-container .gi-04 {
+    padding: 48px;
+    border-radius: 20px;
+  }
+  
+  .gallery .image-container .gi-02 img {
+    width: 100%;
+  }
+  
+  .gallery .image-container .gallery-image {
+    max-width: unset;
+  }
+  
+  .gallery .image-container .gi-02 .caption {
+    font-size: 16px;
+  }
+  
+  .gallery .image-container .gi-05 img {
+    max-height: 330px;
   }
   
 }
