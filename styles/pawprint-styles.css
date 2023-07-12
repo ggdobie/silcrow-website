@@ -84,26 +84,6 @@ header {
   grid-column: unset;
 }
 
-.banner .scrollBadge {
-  background-color: var(--asterisk);
-  width: calc(var(--banner-scale-factor)*22.2vmin);
-  height: calc(var(--banner-scale-factor)*22.2vmin);
-  position: absolute;
-  top: var(--banner-offsetY);
-  left: var(--banner-offsetX);
-  cursor: pointer;
-  border-radius: 50%;
-  mix-blend-mode: color-dodge;
-  filter: blur(20px);
-  opacity: 0;
-  transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*56.9vmin), calc(var(--banner-scale-factor)*59.2vmin));
-  transition: opacity 0.2s;
-}
-
-.banner .scrollBadge:hover:not(:focus):not(:active) {
-  opacity: 1;
-}
-
 .intro {
   min-height: unset;
   padding-top: 17.5rem;
@@ -143,6 +123,10 @@ header {
   padding-top: 0px;
 }
 
+.mockup p {
+  margin-top: 130px;
+}
+
 .mockup figure {
   width: 100%;
 }
@@ -177,7 +161,6 @@ header {
 .mockup.dashboard figure picture img {
   width: 100%;
   transform: scale(210%) rotate(-30deg);
-  /* transform-origin: bottom left; */
   max-width: 360px;
 }
 
@@ -192,10 +175,6 @@ header {
   transform: translateY(3rem);
   line-height: 1.4;
   text-align: right;
-}
-
-.mockup p {
-  margin-top: 130px;
 }
 
 .testimonial {
@@ -358,7 +337,6 @@ header {
   
   .collaboration .info {
     padding-top: 90vh;
-    /* padding-bottom: 12vw; */
   }
   
   .collaboration .illustration {
@@ -460,10 +438,6 @@ header {
 }
 
 @media (min-width: 900px) {
-  
-  .banner .scrollBadge {
-    transform: rotate(38.2deg) skew(-30deg) translate(calc(var(--banner-scale-factor)*9vmin), calc(var(--banner-scale-factor)*67vmin));  
-  }
   
   .intro {
     padding-top: 80px;

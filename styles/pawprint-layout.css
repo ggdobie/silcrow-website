@@ -17,11 +17,6 @@
   grid-column: 3 / -1;
 }
 
-section.mangyoku .info {
-  grid-template-columns: repeat(var(--master-column-count), 1fr);
-  padding: 9vw 35px;
-}
-
 .collaboration .illustration {
   grid-column: 1 / -1;
 }
@@ -112,14 +107,13 @@ section.mangyoku .info {
     grid-column: 2 / 6;
   }
   
-  section.mangyoku .info {
-    grid-template-columns: repeat(var(--master-column-count), 1fr);
-    padding: 9vw 35px;
-  }
-  
 }
 
 @media (min-width: 900px) {
+  
+  section.banner * {
+    grid-column: 1 / -1;
+  }
   
   .mockup.app figure, .mockup.dashboard figure {
     grid-column: 1 / -1;
@@ -147,18 +141,8 @@ section.mangyoku .info {
     grid-column: 3 / -2;
   }
   
-  section.banner * {
-    grid-column: 1 / -1;
-  }
-  
   .collaboration .illustration {
     grid-column: 4 / -4;
-  }
-  
-  section.mangyoku .info {
-    padding-left: calc(var(--gutter)/2);
-    padding-right: calc(var(--gutter)/2);
-    grid-column-gap: var(--gutter);
   }
   
   .gallery .image-container {
@@ -249,14 +233,6 @@ section.mangyoku .info {
     grid-column: -2 / -8;
   }
   
-  .badges .illustration {
-    grid-column: 1 / 9;
-  }  
-    
-  .badges .illustration {
-    grid-column: 4 / span 8;    
-  }
-  
   .collaboration .illustration {
     grid-column: 5 / -6;
   }
@@ -304,10 +280,6 @@ section.mangyoku .info {
   
   .mockup.dashboard figure figcaption {
     grid-column: -11 / -8;
-  }
-  
-  .badges .illustration {
-    grid-column: 7 / span 11;
   }
   
   .diagram .info-card.right {
