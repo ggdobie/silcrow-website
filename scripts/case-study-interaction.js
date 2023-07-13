@@ -86,8 +86,12 @@ mainCtas.forEach(cta => {
   
 })
 
-scrollBadge.addEventListener("click", function() {
-	
-  firstSection.scrollIntoView( {behavior: "smooth"} )
-  
-})
+if (scrollBadge) {
+
+  scrollBadge.addEventListener("click", function() {
+	  
+    firstSection.scrollIntoView( {behavior: "smooth"} )
+    
+  })
+
+}

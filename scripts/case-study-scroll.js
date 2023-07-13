@@ -15,6 +15,9 @@ const badges = document.querySelectorAll(".skills-badge")
 const layerSection = document.querySelector(".layers")
 const layerCaptions = document.querySelectorAll(".illustration figcaption")
 
+const okrContainer = document.querySelector(".card-container")
+const okrCards = okrContainer.querySelectorAll(".okr-card")
+
 const baseSection = document.querySelector(".hide-switcher")
 
 const body = document.body
@@ -31,6 +34,7 @@ let scrollableHeight = pageHeight - viewportHeight
 const scrollEffects = function() {
 	
 // Set gallery active state
+
 	if (gallerySection.classList.contains("hidden")) {
 		galleryActive = false
 	}
@@ -159,6 +163,27 @@ const scrollEffects = function() {
 	else if (layerSection) {
 		layerCaptions.forEach(caption => {
 			caption.classList.remove("retracted")
+		})
+	}
+
+// Fade in each OKR card as it gets closer to the middle of the viewport
+
+	if (okrContainer) {
+		okrCards.forEach((okrCard) => {
+			const okrTop = okrCard.getBoundingClientRect().top
+			const okrHeight = okrCard.getBoundingClientRect().height
+			
+			const okrMiddleYPos = (okrTop + (okrHeight * 0.5))
+			
+			const viewportMiddle = viewportHeight * 0.5
+			
+			const distanceToZone = Math.abs(okrMiddleYPos - viewportMiddle)
+			
+			const okrOpacity = mapAndClamp(distanceToZone, viewportMiddle, 0, 0, 1)
+			const okrScale = mapAndClamp(distanceToZone, viewportMiddle, 0, 0.6, 1)
+			
+			okrCard.style.opacity = okrOpacity
+			okrCard.style.transform = `scale(${okrScale},${okrScale})`
 		})
 	}
 	
