@@ -571,28 +571,38 @@ footer .copyright {
   }
   
   .client-list {
-    grid-column: span 22;
+    /* grid-column: span 22; */
   }
   
-  .case-study.jointly {
-    order: 1;
-  }
-  
-  .quote.lauren {
-    order: 2;
-  }
-  
-  .case-study.fringemaker {
+  .quote.shauna {
     order: 3;
   }
   
-  .quote.alex {
+  .case-study.pawprint {
+    order: 1;
+  }
+  
+  .case-study.jointly {
+    order: 2;
+  }
+  
+  .quote.lauren {
     order: 5;
+    grid-column: span 11;
+    grid-template-columns: repeat(11, 1fr);
+  }
+  
+  .case-study.fringemaker {
+    order: 6;
+  }
+  
+  .quote.alex {
+    order: 7;
   }
   
   .client-list {
     order: 4;
-    grid-template-columns: repeat(22, 1fr);
+    /* grid-template-columns: repeat(22, 1fr); */
   }
   
   .client-list h2 {
@@ -600,7 +610,7 @@ footer .copyright {
   }
   
   .responsible {
-    order: 6;
+    order: 8;
   }
   
   .responsible .hero-text {
