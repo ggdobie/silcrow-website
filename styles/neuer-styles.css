@@ -10,8 +10,7 @@
 }
 
 header nav .breadcrumbs .case-study-logo {
-  margin-bottom: -6px;
-  height: 28px;
+  height: 48px;
 }
 
 header nav .breadcrumbs .caret {
@@ -23,7 +22,7 @@ header {
 }
 
 .banner {
-  background-color: #35E8A7;
+  background-color: #091E2E;
   min-height: unset;
   height: 80vh;
   justify-content: center;
@@ -40,29 +39,6 @@ header {
   align-items: center;
 }
 
-.banner h1 span {
-  display: inline-block;
-}
-
-.banner h1 span:first-child {
-  z-index: 0;
-}
-
-.banner h1 span.ampersand {
-  z-index: 1;
-  color: var(--ink);
-  transform: translate(-0.5em, 0.15em);
-}
-
-.banner h1 span:last-child {
-  z-index: 2;
-}
-
-.banner h1 span::selection {
-  color: var(--asterisk);
-  background: var(--dagger);
-}
-
 .banner .banner-bg {
   width: calc(var(--banner-scale-factor)*170vmin);
   max-width: unset;
@@ -70,17 +46,8 @@ header {
   top: var(--banner-offsetY);
   left: var(--banner-offsetX);
   transform: translate(-47.5%, -14%);
+  opacity: 0.3;
   z-index: 0;
-  grid-column: unset;
-}
-
-.banner-bjorn {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, -80%);
-  width: auto;
-  max-width: 250px;
   grid-column: unset;
 }
 
@@ -95,7 +62,7 @@ header {
 }
 
 .intro .skills-badge {
-  background-color: #0f9483;
+  background-color: #168589;
 }
 
 .intro .skills-badge.product-design {
@@ -148,6 +115,12 @@ header {
   bottom: 0;
   right: 0;
   text-align: right;
+}
+
+.inter {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 50vw;
 }
 
 .mockup {
@@ -227,23 +200,23 @@ header {
   border-top: 1px solid var(--dagger-500);
 }
 
-.okrs {
+.comms {
   height: unset;
 }
 
-.okrs * {
+.comms * {
   max-width: 440px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.okrs .info {
+.comms .info {
   position: sticky;
   padding-top: 3rem;
   padding-botom: 3rem;
 }
 
-.okrs .okr-card {
+.comms .comm-card {
   border-radius: 10px;
   box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
   padding: 24px;
@@ -251,12 +224,12 @@ header {
   background-color: var(--silcrow-050);
 }
 
-.okrs .okr-card {
+.comms .comm-card {
   font-style: italic;
   margin-bottom: 1rem
 }
 
-.okrs .okr-card::before {
+.comms .comm-card::before {
   content: "§";
   font-style: normal;
   display: block;
@@ -285,7 +258,7 @@ header {
 }
 
   section.mangyoku {
-  background-color: #7d8a9e;
+  background-color: #091E2E;
   display: revert;
   padding: 0;
   height: 150vw;
@@ -299,6 +272,7 @@ header {
   top: unset;
   left: unset;
   width: 120vw;
+  opacity: 0.3;
 }
 
 .mangyoku .info .info-card.overlay {
@@ -409,13 +383,13 @@ section.mangyoku .info {
     top: 30px;
   }
   
-  .okrs * {
+  .comms * {
     max-width: unset;
     margin-left: unset;
     margin-right: unset;
   }
   
-  .okrs .card-container .okr-card:last-child {
+  .comms .card-container .comm-card:last-child {
     margin-bottom: 4rem;
   }
   
@@ -441,6 +415,14 @@ section.mangyoku .info {
   .intro .skills-badge.ui-design {
     top: 38px;
     left: 86px;
+  }
+    
+  .comparison {
+    padding-bottom: 15vw;
+  }
+  
+  .comparison figure {
+    max-width: none;
   }
   
   .mockup {
@@ -468,6 +450,14 @@ section.mangyoku .info {
 }
 
 @media (min-width: 800px) {
+    
+  .comparison figure.top figcaption {
+    margin-top: 40px;
+  }
+  
+  .comparison figure.bottom figcaption {
+    margin-bottom: 40px;
+  }
   
   :root {
     --banner-offsetY: 14%;
@@ -534,7 +524,7 @@ section.mangyoku .info {
     margin-top: 160px;
   }
   
-  .okrs .okr-card {
+  .comms .comm-card {
     transform-origin: right center;
   }
   
@@ -575,6 +565,21 @@ section.mangyoku .info {
     top: 108px;
     left: -194px;
   }
+    
+  .comparison.paper {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -5vw;
+    margin-bottom: -5vw;
+  }
+  
+  .comparison figure.top figcaption,
+  .comparison figure.bottom figcaption {
+    margin: 0;
+    top: 42%;
+    left: -27%;
+    text-align: left;
+  }  
   
   .mockup {
     padding-top: 0px;
@@ -599,7 +604,7 @@ section.mangyoku .info {
     transform: translateY(22rem);
   }
   
-  .okrs {
+  .comms {
     padding-top: 10vw;
   }
   
@@ -662,6 +667,30 @@ section.mangyoku .info {
     top: 222px;
     left: -204px;
   }
+    
+  .comparison.paper {
+    margin-top: -7vw;
+    margin-bottom: -5vw;
+    background-color: transparent;
+    z-index: 100;
+  }
+  
+  .comparison figure img {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(110%);
+    box-shadow: -6px 6px var(--ink-100);
+  }
+  
+  .comparison figure.bottom {
+    margin-top: -24%;
+  }
+  
+  .comparison figure.top figcaption,
+  .comparison figure.bottom figcaption {
+    margin: 0;
+    top: 40%;
+    left: -10%;
+    text-align: left;
+  }
   
   .mockup.app figure picture img {
     max-width: 750px;
@@ -673,7 +702,7 @@ section.mangyoku .info {
     transform: scale(92%) rotate(-30deg);
   }
   
-  .okrs .card-container .okr-card {
+  .comms .card-container .comm-card {
     font-size: 2.25em;
     padding: 3rem;
   }
@@ -752,6 +781,19 @@ section.mangyoku .info {
     top: 222px;
     left: -252px;
   }
+    
+  .comparison figure img {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
+    box-shadow: -6px 6px var(--ink-100);
+  }
+  
+  .comparison figure.top figcaption,
+  .comparison figure.bottom figcaption {
+    margin: 0;
+    top: 40%;
+    right: -20%;
+    text-align: right;
+  }
   
   :root {
     --banner-scale-factor: 1.2;
@@ -774,7 +816,7 @@ section.mangyoku .info {
     transform: scale(92%) rotate(-30deg);
   }
   
-  .okrs .card-container {
+  .comms .card-container {
     grid-column: -2 / -13;
   }
   
@@ -839,7 +881,7 @@ section.mangyoku .info {
     left: -650px;
   }
   
-  .okrs .card-container {
+  .comms .card-container {
     grid-column: -9 / -21;
   }
   

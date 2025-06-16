@@ -164,6 +164,10 @@ section.mangyoku .info {
 }
 
 @media (min-width: 1194px) {
+  
+  .comparison figure {
+    grid-column: 5 / -3;
+  }
     
   .mockup.app figure figcaption {
     grid-column: 5 / 7;
