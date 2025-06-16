@@ -200,23 +200,23 @@ header {
   border-top: 1px solid var(--dagger-500);
 }
 
-.comms {
+.okrs {
   height: unset;
 }
 
-.comms * {
+.okrs * {
   max-width: 440px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.comms .info {
+.okrs .info {
   position: sticky;
   padding-top: 3rem;
   padding-botom: 3rem;
 }
 
-.comms .comm-card {
+.okrs .okr-card {
   border-radius: 10px;
   box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
   padding: 24px;
@@ -224,17 +224,19 @@ header {
   background-color: var(--silcrow-050);
 }
 
-.comms .comm-card {
+.okrs .okr-card {
   font-style: italic;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
-.comms .comm-card::before {
-  content: "§";
-  font-style: normal;
+.okrs .okr-card::before {
+  background-image: url("../images/icon-comms.svg");
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 38px;
+  content: "";
   display: block;
   margin-bottom: 2rem;
-  color: var(--ink-100);
 }
 
 .collaboration {
@@ -383,13 +385,13 @@ section.mangyoku .info {
     top: 30px;
   }
   
-  .comms * {
+  .okrs * {
     max-width: unset;
     margin-left: unset;
     margin-right: unset;
   }
   
-  .comms .card-container .comm-card:last-child {
+  .okrs .card-container .okr-card:last-child {
     margin-bottom: 4rem;
   }
   
@@ -524,7 +526,7 @@ section.mangyoku .info {
     margin-top: 160px;
   }
   
-  .comms .comm-card {
+  .okrs .okr-card {
     transform-origin: right center;
   }
   
@@ -604,7 +606,7 @@ section.mangyoku .info {
     transform: translateY(22rem);
   }
   
-  .comms {
+  .okrs {
     padding-top: 10vw;
   }
   
@@ -702,7 +704,7 @@ section.mangyoku .info {
     transform: scale(92%) rotate(-30deg);
   }
   
-  .comms .card-container .comm-card {
+  .okrs .card-container .okr-card {
     font-size: 2.25em;
     padding: 3rem;
   }
@@ -816,7 +818,7 @@ section.mangyoku .info {
     transform: scale(92%) rotate(-30deg);
   }
   
-  .comms .card-container {
+  .okrs .card-container {
     grid-column: -2 / -13;
   }
   
@@ -881,7 +883,7 @@ section.mangyoku .info {
     left: -650px;
   }
   
-  .comms .card-container {
+  .okrs .card-container {
     grid-column: -9 / -21;
   }
   
