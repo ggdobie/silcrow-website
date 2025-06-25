@@ -26,28 +26,31 @@ section.mangyoku .info {
   padding: 9vw 35px;
 }
 
-.gallery .image-container {
-  justify-items: center; 
-  grid-row-gap: 2rem;
-}
-  
-.gallery .image-container .gallery-image {
+.gallery .image-container .gi-01,
+.gallery .image-container .gi-02,
+.gallery .image-container .gi-03,
+.gallery .image-container .gi-04, 
+.gallery .image-container .gi-05, 
+.gallery .image-container .gi-06, 
+.gallery .image-container .gi-07, 
+.gallery .image-container .gi-08, 
+.gallery .image-container .gi-09,  
+.gallery .image-container .gi-10 {
   grid-column: 1 / -1;
-  max-width: 550px;
 }
 
 .gallery .image-container .gi-01,
 .gallery .image-container .gi-02,
-.gallery .image-container .gi-03 {
-  display: grid;
-  grid-row-gap: 16px;
-}
-
-.gallery .image-container .gi-03 {
-  grid-row-gap: 2rem;
-}
-
-.gallery .image-container .gallery-image img {
+.gallery .image-container .gi-03,
+.gallery .image-container .gi-04,
+.gallery .image-container .gi-05,
+.gallery .image-container .gi-06,
+.gallery .image-container .gi-07,
+.gallery .image-container .gi-08,
+.gallery .image-container .gi-09,
+.gallery .image-container .gi-10 img{
+  object-fit: cover;
+  object-position: left center;
   width: 100%;
 }
 
@@ -118,47 +121,17 @@ section.mangyoku .info {
     grid-column: 4 / -4;
   }
   
-  .gallery .image-container .gi-01{
-    grid-column: 3 / span 5;
-  }
-  
-  .gallery .image-container .gi-04  {
-    grid-column: 7 / span 5;
-  }
-  
-  .gallery .image-container .gi-03 {
-    grid-column: 8 / span 4;
-  }
-  
-  .gallery .image-container .gi-02 {
-    grid-column: 3 / span 4;
-  }
-  
-  .gallery .image-container .gi-05 {
+  .gallery .image-container .gi-01,
+  .gallery .image-container .gi-02,
+  .gallery .image-container .gi-03,
+  .gallery .image-container .gi-04, 
+  .gallery .image-container .gi-05, 
+  .gallery .image-container .gi-06, 
+  .gallery .image-container .gi-07, 
+  .gallery .image-container .gi-08, 
+  .gallery .image-container .gi-09,  
+  .gallery .image-container .gi-10 {
     grid-column: 3 / -2;
-    max-width: unset;
-    width: 100%;
-  }
-  
-  .gallery .image-container .gi-01 {
-    order: 0;
-  }
-  
-  .gallery .image-container .gi-02 {
-    order: 2;
-  }
-  
-  .gallery .image-container .gi-03 {
-    order: 1;
-    grid-row-gap: var(--gutter);
-  }
-  
-  .gallery .image-container .gi-04 {
-    order: 3;
-  }
-  
-  .gallery .image-container .gi-05 {
-    order: 4;
   }
   
 }
@@ -194,40 +167,21 @@ section.mangyoku .info {
     grid-column: 4 / -3;
   }
   
-  .gallery .image-container {
-    grid-row-gap: 2rem;
-  }
-  
-  .gallery .image-container .gi-01 {
-    grid-column: 3 / span 12;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap: var(--gutter);
-  }
-  
-  .gallery .image-container .gi-01 picture {
-    grid-column: span 1;
-  } 
-    
-  .gallery .image-container .gi-02 {
-    order: 1;
-    grid-column: 3 / span 4;
-  }
-  
-  .gallery .image-container .gi-03 {
-    order: 2;
-    grid-column: 7 / span 4;
-  }
-  
-  .gallery .image-container .gi-04 {
-    order: 3;
-    grid-column: 11 / span 4;
-    display: grid;
-    align-items: center;
-  }
-  
   .cta.show-main .cta-text-container {
     grid-column: 5 / 12;
+  }
+  
+  .gallery .image-container .gi-01,
+  .gallery .image-container .gi-02,
+  .gallery .image-container .gi-03,
+  .gallery .image-container .gi-04, 
+  .gallery .image-container .gi-05, 
+  .gallery .image-container .gi-06, 
+  .gallery .image-container .gi-07, 
+  .gallery .image-container .gi-08, 
+  .gallery .image-container .gi-09,  
+  .gallery .image-container .gi-10 {
+    grid-column: 2 / -2;
   }
   
 }
@@ -250,27 +204,17 @@ section.mangyoku .info {
     grid-column: 5 / -6;
   }
   
-  .gallery .image-container {
-    grid-row-gap: 3rem;
-  }
-  
-  .gallery .image-container .gi-01 {
-    grid-column: 3 / -2;
-  }
-    
-  .gallery .image-container .gi-02 {
-    order: 1;
-    grid-column: 3 / span 5;
-  }
-  
-  .gallery .image-container .gi-03 {
-    order: 2;
-    grid-column: 8 / span 6;
-  }
-  
-  .gallery .image-container .gi-04 {
-    order: 3;
-    grid-column: 14 / span 6;
+  .gallery .image-container .gi-01,
+  .gallery .image-container .gi-02,
+  .gallery .image-container .gi-03,
+  .gallery .image-container .gi-04, 
+  .gallery .image-container .gi-05, 
+  .gallery .image-container .gi-06, 
+  .gallery .image-container .gi-07, 
+  .gallery .image-container .gi-08, 
+  .gallery .image-container .gi-09,  
+  .gallery .image-container .gi-10 {
+    grid-column: 3 / -3;
   }
 
 }
@@ -302,20 +246,16 @@ section.mangyoku .info {
   }
   
   .gallery .image-container .gi-01,
-  .gallery .image-container .gi-05 {
+  .gallery .image-container .gi-02,
+  .gallery .image-container .gi-03,
+  .gallery .image-container .gi-04, 
+  .gallery .image-container .gi-05, 
+  .gallery .image-container .gi-06, 
+  .gallery .image-container .gi-07, 
+  .gallery .image-container .gi-08, 
+  .gallery .image-container .gi-09,  
+  .gallery .image-container .gi-10 {
     grid-column: 5 / -5;
-  }
-  
-  .gallery .image-container .gi-02 {
-    grid-column: 5 / span 7;
-  }
-  
-  .gallery .image-container .gi-03 {
-    grid-column: 12 / span 8;
-  }
-  
-  .gallery .image-container .gi-04 {
-    grid-column: 20 / span 7;
   }
   
 }
