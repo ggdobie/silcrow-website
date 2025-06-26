@@ -21,7 +21,7 @@
   grid-column: 1 / -1;
 }
 
-section.mangyoku .info {
+section.features .info {
   grid-template-columns: repeat(var(--master-column-count), 1fr);
   padding: 9vw 35px;
 }
@@ -184,6 +184,14 @@ section.mangyoku .info {
     grid-column: 2 / -2;
   }
   
+  .features .info {
+    align-content: center;
+  }
+  
+  .features .info-card.left {
+    grid-column: 3 / -8;
+  }
+  
 }
 
 @media (min-width: 1920px) {
@@ -215,6 +223,14 @@ section.mangyoku .info {
   .gallery .image-container .gi-09,  
   .gallery .image-container .gi-10 {
     grid-column: 3 / -3;
+  }
+  
+  .features .info {
+    align-content: start;
+  }
+  
+  .features .info-card.left {
+    grid-column: 7 / -8;
   }
 
 }
@@ -256,6 +272,10 @@ section.mangyoku .info {
   .gallery .image-container .gi-09,  
   .gallery .image-container .gi-10 {
     grid-column: 5 / -5;
+  }
+  
+  .features .info-card.left {
+    grid-column: 10 / -14;
   }
   
 }
