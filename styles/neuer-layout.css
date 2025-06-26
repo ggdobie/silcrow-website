@@ -1,3 +1,7 @@
+.banner .banner-bg {
+  grid-column: 1 / -1;
+}
+
 .mockup figure {
   display: grid;
   grid-template-columns: repeat(var(--master-column-count), 1fr);
@@ -81,16 +85,12 @@ section.features .info {
   }
   
   .collaboration .illustration {
-    grid-column: 2 / 6;
+    grid-column: 1 / -1;
   }
   
 }
 
 @media (min-width: 900px) {
-  
-  section.banner * {
-    grid-column: 1 / -1;
-  }
   
   .mockup.app figure, .mockup.dashboard figure {
     grid-column: 1 / -1;
@@ -208,9 +208,9 @@ section.features .info {
     grid-column: -2 / -8;
   }
   
-  .collaboration .illustration {
+  /* .collaboration .illustration {
     grid-column: 5 / -6;
-  }
+  } */
   
   .gallery .image-container .gi-01,
   .gallery .image-container .gi-02,
@@ -253,9 +253,9 @@ section.features .info {
     grid-column: -9 / -17;
   }
   
-  .collaboration .illustration {
+  /* .collaboration .illustration {
     grid-column: 5 / -12;
-  }
+  } */
   
   .speed .illustration {
     grid-column: 5 / -7;
