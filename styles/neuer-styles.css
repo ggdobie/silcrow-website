@@ -1,0 +1,722 @@
+header nav .breadcrumbs .case-study-logo {
+  height: 48px;
+}
+
+header nav .breadcrumbs .caret {
+  background-color: var(--dagger-100);
+}
+
+header {
+  mix-blend-mode: normal;
+}
+
+.banner {
+  padding: 0;
+  min-height: unset;
+  height: 100vh;
+  max-width: 110vw; 
+  background-color: #07006C;
+}
+
+.banner .banner-bg img {
+  transform: scale(2.1) translate(-0.25rem, 0);
+}
+
+.intro {
+  min-height: unset;
+  padding-top: 17.5rem;
+  padding-bottom: 4rem;
+}
+
+.intro h2 {
+  line-height: 0.96;
+}
+
+.intro .skills-badge {
+  background-color: #535CD9;
+}
+
+.intro .skills-badge.product-design {
+  -webkit-mask-image: url("../images/skills-badge-product-design.svg");
+  mask-image: url("../images/skills-badge-product-design.svg");
+  top: 60px;
+  left: -8px;
+  transition-delay: 0.2s
+}
+
+.intro .skills-badge.ui-design {
+  -webkit-mask-image: url("../images/skills-badge-user-interface-design.svg");
+  mask-image: url("../images/skills-badge-user-interface-design.svg");
+  top: 95px;
+  right: -4px;
+}
+
+.comparison {
+  padding-bottom: 55vw;
+}
+
+.comparison figure {
+  position: relative;
+  max-width: 480px;
+  -webkit-transform: translateZ(1px);
+}
+
+.comparison figure img {
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(130%);
+  box-shadow: -6px 6px var(--ink-100);
+}
+
+.comparison figure.top {
+  z-index: 1;
+}
+
+.comparison figure.bottom {
+  margin-top: -14%;
+  z-index: 0;
+}
+
+.comparison figure.top figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.comparison figure.bottom figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+.inter {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 50vw;
+}
+
+.mockup {
+  min-height: unset;
+  padding-bottom: 6rem;
+  justify-items: center;
+}
+
+.mockup.app {
+  padding-top: 0px;
+}
+
+.mockup p {
+  margin-top: 130px;
+}
+
+.mockup figure {
+  width: 100%;
+}
+
+.mockup.app figure picture img {
+  width: 100%;
+  transform: scale(150%) rotate(-30deg);
+  transform-origin: bottom left;
+  max-width: 360px;
+}
+
+.mockup.app figure picture {
+  order: 2;
+  margin-top: 12rem;
+}
+
+.mockup.app figure figcaption {
+  order: 1;
+  margin-top: 0rem;
+  line-height: 1.4;
+}
+
+.mockup figure figcaption span {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.mockup.dashboard figure picture {
+  transform: translate(29%, -87%);
+}
+
+.mockup.dashboard figure picture img {
+  width: 100%;
+  transform: scale(210%) rotate(-30deg);
+  max-width: 360px;
+}
+
+.mockup.dashboard figure picture {
+  order: 2;
+  z-index: 0;
+}
+
+.mockup.dashboard figure figcaption {
+  order: 1;
+  z-index: 1;
+  transform: translateY(3rem);
+  line-height: 1.4;
+  text-align: right;
+}
+
+.testimonial {
+  background-color: var(--dagger-100);
+  color: var(--asterisk);
+}
+
+.testimonial figure blockquote .quotemark {
+  background-color: var(--dagger-900);
+}
+
+.testimonial figure figcaption {
+  border-top: 1px solid var(--dagger-500);
+}
+
+.okrs {
+  height: unset;
+}
+
+.okrs * {
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.okrs .info {
+  position: sticky;
+  padding-top: 3rem;
+  padding-botom: 3rem;
+}
+
+.okrs .okr-card {
+  border-radius: 10px;
+  box-shadow: 0px 11px 14px rgba(63, 49, 42, 0.09);
+  padding: 24px;
+  position: relative;
+  background-color: var(--silcrow-050);
+}
+
+.okrs .okr-card {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.okrs .okr-card::before {
+  background-image: url("../images/icon-comms.svg");
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 38px;
+  content: "";
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.collaboration {
+  height: 1130px;
+}
+.collaboration .illustration {
+  margin-top: 20vh;
+  margin-bottom: 30vh;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collaboration .illustration img {
+  transform: scale(170%);  
+}
+
+.collaboration .info {
+  padding-top: 70vh;
+  padding-bottom: 30vw;
+}
+
+section.features {
+  background-color: #CED8E0;
+  display: revert;
+  padding: 0;
+  height: 100vh;
+  min-height: unset;
+}
+
+.features .illustration {
+  position: absolute;
+  top: unset;
+  bottom: 27vw;
+  transform: scale(1.5);
+}
+
+section.features .info .info-card {
+  background-color: var(--silcrow-050);
+}
+
+.cta.show-gallery h3::after {
+  background-color: var(--ink-100);
+}
+
+.gallery .image-container {
+  padding-bottom: 7rem;
+}
+
+.gallery .image-container .gallery-image {
+  filter: drop-shadow(0px 11px 14px rgba(63, 49, 42, 0.09));
+  box-shadow: none;
+}
+
+.gallery .image-container picture img {
+  border-radius: 10px;
+}
+
+@media (min-width: 480px) {
+  
+  .intro {
+    padding-top: 15rem;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 85px;
+    left: -8px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 45px;
+    right: unset;
+    left: 39%;
+  }
+  
+  .mockup {
+    padding-top: 10rem;
+  }
+
+  .intro .skills-badge.ux-design {
+    top: 30px;
+  }
+  
+  .okrs * {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+  
+  .okrs .card-container .okr-card:last-child {
+    margin-bottom: 4rem;
+  }
+  
+}
+
+@media (min-width: 640px) {
+  
+  .banner {
+    height: 100vh;
+  }
+  
+  .banner .banner-bg img {
+    transform: scale(1.75) translate(-0.25rem, -0.7rem);
+  }
+  
+  .intro {
+    padding-top: 13rem;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: -25px;
+    left: -118px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 38px;
+    left: 86px;
+  }
+    
+  .comparison {
+    padding-bottom: 15vw;
+  }
+  
+  .comparison figure {
+    max-width: none;
+  }
+  
+  .mockup {
+    padding-top: 8rem;
+  }
+  
+  .collaboration {
+    padding-top: 10rem;
+    height: 1380px;
+  }
+  
+  .collaboration .info {
+    padding-top: 90vh;
+  }
+
+  .collaboration .illustration img {
+    transform: scale(200%);
+  }
+  
+  section.features {
+    height: 100vw;
+  }
+  
+  .features .illustration {
+    bottom: -10vw;
+    left: unset;
+    right: -20vw;
+    width: 140vw;
+    transform: scale(1);
+  }
+  
+}
+
+@media (min-width: 800px) {
+  
+  .banner .banner-bg img {
+    transform: scale(1.5) translate(-3rem, -1rem);
+  }
+    
+  .comparison figure.top figcaption {
+    margin-top: 40px;
+  }
+  
+  .comparison figure.bottom figcaption {
+    margin-bottom: 40px;
+  }
+  
+  .intro {
+    min-height: 80vh;
+    padding-top: 300px;
+    padding-bottom: 12rem;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 35px;
+    left: -108px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 98px;
+    left: 76px;
+  }
+  
+  .mockup p {
+    margin-top: 160px;
+  }
+  
+  .okrs .okr-card {
+    transform-origin: right center;
+  }
+  
+  .collaboration .illustration {
+    margin-bottom: 25vh;
+  }
+  
+  section.features {
+    height: 47rem;
+  }
+  
+  .features .illustration {
+    bottom: -5vw;
+    left: unset;
+    right: -20vw;
+    width: 120vw;
+  }
+  
+  .collaboration .illustration img {
+    transform: scale(250%);  
+  }
+  
+}
+
+@media (min-width: 900px) {
+  
+  .intro {
+    padding-top: 80px;
+    padding-bottom: 0;
+    height: 80vh;
+    min-height: 500px;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 35px;
+    left: 32px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 108px;
+    left: -194px;
+  }
+    
+  .comparison.paper {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -5vw;
+    margin-bottom: -5vw;
+  }
+  
+  .comparison figure.top figcaption,
+  .comparison figure.bottom figcaption {
+    margin: 0;
+    top: 42%;
+    left: -27%;
+    text-align: left;
+  }  
+  
+  .mockup {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-height: 100vh;
+  }
+  
+  .mockup.app figure picture img, .mockup.dashboard figure picture img {
+    max-width: unset;
+    transform: scale(95%) rotate(-30deg);
+  }
+  
+  .mockup.dashboard figure picture img {
+    max-width: 1024px;
+  }
+  
+  .mockup.dashboard figure picture {
+    transform: translate(23%, -23%);
+  }
+  
+  .mockup.dashboard figure figcaption {
+    transform: translateY(22rem);
+  }
+  
+  .okrs {
+    padding-top: 10vw;
+  }
+  
+  .collaboration {
+    padding-top: 5rem;
+  }
+  
+  .collaboration .info {
+    padding-top: 77vh;
+  }
+  
+  .collaboration .illustration {
+    max-width: unset;
+  }
+  
+  .collaboration .illustration img {
+    width: 100%;
+  }
+  
+  section.features {
+    height: 80vw;
+  }
+    
+  .features .illustration {
+    bottom: 10vw;
+    right: -25vw;
+    width: 100vw;
+  }
+  
+}
+
+@media (min-width: 1194px) {
+  
+  .banner .banner-bg img {
+    width: 110vw;
+    max-width: none;
+  }
+  
+  .intro {
+    min-height: unset;
+  }
+
+  .intro .skills-badge.product-design {
+    top: 95px;
+    left: -68px;
+  }
+
+  .intro .skills-badge.ui-design {
+    top: 222px;
+    left: -204px;
+  }
+    
+  .comparison.paper {
+    margin-top: -7vw;
+    margin-bottom: -5vw;
+    background-color: transparent;
+    z-index: 100;
+  }
+  
+  .comparison figure img {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(110%);
+    box-shadow: -6px 6px var(--ink-100);
+  }
+  
+  .comparison figure.bottom {
+    margin-top: -24%;
+  }
+  
+  .comparison figure.top figcaption,
+  .comparison figure.bottom figcaption {
+    margin: 0;
+    top: 40%;
+    left: -10%;
+    text-align: left;
+  }
+  
+  .mockup.app figure picture img {
+    max-width: 750px;
+    transform: scale(78%) rotate(-30deg);
+  }
+  
+  .mockup.dashboard figure picture img {
+    max-width: 1200px;
+    transform: scale(92%) rotate(-30deg);
+  }
+  
+  .okrs .card-container .okr-card {
+    font-size: 2.25em;
+    padding: 3rem;
+  }
+  
+  .collaboration {
+    height: 1470px;
+  }
+  
+  .collaboration .illustration {
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    max-width: 920px;
+  }
+  
+  .collaboration .illustration img {
+    transform: scale(100%);
+  }
+  
+  .collaboration .info {
+    padding-top: 39rem;
+    padding-bottom: 31rem;
+  }
+  
+  .speed {
+    height: 1380px;
+    padding-top: 10vw;
+  }
+  
+  .speed .illustration {
+    margin-bottom: 8rem;
+  }
+  
+  .speed .info {
+    padding-top: 30vw;
+  }
+  
+  .gallery .image-container picture img {
+    border-radius: 20px;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  
+  .intro {
+    min-height: 860px;
+  }
+  
+  .intro .skills-badge.product-design {
+    top: 75px;
+    left: -440px;
+  }
+  
+  .intro .skills-badge.ui-design {
+    top: 222px;
+    left: -252px;
+  }
+    
+  .comparison figure img {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(100%);
+    box-shadow: -6px 6px var(--ink-100);
+  }
+  
+  .comparison figure.top figcaption,
+  .comparison figure.bottom figcaption {
+    margin: 0;
+    top: 40%;
+    right: -20%;
+    text-align: right;
+  }
+  
+  .mockup.app figure picture img {
+    max-width: 900px;
+  }
+  
+  .mockup.dashboard figure figcaption {
+    transform: translateY(26rem);
+  }
+  
+  .mockup.dashboard figure picture img {
+    max-width: 1720px;
+    transform: scale(92%) rotate(-30deg);
+  }
+  
+  .okrs .card-container {
+    grid-column: -2 / -13;
+  }
+  
+  .collaboration {
+    height: 1660px;
+  }
+  
+  .collaboration .illustration {
+    max-width: unset;
+    margin-top: 0px;
+    max-width: unset;
+  }
+  
+  .collaboration .illustration img {
+    transform: scale(100%);
+  }
+  
+  .speed {
+    height: 1750px;
+  }
+  
+  section.features {
+    height: 60vw;
+  }
+    
+  .features .illustration {
+    bottom: 5vw;
+    right: -25vw;
+    width: 80vw;
+  }
+  
+}
+
+@media (min-width: 2250px) {
+  
+  .intro .skills-badge.ui-design {
+    top: 222px;
+    left: -650px;
+  }
+  
+  .okrs .card-container {
+    grid-column: -9 / -21;
+  }
+  
+  .collaboration {
+    height: 1880px;
+  }
+  
+  .collaboration .info {
+    padding-top: 34rem;
+  }
+  
+  .collaboration .illustration {
+    margin-top: 5rem;
+  }
+  
+  .speed {
+    height: 1970px;
+  }
+  
+  .features .illustration {
+    /* width: 70rem; */
+  }
+  
+}
