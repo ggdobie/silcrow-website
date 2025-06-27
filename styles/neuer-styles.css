@@ -240,10 +240,9 @@ section.features {
 
 .features .illustration {
   position: absolute;
-  bottom: 10vw;
   top: unset;
-  left: -15vw; // FIX THIS FOR IOS
-  width: 170vw; // FIX THIS FOR IOS
+  bottom: 27vw;
+  transform: scale(1.5);
 }
 
 section.features .info .info-card {
@@ -348,14 +347,9 @@ section.features .info .info-card {
   .collaboration .info {
     padding-top: 90vh;
   }
-  
-  /* .collaboration .illustration {
-    max-width: unset;
-    margin-bottom: 5vh;
-  }
-   */
+
   .collaboration .illustration img {
-    transform: scale(200%);  
+    transform: scale(200%);
   }
   
   section.features {
@@ -367,6 +361,7 @@ section.features .info .info-card {
     left: unset;
     right: -20vw;
     width: 140vw;
+    transform: scale(1);
   }
   
 }
@@ -522,7 +517,7 @@ section.features .info .info-card {
 @media (min-width: 1194px) {
   
   .banner .banner-bg img {
-    transform: scale(2.15) translate(-1rem, -2rem);
+    width: 110vw;
     max-width: none;
   }
   
@@ -618,11 +613,6 @@ section.features .info .info-card {
 }
 
 @media (min-width: 1920px) {
-    
-  .banner .banner-bg img {
-    transform: scale(2.8) translate(5vw, -3vh);
-    max-width: none;
-  }
   
   .intro {
     min-height: 860px;
