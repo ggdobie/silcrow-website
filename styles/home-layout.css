@@ -314,6 +314,12 @@ footer .copyright {
     grid-column: 7 / -2;
   }
   
+  .client-logo-row {
+    will-change: transform;
+    will-change: opacity;
+    transform: translateZ(0);
+  }
+  
   .case-study, .quote, .responsible {
     grid-row-gap: 0;
     grid-template-rows: auto 1fr auto;
